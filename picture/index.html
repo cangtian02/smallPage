@@ -1,0 +1,45 @@
+<!--
+ * @Author: duiying
+ * @CreateDate: Do not edit
+ * @LastEditors: duiying
+ * @LastEditTime: 2020-06-17 20:34:31
+ * @Description: ...
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>picture</title>
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-touch-callout: none;}
+
+    html{font-size: 20px;font-family: sans-serif,"Microsoft YaHei",微软雅黑;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+    body{background: #F2F4F5;font-size: .7rem;color: #343434;}
+    html, body, .picBox{height: 100%;position: relative;overflow: hidden;}
+
+    @media only screen and (min-width: 400px) {
+      html{font-size: 21.33333333px !important;}
+    }
+    @media only screen and (min-width: 414px) {
+      html{font-size: 22.08px !important;}
+    }
+    @media only screen and (min-width: 480px) {
+      html{font-size: 25.6px !important;}
+    }
+
+    ul,li{list-style-type: none;}
+    i,em{font-style: normal;}
+    input{outline: none;border: none;}
+    a,a:active{text-decoration: none;color: #fff;}
+
+    .picBox img{width: 14rem;height: 24rem;position: absolute;left: 50%;top: 5.5rem;transform: translateX(-43%);z-index: 2;}
+    .picBox img:first-child{width: 15rem;height: 25rem;z-index: 3;top: 5rem;transform: translateX(-50%);}
+    .picBox img:last-child{z-index: 1;width: 13rem;height: 23rem;transform: translateX(-35%);top: 6rem;}
+  </style>
+</head>
+<body>
+  <div class="picBox" id="picBox"></div>
+  <script src="./index.js"></script>
+</body>
+</html>
