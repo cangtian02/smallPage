@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+	<div class="page">
+	<div class="share-box" id="share-box"></div>
+	<div class="content">
+		<div class="gPlayer" id="gPlayer"></div>		
+		<ul class="listmoney bgf">			
+			<li>
+				<span class="goodsMoney red arial">￥<font id="preferentialPrice">0.00</font></span>
+				<del class="arial">￥<span id="originalPrice">0.00</span></del>
+			</li>				
+			<li>库存:<span id="stock">0</span></li>
+			<li><span id="buyCount">0</span>人购买</li>
+		</ul>
+		<div class="activityBox" id="activityBox"></div>		
+		<div class="list-block">
+			<ul>
+				<li class="item-content item-share">
+					<div class="item-inner">
+						<div class="fb text-title" id="goodsName">名称</div>						
+					</div>
+					<div class="share" id="share"><img src='/schoolwap/images/default/fenxiang.png' /></div>
+				</li>
+				<li class="item-content">					
+					<div class="item-inner">
+						<div class="item-title">发货地：&nbsp;<span id="sendAddress"></span></div>
+						<font class="fr" id="logisticsCost">运费</font>
+					</div>					
+				</li>
+				<li class="item-content">
+					<a href="javascript:;" class="item-link item-content" id="open-popup-box">
+					<div class="item-inner">
+						<div class="item-title">
+							 已选择： <span class="red" id="normsValue">规格值</span>	    			
+						</div>
+						<font class="red fr arial">￥<span id="total-prices">0.00</span></font>
+					</div>
+					</a>
+				</li>			
+			</ul>
+		</div>
+
+		<div class="promise">
+			<span><img src="/schoolwap/images/class/qi.png"/> 七天退换</span>
+			<span><img src="/schoolwap/images/class/zheng.png"/> 正品保证</span>
+			<span><img src="/schoolwap/images/class/wei.png"/> 微信支付</span>
+		</div>
+
+		<div class="listsendadress bgf" id="extraInfo"><div class="topTitle">补充说明:</div><div class="html-content"></div></div>
+
+		<div class="shopInfo">
+			<div class="top">
+				<img src="/schoolwap/images/default/sydefault.png" id="providerPhotoUrl" />
+				<div class="name" id="providerName"></div>
+				<a href="javascript:;" class="gostudentshop" id="gostudentshop">进入店铺</a>
+			</div>
+			<ul class="bot">
+				<li><h3 id="providerGoodsTotal"></h3><p>全部宝贝</p></li>
+				<li><h3 id="goodsCollectionCount"></h3><p>收藏人数</p></li>
+				<li>
+					<div>宝贝描述：4.0</div>
+					<div>服务描述：4.0</div>
+					<div>质量描述：4.0</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="detailinfo bgf" id="detailinfo">			
+			<div class="buttons-tab fixed-tab">
+				<a href="#tab1" class="tab-link active button">商品介绍</a>
+				<a href="#tab2" class="tab-link button">规格参数</a>
+				<a href="#tab3" class="tab-link button" id="commentBtn">商品评论</a>
+			</div>			
+			<div class="tabs">
+				<div id="tab1" class="tab active goodsProduce"><div class="noInfo tc">暂无商品介绍</div></div>		
+				<div id="tab2" class="tab goodsAttr"><div class="noInfo tc">暂无商品规格</div></div>		
+				<div id="tab3" class="tab comment-box">
+					<div class="list-block media-list">
+						<ul class="comment-list" id="comment-list"></ul>
+					</div>					
+				</div>
+			</div>
+		</div>	
+	</div>
+		<div class="sayimo-mask"></div><!--遮罩层-->	
+	</div>
+	</div>
+	<script src="../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/class/goodsDetail/goodsDetail');</script>	
+</body>
+</html>

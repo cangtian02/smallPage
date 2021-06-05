@@ -1,0 +1,49 @@
+.gPlayer{position: relative;}
+.slide-container{}
+	.slide-container .slide-main li{height: 0;background: #FFFFFF;padding-top: 75%;position: relative;}
+	.slide-container .slide-main li img{position: absolute;top: 0;bottom: 0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);}
+
+.gTimes{float: right;padding: 0 .5rem;line-height: 1.8rem;font-size: .6rem;position: absolute;top: 0;right: 0;z-index: 999;background: #FFFF00;}
+	
+.gInfo{}
+	.gInfo .top, .gInfo .bot{display: -webkit-box;border-bottom: .05rem solid #F5F5F5;}
+	.gInfo .top .gPrice{display: inline-block;padding: .25rem .75rem;text-align: center;border-left: .05rem solid #F5F5F5;}
+	.gInfo .top .gPrice div{line-height: 1rem;font-size: .7rem;}
+	.gInfo .top .gName{-webkit-box-pack: center;-webkit-box-flex: 1;padding: .25rem;color: #000000;font-size: .7rem;}
+	.gInfo .bot div{-webkit-box-flex: 1;width: 50%; padding: .5rem;font-size: .7rem;}
+	.gInfo .bot .gSendAddress{text-align: right;border-left: .05rem solid #F5F5F5;}
+
+.kjBox{padding: .5rem 0;}
+
+.kjBox #kjInfo{display: none;}
+.kjBox .kjInfo{display: -webkit-box;height: 8rem;margin: 0 auto;}
+	.kjBox .kjInfo .l, .kjInfo .r{-webkit-box-flex: 1;}
+	.kjBox .kjInfo .l, .kjInfo .r, .kjInfo .b{width: 8rem;height: 8rem;}
+	.kjBox .kjInfo .b{margin: 0 auto;position: relative;}
+	.kjBox .kjInfo .l .b{background: url(/schoolwap/images/activity/yqkj/dangqingjia.png) no-repeat;background-size: 100% 100%;}
+	.kjBox .kjInfo .r .b{background: url(/schoolwap/images/activity/yqkj/yikanjia.png) no-repeat;background-size: 100% 100%;}
+	.kjBox .kjInfo .p{width: 2.2rem;text-align: center;font-size: .6rem;position: absolute;}
+	.kjBox .kjInfo .l .p{right: .35rem;top: 4.5rem;}
+	.kjBox .kjInfo .r .p{left: .55rem;top: 2.4rem;}
+
+.kjPriceinfo{font-size: .6rem;}
+
+.kjBox .kjBtn{}
+	.kjBox .kjBtn .btn, .kjBtn .btn img{height: 2rem;}
+	.kjBox .kjBtn .btn img{display: block;margin: 0 auto;}	
+	.kjBox .kjBtn .btn.sharebtn{display: none;}
+
+.kjBox .ex{font-size: .8rem;color: #000000;line-height: 2rem;text-align: center;}
+	.kjBox .ex img{display: inline-block;height: 2rem;vertical-align: middle;margin-right: .5rem;}
+
+.ljkjTab{margin: .25rem 0 1rem 0;}
+	.buttons-tab .button{border-bottom: .05rem solid transparent;}
+	.buttons-tab .button.active{color: #E60012;border-color: #E60012;}
+	.tab ul{padding: .25rem;}
+	.tab ul li{display: -webkit-box;height: 2rem;overflow: hidden;margin-bottom: .5rem;}
+	.tab ul li img{display: inline-block;width: 2rem;height: 2rem;margin-right: .5rem;border: .05rem solid #F5F5F5;border-radius: 50%;}
+	.tab ul li p{display: -webkit-box;-webkit-box-flex: 1;-webkit-box-align: center;margin: 0;height: 2rem;line-height: 1rem;font-size: .6rem;}
+
+.toast_text{font-size: .6rem;text-align: left;}
+.toast_text p{margin: 0;}
+.toast_title{padding-bottom: .5rem;border-bottom: .05rem solid #CFCFCF;}	

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>标签自动切换</title>
+<link rel="stylesheet" type="text/css" href="css/标签切换.css" />
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+</head>
+
+<body>
+
+<div class="side">
+   <ul class="sidetop">
+     <li>联想</li>
+     <li>华为</li>
+     <li>诺基亚</li>
+   </ul>
+   <ul class="sidebox">
+       <li>联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485</li>
+       <li>华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0</li>
+       <li>诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列</li>
+   </ul>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$(".side .sidetop li").eq(0).css({"background-color":"#ccc"})
+	aa();	
+	bb(); 
+});
+var i=-1;
+var time=null;
+function aa(){
+	n = $('.side .sidetop li').length-1;
+	i++;
+	if(i > n){
+	i = 0;
+}
+	slide(i);
+	time=window.setTimeout(aa, 3000);
+}
+function slide(i){
+	$('.side .sidetop li').eq(i).css({"background-color":"#ccc"}).siblings('li').css({"background-color":"#96F"})
+	$('.side .sidebox li').eq(i).css('display','block').siblings('.side .sidebox li').css('display','none');
+}
+function bb(){
+	$('.side .sidetop li').hover(function(){
+	  if(time){
+		clearTimeout(time);
+		i = $(this).prevAll().length;
+		slide(i);
+	  }
+	},
+	function () {
+	  time = window.setTimeout(aa, 3000);
+	  this.blur();
+	  return false;
+	});
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/标签切换.css" />
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+</head>
+
+<body>
+
+<div class="side">
+   <ul class="sidetop">
+     <li>联想</li>
+     <li>华为</li>
+     <li>诺基亚</li>
+   </ul>
+   <ul class="sidebox">
+       <li class="sidebox_1">联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485联想Z485</li>
+       <li class="sidebox_2">华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0华为W1 windows phone 8.0</li>
+       <li class="sidebox_3">诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列诺基亚 lumia 系列</li>
+   </ul>
+</div>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+	 $(".side .sidetop li").eq(0).css({"background-color":"#ccc"})
+	$(".side .sidebox li").eq(0).css({"display":"block"})
+	 $(".side .sidetop li").each(function() {
+        $(this).hover(function(){
+			var index = $(this).index();
+			$(".side .sidetop li").eq(index).css({"background-color":"#ccc"}).siblings('li').css({"background-color":"#96F"})
+			$(".side .sidebox li").eq(index).fadeIn(300).siblings('li').fadeOut(100);
+		});
+    });
+	 
+});
+</script>
+</body>
+</html>
+
+
+
+

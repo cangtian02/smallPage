@@ -1,0 +1,26 @@
+.ment-list{background: #FFFFFF;margin-bottom: .5rem;}
+
+.ment-list .cont{padding: .5rem;height: 5rem;display: -webkit-box;border-bottom: .05rem solid #F5F5F5;}
+	.ment-list .cont .l{display: inline-block;width: 4rem;height: 4rem;margin-right: .5rem;}
+	.ment-list .cont .l img{width: 3.9rem;height: 3.9rem;border: .05rem solid #F5F5F5;}
+	.ment-list .cont .r{-webkit-box-flex: 1;}
+	.ment-list .cont .r h1{height: 2rem;line-height: 1rem;font-weight: normal;font-size: .7rem;color: #131313;display: -webkit-box;overflow: hidden;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-break: break-all;margin: 0;}
+	.ment-list .cont .r .r_price{line-height: 1.1rem;}
+	.ment-list .cont .r .r_price em{font-style: normal;}
+	.ment-list .cont .r .r_price .r_price_o{font-size: .8rem;color: #E60012;}
+	.ment-list .cont .r .r_price .r_price_p{font-size: .7rem;color: #a0a0a0;}
+	.ment-list .cont .r .r_price .r_price_p .i{letter-spacing: -.2rem;}
+	.ment-list .cont .r .num{color: #999999;font-size: .6rem;}	
+		
+.evaluate-box{background: #FFFFFF;padding: 0 .5rem 2rem .5rem;}
+	.evaluate-box .grade{line-height: 2rem;}
+	.evaluate-box .grade span{color: #7d7d7d;font-size: .7rem;display: inline-block;}
+	.evaluate-box .grade em{display: inline-block;width: 1rem;height: 1rem;background: url(/schoolclient/images/default/stargray.png) no-repeat;background-size: contain;vertical-align: middle;margin-right: .5rem;}
+	.evaluate-box .grade em.star{background: url(/schoolclient/images/default/star.png) no-repeat;background-size: contain;}
+	.evaluate-box .commentContent{width: 100%;border: 2px solid #EEEEEE;resize: none;padding: .25rem;font-size: .7rem;display: block;}
+	.evaluate-box .btn{padding: .5rem 0;height: 2.5rem;}
+	.evaluate-box .btn .ok-btn{font-size: .7rem;line-height: 1.5rem;padding: 0 .6rem;color: #E60012;border: .05rem solid #E60012;border-radius: .25rem;}
+	.evaluate-box .btn .ok-btn.disabled{color: #ccc;border: .05rem solid #ccc;}
+	.evaluate-box .image-btn{width: 2.2rem;height: 2.2rem;border-radius: .25rem;border: .05rem solid #EEEEEE;background: url(/schoolclient/images/default/warning.png) no-repeat;background-size: contain;position: relative;overflow: hidden;}
+	.evaluate-box .image-btn #file{position: absolute;left: 0;top: 0;right: 0;bottom: 0;opacity: 0;}
+	.evaluate-box .image-list img{float: left;width: 2.2rem;height: 2.2rem;border-radius: .25rem;margin-right: .2rem;}

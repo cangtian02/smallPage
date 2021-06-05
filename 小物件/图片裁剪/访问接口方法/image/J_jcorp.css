@@ -1,0 +1,20 @@
+.J-mask{position: absolute;left: 0;right: 0;top: 0;bottom: 0;background: rgba(0,0,0,.7);z-index: 9998;}
+.J-filebox{width: 800px;position: absolute;top: 100px;bottom: 100px;left: 50%;margin-left: -400px;background: #FFFFFF;border-radius: 5px;z-index: 9999;overflow: hidden;}
+	.J-filebox .J-title{height: 40px;line-height: 40px;text-align: center;border-bottom: 1px solid #CCCCCC;font-size: 16px;position: relative;}
+	.J-filebox .J-close{position: absolute;top: 0;right: 0;width: 40px;text-align: center;cursor: pointer;}
+	.J-filebox .J-close:hover{color: #CC0000;}	
+	.J-filebox .J-wrap{position: absolute;top: 41px;left: 0;right: 0;bottom: 0;}
+	.J-filebox .J-wrap .J-fileimg-box{width: 120px;height: 40px;line-height: 40px;text-align: center;background: #2587C8;color: #FFFFFF;border-radius: 5px;position: absolute;top: 30%;left: 50%;margin-left: -60px;overflow: hidden;z-index: 1;}
+	.J-filebox .J-wrap .J-fileimg-box input{position: absolute;left: 0;top: 0;right: 0;bottom: 0;opacity: 0;cursor: pointer;}	
+	.J-filebox .J-wrap .J-img-jcrop{position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: #FFFFFF;z-index: 2;}
+	.J-filebox .J-wrap .J-img-jcrop .J-img-box{position: absolute;top: 0;bottom: 51px;left: 0;right: 0;border-bottom: 1px solid #CCCCCC;background: url(J-loading.gif) center center no-repeat;overflow: hidden;}
+	.J-filebox .J-wrap .J-img-jcrop .J-y-img{display: none;overflow: hidden;}		
+	.J-filebox .J-wrap .J-img-jcrop .J-img-box .J-scale-box{width: 30px;height: 200px;position: absolute;right: 10px;top: 10px;z-index: 2;background: rgba(204,204,204,.7);border-radius: 5px;}
+	.J-filebox .J-wrap .J-img-jcrop .J-img-box .J-scale-box .pos{width: 80px;line-height: 26px;background: rgba(204,204,204,.7);border-radius: 5px;position: absolute;left: -90px;top: 0;color: #2587C8;font-size: 14px;text-align: center;display: none;}
+	.J-filebox .J-wrap .J-img-jcrop .J-img-box .J-scale-box .i{width: 5px;height: 180px;margin: 10px 12.5px;background: #FFFFFF;position: relative;}	
+	.J-filebox .J-wrap .J-img-jcrop .J-img-box .J-scale-box .i em{width: 20px;height: 5px;background: #2587C8;position: absolute;top: 87.5px;left: -7.5px;cursor: n-resize;}	
+	.J-filebox .J-wrap .J-img-jcrop .J-img-box .J-dispose-img{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);z-index: 1;}		
+	.J-filebox .J-wrap .J-img-jcrop .J-control{height: 30px;padding: 10px 0;position: absolute;bottom: 0;left: 0;right: 0;text-align: center;}
+	.J-filebox .J-wrap .J-img-jcrop .J-control .J-btn{display: inline-block;line-height: 30px;padding: 0 20px;border-radius: 5px;background: #2587C8;color: #FFFFFF;cursor: pointer;margin: 0 10px;}
+.J-filebox .J-wrap .J-img-jcrop, .J-filebox, .J-mask, #J_dispose_y{display: none;}
+#J-canvas, .jcrop-keymgr{opacity: 0;}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+	<div class="content">		
+		<div class="list-block">
+			<ul>				
+				<li><div class="item-content"><div class="item-inner">
+					<div class="item-title label"><span class="red">*&nbsp;</span>真实姓名：</div>
+					<div class="item-input"><input class="input" type="text" id="name"></div>
+				</div></div></li>
+				<li><div class="item-content"><div class="item-inner">
+					<div class="item-title label"><span class="red">*&nbsp;</span>联系方式：</div>
+					<div class="item-input"><input class="input" type="tel" id="mobilePhone"></div>
+				</div></div></li>
+			    <li><div class="item-content"><div class="item-inner">
+			        <div class="item-title label"><span class="red">*&nbsp;</span>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校：</div>
+			        <div class="item-input"><input type="text" id="schoolId" /></div>
+			    </div></div></li>
+			    <li><div class="item-content"><div class="item-inner">
+			        <div class="item-title label"><span class="red">*&nbsp;</span>所&nbsp;&nbsp;在&nbsp;&nbsp;系：</div>
+			        <div class="item-input"><input type="text" id="department" /></div>
+			    </div></div></li>
+			    <li><div class="item-content"><div class="item-inner">
+			        <div class="item-title label"><span class="red">*&nbsp;</span>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：</div>
+			        <div class="item-input"><input type="text" id="classes" /></div>
+			    </div></div></li>
+				<li><div class="item-content"><div class="item-inner">
+					<div class="item-title label"><span class="red">*&nbsp;</span>学生证号：</div>
+					<div class="item-input"><input class="input" type="text" id="studentCard"></div>
+				</div></div></li>			    
+				<li><div class="item-content"><div class="item-inner">
+					<div class="item-title label"><span class="red">*&nbsp;</span>学&nbsp;&nbsp;生&nbsp;&nbsp;证：</div>
+					<div class="item-input">
+						<div class="imgBtn" id="studentCardBtn">
+							<input accept="image/*" type="file" id="studentCardUrl" name="file">
+						</div>						
+					</div>
+				</div></div></li>			    
+				<li><div class="item-content"><div class="item-inner">
+					<div class="item-title label"><span class="red">*&nbsp;</span>身份证号：</div>
+					<div class="item-input"><input class="input" type="text" id="idCardCode"></div>
+				</div></div></li>
+				<li><div class="item-content"><div class="item-inner">
+					<div class="item-title label"><span class="red">*&nbsp;</span>身份证正面照：</div>
+					<div class="item-input">
+						<div class="imgBtn" id="idCardFaceBtn">
+							<input accept="image/*" type="file" id="idCardFaceUrl" name="file">
+						</div>						
+					</div>
+				</div></div></li>
+				<li><div class="item-content"><div class="item-inner">
+					<div class="item-title label"><span class="red">*&nbsp;</span>身份证反面照：</div>
+					<div class="item-input">
+						<div class="imgBtn" id="idCardReverseBtn">
+							<input accept="image/*" type="file" id="idCardReverseUrl" name="file">
+						</div>
+					</div>
+				</div></div></li>				
+			</ul>
+		</div>
+		<div class="btn disabled" id="btn">立即报名</div>
+   	</div>
+    </div>
+    </div>
+    <div class="sayimo-mask"></div><!--遮罩层-->
+    <script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/activity/ckds/cyds-ljbm');</script>	
+</body>
+</html>

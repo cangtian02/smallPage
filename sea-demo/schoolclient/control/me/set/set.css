@@ -1,0 +1,8 @@
+.list-block{margin: .25rem 0 0 0;}
+	.list-block .item-inner{overflow: inherit;}
+	.list-block, .list-block input{font-size: .7rem;}
+	.list-block .sayimo-img img{float:right;width: 2rem;height: 2rem;border-radius: 50%;border: none;}
+	.list-block .item-title.sayimo-modify-fontcolor, .list-block .item-input, .list-block .item-input input, .list-block .item-input select{color: #A9A9BB;font-size: .7rem;}
+	.list-block .item-input input, .list-block .item-input{text-align: right;}
+	.list-block .item-input select{direction: rtl;}
+.base_btn{margin: 1rem .5rem;}		

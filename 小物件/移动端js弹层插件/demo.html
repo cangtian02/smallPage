@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0">
+  <title>移动端弹层插件</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    
+    button {
+      padding: 5px 10px;
+      margin: 10px;
+      line-height: 28px;
+    }
+
+  </style>
+  <link rel="stylesheet" href="cloud.min.css">
+  <script type="text/javascript" src="cloud.js"></script>
+</head>
+
+<body style="padding-bottom: 5000px;">
+  <button onclick="comp();">综合框</button>
+  <button onclick="opens();">自定义</button>
+  <button onclick="explain();">提示框</button> 
+  <button onclick="asked();">询问框</button>
+  <button onclick="alerts();">确定框</button>
+  <button onclick="msg();">消息框</button>
+  <button onclick="load();">加载框</button>
+
+  <script type="text/javascript">
+    //综合框
+    function comp() {
+      cloud.open({
+        title: '自定义标题', //标题，有值是才显示，默认不显示（String类型）（非必传参数）
+        close: true, //标题上面的关闭按钮,true时才显示，false不显示，默认false（Boolean类型）（非必传参数）
+        content: '自定义内容', //内容，（String类型）（必传参数）
+        covered: true, //罩层，true时显示，false时不显示，默认true(Boolean类型)，（非必传参数）
+        coveredClose: true, //罩层点击是否关闭层，true关闭，false不关闭，默认true（Boolean类型）（非必传参数）
+        button: [{ //按钮，有值才显示，默认不显示（Array类型）（非必传参数）
+          name: '按钮1',
+          callback: function() {
+            this.alert('你点击了按钮1');
+          }
+        }, {
+          name: '按钮2',
+          callback: function() {
+            this.alert('你点击了按钮2');
+          }
+        }]
+      });
+    }
+
+    //自定义
+    function opens() {
+      cloud.open({
+        content: '这是可以可以由你任意定义的弹层',
+        time: 2500
+      });
+    }
+
+    //提示框
+    function explain() {
+      cloud.explain('你正在运行javascript程序');
+    }
+
+    //询问框
+    function asked() {
+      cloud.asked('你爱我吗', function() {
+        this.explain('我也爱你');
+      }, function() {
+        this.explain('啥，你居然不爱我？');
+      });
+    }
+
+    //确定框
+    function alerts() {
+      cloud.alert('你想说什么');
+    }
+
+    //消息框
+    function msg() {
+      cloud.msg('上面,默认一秒消失', 'top');
+      cloud.msg('中间，设置两秒消失', 'center', 2000);
+      cloud.msg('下面，设置三秒消失', 'bottom', 3000);
+    }
+
+    //加载框
+    function load() {
+      cloud.load(); //第二个参数，true为点击罩层关闭，false为不关闭（需执行cloud.colse()关闭），非必传参数
+    }
+
+  </script>
+</body>
+
+</html>

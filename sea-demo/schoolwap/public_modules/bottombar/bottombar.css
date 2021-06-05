@@ -1,0 +1,13 @@
+.footer-nav{background: #FFFFFF;}
+	.bar-tab .tab-item.active, .bar-tab .tab-item:active{color: #e60012;}
+	.footer-nav .tab-item .icon{height: 1rem;}
+	.icon-home{content:url(/schoolwap/images/bottombar/icon_home.png);}
+	.bar-tab .tab-item.active .icon-home{content:url(/schoolwap/images/bottombar/icon_home_active.png);}
+	.icon-store{content:url(/schoolwap/images/bottombar/icon_class.png);}
+	.bar-tab .tab-item.active .icon-store{content:url(/schoolwap/images/bottombar/icon_class_active.png);}
+	.icon-find{content:url(/schoolwap/images/bottombar/icon_find.png);}
+	.bar-tab .tab-item.active .icon-find{content:url(/schoolwap/images/bottombar/icon_find_active.png);}	
+	.icon-cart{content:url(/schoolwap/images/bottombar/icon_cart.png);}
+	.bar-tab .tab-item.active .icon-cart{content:url(/schoolwap/images/bottombar/icon_cart_active.png);}
+	.icon-me{content:url(/schoolwap/images/bottombar/icon_me.png);}
+	.bar-tab .tab-item.active .icon-me{content:url(/schoolwap/images/bottombar/icon_me_active.png);}

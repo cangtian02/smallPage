@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<style>
+	#input{width: 200px;height: 30px;line-height: 30px;margin: 0 auto;display: block;font-size: 20px;}
+	</style>
+	<body>	
+	<input id="input" maxlength="13" />	
+	<script>
+	$(document).ready(function(){
+		var inp = $("#input"),
+			zt = true;
+		inp.bind('input input',function (){
+        	var len = inp.val().length;
+        	aa(len);      
+        }).bind("input keydown",function(e){        
+            e = e ? e : event;
+            if(e.keyCode == 8){
+				zt = false;
+            }else{
+            	zt = true;
+            }
+        });
+        function aa(len){
+	        if (zt == true){
+	        	if(len == 3 || len == 8){
+	        		inp.val(inp.val() + " ");
+	        	}else if(len == 13){
+	        		var phone = inp.val().replace(/\s+/g, "");
+	        		if(!(/^(13[0-9]|15[0|3|6|7|8|9]|18[8|9])\d{8}$/.test(phone))){
+	        			alert("手机号码填写错误");
+	        			inp.focus();
+	        			return false;
+	        		}
+	        	}
+	        }
+        }
+	});
+	</script>	
+	</body>
+</html>

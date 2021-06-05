@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+    	<div class="buttons-tab buttons-fixed">
+			<a href="#tab1" id="btab1" class="ck-news tab-link active button"><img src="../../../images/me/icon_tab_myresume.png">个人简历</a>
+			<a href="#tab2" id="btab2" class="ck-needs tab-link button"><img src="../../../images/me/icon_tab_deliver.png">已投简历</a>
+		</div>    	
+    <div class="content infinite-scroll infinite-scroll-bottom pull-to-refresh-content">
+		<!-- 下拉加载提示符-->
+		<div class="pull-to-refresh-layer"><div class="preloader"></div><div class="pull-to-refresh-arrow"></div></div>	
+		<div class="tabs">
+			<div id="tab1" class="tab active"><div id="myresume"></div></div>
+			<div id="tab2" class="tab"><div class="list-block media-list"><ul class="deliver-list" id="deliver-list"></ul></div></div>			
+		</div>	   	
+		<!-- 下滑无限刷新加载提示符 -->
+		<div class="infinite-scroll-preloader"><div class="preloader"></div></div>    	
+    </div>
+    </div>
+    </div>
+	<script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/me/resume/myresume');</script>	
+</body>
+</html>

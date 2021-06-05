@@ -1,0 +1,5 @@
+.reservedGoodList{margin-top: .25rem;}
+.buttons-tab{margin: .25rem 0;}
+	.buttons-tab .button{height: 2rem;line-height: 1rem;border-left: .1rem solid #FFFFFF;background: #939393;color: #FFFFFF;border-bottom: none;font-size: .7rem;}
+	.buttons-tab .button:first-child{border-left: none;}
+	.buttons-tab .button.active{color: #FFFFFF;background: #E60012;border-color: #FFFFFF;}

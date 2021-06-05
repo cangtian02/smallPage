@@ -1,0 +1,13 @@
+.content{bottom: 2.5rem;}
+
+.insertTransfer{height: 2.5rem;background: #FFFFFF;border-top: .05rem solid #F5F5F5;position: absolute;left: 0;right: 0;bottom: 0;z-index: 2;}
+	.insertTransfer span{display: block;margin: .25rem 1rem;color: #FFFFFF;font-size: .8rem;text-align: center;line-height: 2rem;background: #E60012;border-radius: .25rem;}
+
+.transferList{}
+	.transferList li a{display: -webkit-box;height: 5.5rem;padding: .5rem;background: #FFFFFF;border-bottom: .05rem solid #F5F5F5;}
+	.transferList li a .l{display: inline-block;width: 4.5rem;height: 4.5rem;border: .05rem solid #F5F5F5;margin-right: .5rem;}
+	.transferList li a .l img{display: block;width: 100%;height: 100%;}
+	.transferList li a .r{-webkit-box-flex: 1;}
+	.transferList li a .r .t{-webkit-box-pack: center;-webkit-box-flex: 1;height: 2rem;line-height: 1rem;color: #666;font-size: .7rem;}
+	.transferList li a .r .p{margin: .2rem 0;font-size: .7rem;}
+	.transferList li a .r .i{color: #A7A7A7;font-size: .6rem;}

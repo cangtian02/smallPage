@@ -1,0 +1,14 @@
+.content{background: #FFFFFF;}
+.aBanner{display: block;width: 100%;max-height: 12rem;}
+.reg_form{padding-top: .5rem;}
+	.reg_form label{display: inline-block;width: 20%;color: #000;text-align: center;}
+	.reg_form input{display: inline-block;width: 75%;line-height: 1.5rem;border-radius: .25rem;border: .05rem solid #E1E1E1;color: #000000;padding-left: .25rem;}
+	.item-p{margin: .5rem;}
+	.button-danger.button-fill{height: 1.8rem;line-height: 1.8rem;}
+.go_auth{text-align: right;margin-right: .5rem;line-height: 2.5rem;}
+	.go_auth a{color: #ff0000;font-size: .7rem;}
+.tel{border: .05rem dashed #1b1b1b;border-radius: 2.5rem;text-align: center;vertical-align: middle;width: 90%;margin: 1.5rem auto;padding: .25rem;}
+	.font-zw{color: #434343;font-size: .7rem;margin: 0 .5rem;line-height: 1.2rem;}
+	.item-font-one{color: #ff0000;vertical-align: middle;font-size: .7rem;font-weight: 500;}
+	.item-font-two{color: #434343;vertical-align: middle;font-size: 1rem;}
+	.item-img{padding: .25rem;vertical-align: middle;width: 1.75rem;  height: 1.5rem;}

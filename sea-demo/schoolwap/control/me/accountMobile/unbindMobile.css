@@ -1,0 +1,8 @@
+.list-block{margin: .25rem 0;}
+	.list-block .s-icon{float: left;width: .7rem;height: 1rem;margin-right: .5rem;}
+	.list-block .s-icon-1{background: url(/schoolwap/images/me/icon_phone.png) no-repeat 0 center;background-size: 100% auto;}
+	.list-block .s-icon-2{background: url(/schoolwap/images/me/icon_yanzhengma.png) no-repeat 0 center;background-size: 100% auto;}
+	.btnSendCode{width: 6.5rem;text-align: center;color: #FFFFFF;background: #999999;position: absolute;top: 0;bottom: 0;right: 0;z-index: 2;line-height: 2.5rem;font-size: .7rem;}
+	.btnSendCode.disabled{background: #CCCCCC;}
+	.btn{line-height: 2rem;margin: 1.5em .8rem;color: #fff;background: #e60012;border-radius: .25rem;text-align: center;}
+	.info{margin: 0 .5rem;font-size: .7rem;}

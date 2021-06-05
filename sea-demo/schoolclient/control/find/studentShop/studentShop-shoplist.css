@@ -1,0 +1,9 @@
+.shoplist{margin: .25rem;}
+	.shoplist li{float: left;width: 33.333333336%;padding: .25rem;}
+	.shoplist li div{background: #FFFFFF;color: #656565;padding: .25rem;}
+	.shoplist li div .imgBox{width: 100%;height: 0;padding-top: 100%;position: relative;}
+	.shoplist li div .imgBox img{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+	.shoplist li .t{height: 2rem;overflow: hidden;display: -webkit-box;margin-top: .25rem;}
+	.shoplist li .t i{display: inline-block;width: .9rem;height: .9rem;margin-right: .25rem;background: url(/schoolclient/images/find/studentshop/icon_dian.png) no-repeat;background-size: 100% 100%;}
+	.shoplist li .t p{-webkit-box-flex: 1;margin: 0;font-size: .6rem;line-height: .75rem;}
+.bar-search~.content{top: 0rem !important;}	

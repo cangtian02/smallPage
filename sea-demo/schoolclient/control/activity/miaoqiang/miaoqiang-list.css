@@ -1,0 +1,48 @@
+
+.buttons-tab:after{display: none;}
+.buttons-tab .button{border: none;}
+.buttons-tab .button{color: #fff;height: 3.5rem;line-height: 3.5rem;font-size: .7rem;}	
+	.tab-link:first-child{background: #33D3F5;}
+	.tab-link:last-child{background: #EF6D6D;}
+	.tab-link img{width: 2rem;height: 2rem;vertical-align: middle;margin-right: .5rem;}
+	.buttons-tab .button.active{color: #fff;border: 0;}
+	.buttons-tab .button.active:after{content: "";width: 0;height: 0;border-left: .5rem solid transparent;border-right: .5rem solid transparent;border-bottom: .75rem solid #FFFFFF;position: absolute;left: 50%;bottom: 0;margin-left: -.25rem;}
+	
+.content{top: 3.45rem;}
+	.lists .list{display: none;}
+	.lists .list.active{display: block;}
+	
+.btn-tab{margin: .25rem 0;background: #FFFFFF;display: -webkit-flex;position: relative;}
+	.btn-tab .btn{width: 100%;height: 2rem;line-height: 1rem;border-left: .1rem solid #FFFFFF;background: #939393;color: #FFFFFF;border-bottom: none;font-size: .7rem;-webkit-box-flex: 1;text-align: center;padding: 0 .5rem;}
+	.btn-tab .btn:first-child{border-left: none;}
+	.btn-tab .btn.active{color: #FFFFFF;background: #E60012;border-color: #FFFFFF;}
+		
+.reservedGoodList{margin: 0 .5rem;}
+	.reservedGoodList li{margin-bottom: .5rem;}
+	.reservedGoodList li a{display: block;position: relative;}
+	.reservedGoodList li a .icon_ljqg{width: 3rem;height: 3rem;background: url(/schoolclient/images/activity/reserved/icon_panic_03.png) no-repeat;background-size: contain;position: absolute;top: .35rem;right: .35rem;}
+	.reservedGoodList li a img{display: block;width: 100%;}
+	.reservedGoodList li a .i{position: absolute;left: 0;right: 0;bottom: 0;background: rgba(255,255,255,.6);padding: .1rem .25rem;}
+	.reservedGoodList li a .i .l{margin-right: 5rem;}
+	.reservedGoodList li a .i .l h1, .reservedGoodList li a .i .l p{-webkit-flex-shrink: 1;-ms-flex: 0 1 auto;-webkit-flex-shrink: 1;flex-shrink: 1;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+	.reservedGoodList li a .i .l h1{font-size: .7rem;margin: 0;}
+	.reservedGoodList li a .i .l p{font-size: .6rem;margin: 0;color: #191919;}
+	.reservedGoodList li a .i .r{font-size: .8rem;position: absolute;right: .25rem;bottom: .05rem;}
+	.reservedGoodList li a .i .r i{font-size: .9rem;}
+.bottom-model{position: absolute;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,.7);z-index: 99999;}
+	.bottom-model .bottom-close{position: absolute;right: .15rem;top: .25rem;width: 1.2rem;height: 1.2rem;background: url(/schoolclient/images/activity/reserved/icon_purchase_cancel.png) no-repeat;background-size: 100% 100%;}
+	.bottom-model .bottom-title{font-size: .8rem;color: #FFFFFF;margin: .25rem .5rem;}
+	.bottom-model .bottom-content{font-size: .7rem;color: #FFFFFF;margin: .25rem .75rem;}
+	.bottom-model .bottom-content p{margin: 0;}	
+
+.ment-list{}
+    .ment-list li{background: #FFFFFF;margin-bottom: .25rem;padding: .5rem; }
+    .ment-list li .cont{height: 4.25rem;display: -webkit-box;}
+    .ment-list li .cont .l{display: inline-block;width: 4.25rem;height: 4.25rem;margin-right: .5rem;border: .05rem solid #F5F5F5;}
+    .ment-list li .cont .l img{width: 4.15rem;height: 4.15rem;}
+    .ment-list li .cont .c{-webkit-box-flex: 1;}
+    .ment-list li .cont .c .name{height: 2rem;line-height: 1rem;font-size: .7rem;color: #131313;}
+    .ment-list li .cont .c .price{line-height: 1rem;color: #E60012;font-size: .7rem;}
+    .ment-list li .cont .r{line-height: 1.25rem;font-size: .6rem;}
+    .ment-list li .cont .r span{color: #8A8A8A;}
+    .ment-list li .cont .r div{float: right;color: #FFFFFF;background: #E60012;padding: 0 .6rem;border-radius: .2rem;}

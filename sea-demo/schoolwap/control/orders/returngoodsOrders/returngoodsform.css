@@ -1,0 +1,24 @@
+.ment-list{background: #FFFFFF;margin-bottom: .5rem;}
+	
+.return-box{background: #FFFFFF;padding: .5rem;}		
+	.table{display: -webkit-box;line-height: 1.5rem;margin-bottom: .5rem;}
+	.table .t{display: inline-block;width: 5rem;font-size: .7rem;}
+	.table .c{-webkit-box-flex: 1;width: 100%;}
+	.table .c .t-list li{float: left;font-size: .7rem;color: #999999;margin-right: .5rem;}
+	.table .c .t-list li em{display: inline-block;width: .7rem;height: .7rem;vertical-align: middle;margin-right: .25rem;background: url(/schoolwap/images/default/icon_find_content_dischoose.png) no-repeat;background-size: 100% 100%;}
+	.table .c .t-list li.active em{background: url(/schoolwap/images/default/icon_find_content_highlight_delivery.png) no-repeat;background-size: 100% 100%;}
+	.table .c .num{width: 6rem;}		
+	.return-box .commentContent{display: block;width: 100%;border: 2px solid #EEEEEE;resize: none;padding: .25rem;font-size: .7rem;margin-bottom: .5rem;}	
+	.return-box .image-list .image-btn{width: 2.2rem;height: 2.2rem;border-radius: .25rem;background: url(/schoolwap/images/default/warning.png) no-repeat;background-size: contain;position: relative;overflow: hidden;}
+	.return-box .image-list .image-btn #file{position: absolute;left: 0;top: 0;right: 0;bottom: 0;opacity: 0;}
+	.return-box .image-list img{float: left;width: 2.2rem;height: 2.2rem;border-radius: .25rem;margin-right: .25rem;}	
+	.return-box .ok-btn{margin: .8rem;text-align: center;font-size: .7rem;line-height: 2rem;color: #FFFFFF;border-radius: .25rem;background: #E60012;}
+	
+.numbox{height: 1.5rem;padding: 0 16%;vertical-align: middle;position: relative;}
+	.numbox .btn{width: 32%;height: 100%;font-size: .9rem;line-height: 100%;color: #555;background-color: #E5E4E4;border: none;position: absolute;top: 0;}
+	.numbox .btn:active{background-color: #ccc}
+	.numbox .btn:disabled{color: silver}
+	.numbox .numbox-btn-plus{right: 0;}
+	.numbox .numbox-btn-min{left: 0;}
+	.numbox .numbox-input{width: 100%;height: 100%;border: none;font-size: .7rem;}
+	.numbox .numbox-input:disabled{background: #FFFFFF;}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+	<div class="page">
+	<div class="content">	  			
+		<div class="tab-control">
+			<a class="tab-control-item" href="javascript:;">校内</a>
+			<a class="tab-control-item" href="javascript:;">其他</a>
+		</div>		
+		<div class="tab-control-content">
+			 <div class="list-block">
+			    <ul>
+				    <li>
+				        <div class="item-content">
+				        	<div class="item-inner">
+				        		<div class="item-title label">收件人</div>
+				        		<div class="item-input"><input type="text" id="schooluser" placeholder="请输入收件人姓名" /></div>
+				        	</div>
+				        </div>
+				    </li>
+				    <li>
+				        <div class="item-content">			
+				        	<div class="item-inner">
+				        		<div class="item-title label">联系方式</div>
+				        		<div class="item-input"><input type="tel" id="schoolphone" placeholder="请输入联系方式" /></div>
+				         	</div>
+				        </div>
+				    </li>
+				    <li>
+				    	<div class="item-content">
+				      		<div class="item-inner">
+				      			<div class="item-title label">所在学校</div>
+				      			<div class="item-input" id="schooladdressbox"></div>
+				      		</div>
+				    	</div>
+				    </li>
+				    <li>
+					    <div class="item-content">
+						    <div class="item-inner">
+							    <div class="item-title label">详细地址</div>
+							    <div class="item-input" id="dormitoryNumberTextbox">
+							    	<input type="text" placeholder="宿舍楼层号" id="dormitoryNumberText" />
+							    	<input type="hidden" id="dormitoryNumberCode" />
+							    </div>
+						    </div>
+					    </div>
+				    </li>
+			    </ul>
+			 </div>
+		</div>						
+		<div class="tab-control-content">
+			<div class="list-block">
+			    <ul>
+				    <li>
+				        <div class="item-content">
+					        <div class="item-inner">
+					        	<div class="item-title label">收件人</div>
+					        	<div class="item-input"><input type="text" id="otheruser" placeholder="请输入收件人姓名" /></div>
+					        </div>
+				        </div>
+				    </li>
+				    <li>
+				        <div class="item-content">
+				        	<div class="item-inner">
+				        		<div class="item-title label">联系方式</div>
+				        		<div class="item-input"><input type="tel" id="otherphone" placeholder="请输入联系方式" /></div>
+				        	</div>
+				        </div>
+				    </li>
+				    <li>
+				        <div class="item-content">
+				        	<div class="item-inner">
+					            <div class="item-title label">所在地区</div>
+					            <div class="item-input">
+					              	<input type="text" placeholder="选择省市区" id='city-picker' value="" />
+		        					<input type="hidden" id='baseAreaCode' value="" />
+					            </div>
+				        	</div>
+				        </div>
+				    </li>
+				    <li>
+				        <div class="item-content">
+				        	<div class="item-inner">
+				            	<div class="item-title label">详细地址</div>
+				            	<div class="item-input"><input type="text" placeholder="街道、楼牌号等" id="otheraddres" /></div>
+				        	</div>
+				        </div>
+				    </li>
+			    </ul>
+			</div>			 		
+		</div>
+		<div class="btn disabled" id="post_button">保存并返回</div>	
+	</div>
+	</div>
+	</div>
+	<script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/me/receivingAddress/updateReceivingAddress');</script>	
+</body>
+</html>

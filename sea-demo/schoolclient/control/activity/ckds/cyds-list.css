@@ -1,0 +1,6 @@
+.top{margin: 0 .75rem;font-size: .8rem;line-height: 2rem;}
+
+.tdqdlist{margin: 0 .5rem;border: .05rem solid #EFEFF4;}
+	.tdqdlist .t{padding-left: .5rem;line-height: 2rem;background: #EFEFF4;}
+	.tdqdlist ul li{line-height: 1.8rem;font-size: .7rem;padding: 0 .5rem;}
+	.tdqdlist ul li span:last-child{font-size: .6rem;}

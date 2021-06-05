@@ -1,0 +1,18 @@
+.buttons-tab .button.active{color: #E60012;border-color: #E60012;}
+
+.rewardList{margin: .5rem 0;}
+	.rewardList li{margin-bottom: .25rem;}
+	.rewardList li a{display: -webkit-box;height: 7rem;padding: 2rem .5rem .5rem;background: #FFFFFF;border-bottom: .05rem solid #F5F5F5;position: relative;}
+	.rewardList li a .l{display: inline-block;width: 4.5rem;height: 4.5rem;border: .05rem solid #F5F5F5;margin-right: .5rem;}
+	.rewardList li a .l img{display: block;width: 100%;height: 100%;}
+	.rewardList li a .r{-webkit-box-flex: 1;}
+	.rewardList li a .r .t{-webkit-box-pack: center;-webkit-box-flex: 1;height: 2rem;line-height: 1rem;color: #666;font-size: .7rem;}
+	.rewardList li a .r .p{margin: .2rem 0;font-size: .7rem;}
+	.rewardList li a .r .i{color: #A7A7A7;font-size: .6rem;}
+	.rewardList li a .p_l, .rewardList li a .p_r{color: #FFFFFF;position: absolute;top: 0;}
+	.rewardList li a .p_l{line-height: 1.4rem;padding: 0 .75rem;left: 0;font-size: .7rem;}
+	.rewardList li a .p_l.p_l_1{background: #E60012;}
+	.rewardList li a .p_l.p_l_2{background: #FEA831;}
+	.rewardList li a .p_l.p_l_3{background: #0082E6;}
+	.rewardList li a .p_l.p_l_4{background: #999999;}	
+	.rewardList li a .p_r{right: 0;background: #E60012;width: 2rem;height: 2rem;padding: .2rem 0;line-height: .8rem;text-align: center;font-size: .6rem;}

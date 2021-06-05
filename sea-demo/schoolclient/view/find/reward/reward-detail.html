@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+		<div class="content">
+			
+			<div class="slidePlay" id="slidePlay"></div>
+			
+			<div class="tran-item tran-item-pt5">
+				<div class="tran-name" id="rewardName"></div>
+				<div class="tran-share" id="share"><i></i></div>
+			</div>
+			<div class="tran-item">
+				<div class="tran-price red">赏金：<span class="arial">￥</span><span id="factPrice"></span></div>
+				<div class="tran-updateTime">有效期：<span id="startDate"></span> 至 <span id="endDate"></span></div>
+			</div>
+			<div class="tran-item tran-item-pt5 tran-span">投标人数：<span id="submitNum"></span>人</div>
+			<div class="tran-item tran-item-pt5">
+				<div class="tran-warning">如遇无效、虚假、诈骗信息请举报</div>
+				<div class="tran-warningtel"><a href="javascript:;" id="telPhone"></a></div>
+			</div>
+			<div class="tran-item tran-desc">
+				<div class="tran-desc-t">需求简述：</div>
+				<div class="html-content" id="resume">这么懒，简述都没有。。。</div>
+			</div>
+			
+			<div class="buttons-tab">
+				<a href="#tab1" class="tab-link active button">悬赏介绍</a>
+				<a href="#tab2" class="tab-link button">我的作品</a>
+				<a href="#tab3" class="tab-link button">其他作品</a>
+			</div>			
+			<div class="tabs bgf">
+				<div id="tab1" class="tab active"><div class="html-content" id="description"><div class="noInfo tc">暂无悬赏介绍</div></div></div>		
+				<div id="tab2" class="tab"><div class="html-content"><div class="noInfo tc">你还未参与投标</div></div></div>		
+				<div id="tab3" class="tab"><div class="html-content"><div class="noInfo tc">暂无其它投标作品</div></div></div>
+			</div>			
+			
+		</div>
+		<div class="myreward" id="myreward"><span>我要投标</span></div>
+    </div>
+    </div>
+    <script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/find/reward/reward-detail');</script>	
+</body>
+</html>

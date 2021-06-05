@@ -1,0 +1,28 @@
+body,.page, .page-group{background: #FFFFFF;}
+.d_top{margin: .5rem;border-bottom: .05rem solid #EBEBEB;display: -webkit-flex;}
+	.d_top img{display: inline-block;width: 6rem;height: 6rem;margin-right: .5rem;}
+	.d_top h4{margin: .5rem 0 0 0;color: #333333;font-weight: normal;}
+	.d_top .star{color: #A9CE05;line-height: 1rem;font-size: .7rem;margin: .5rem 0;}
+	.d_top .star em{float:left;width: .8rem;height: .8rem;margin: .1rem .25rem 0 0;background: url(/schoolclient/images/find/downapp/icon_star_active.png) no-repeat;background-size: contain;}
+	.d_top .star em.disem{background: url(/schoolclient/images/find/downapp/icon_star_dis.png) no-repeat;background-size: contain;}
+	.d_top p{margin:0;color: #FF0000;font-size: .7rem;}
+@media only screen and (max-width: 374px) {
+	.d_top img{width: 5rem;height: 5rem;margin-right: .25rem;}
+	.d_top p{font-size: .6rem;}
+}
+
+.btn{margin: .75rem .5rem;height: 2rem;}
+	.btn .btn_cur{width: 47%;height: 2rem;color: #FFFFFF;font-size: .7rem;line-height: 2rem;}
+	.btn .btn_cur .i{float: left;width: 2rem;height: 2rem;margin-right: .25rem;}
+	.btn .btn_cur .i em{display: block;width: 1.4rem;height: 1.4rem;margin: .3rem;}
+	.btn .btn_android{background: #AFD603;float: left;}
+	.btn .btn_android .i{background: #A9CE05;}
+	.btn .btn_android .i em{background: url(/schoolclient/images/find/downapp/icon_android.png) no-repeat;background-size: contain;}
+	.btn .btn_ios{background: #07ADE1;float: right;}
+	.btn .btn_ios .i{background: #01A7DB;}
+	.btn .btn_ios .i em{background: url(/schoolclient/images/find/downapp/icon_ios.png) no-repeat;background-size: contain;}
+
+.info{padding: .5rem;margin-bottom: 2rem;background: #EBEBEB;}
+	.info h4{padding-left: .75rem;margin: 0 0 .25rem 0;color: #333333;font-weight: normal;position: relative;}
+	.info h4:after{display: block;content: '';width: .15rem;height: 1rem;background: #AFD603;position: absolute;left: 0;top: .1rem;}
+	.info p{margin: 0;color: #7D7D7D;font-size: .7rem;text-indent: 1.7rem;}

@@ -1,0 +1,9 @@
+.groupBuying{margin: .25rem 0;background: #FFFFFF;}
+	.groupBuying .groupBuying-top{padding: .25rem;color: #a0a0a0;line-height: 1.2rem;font-size: .6rem;border-bottom: .05rem solid #F5F5F5;}
+	.groupBuying .groupBuying-top span{color: #E60012;}
+	.groupBuying .groupBuying-top i{display: inline-block;width: .6rem;height: .6rem;vertical-align: text-top;margin-right: .25rem;background: url(/schoolclient/images/activity/tuangou/icon_clock_gray.png) no-repeat;background-size: 100% 100%;}
+	.groupBuying .groupBuying-bot{padding: .25rem 0;color: #a0a0a0;position: relative;}
+	.groupBuying .groupBuying-bot:after{content: '';width: .05rem;background: #F5F5F5;position: absolute;top: .5rem;bottom: .5rem;left: 50%;}
+	.groupBuying .groupBuying-bot dl{margin: 0;}
+	.groupBuying .groupBuying-bot dt:first-child{color: #6d6d6d;font-size: .7rem;}
+	.groupBuying .groupBuying-bot dt:last-child{font-size: .6rem;}

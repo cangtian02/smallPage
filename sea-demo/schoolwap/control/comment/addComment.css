@@ -1,0 +1,14 @@
+.ment-list{background: #FFFFFF;margin-bottom: .5rem;}
+	
+.evaluate-box{background: #FFFFFF;padding: 0 .5rem 2rem .5rem;}
+	.evaluate-box .grade{line-height: 2rem;}
+	.evaluate-box .grade span{color: #7d7d7d;font-size: .7rem;display: inline-block;}
+	.evaluate-box .grade em{display: inline-block;width: 1rem;height: 1rem;background: url(/schoolwap/images/default/stargray.png) no-repeat;background-size: contain;vertical-align: middle;margin-right: .5rem;}
+	.evaluate-box .grade em.star{background: url(/schoolwap/images/default/star.png) no-repeat;background-size: contain;}
+	.evaluate-box .commentContent{width: 100%;border: 2px solid #EEEEEE;resize: none;padding: .25rem;font-size: .7rem;display: block;}
+	.evaluate-box .btn{padding: .5rem 0;height: 2.5rem;}
+	.evaluate-box .btn .ok-btn{font-size: .7rem;line-height: 1.5rem;padding: 0 .6rem;color: #E60012;border: .05rem solid #E60012;border-radius: .25rem;}
+	.evaluate-box .btn .ok-btn.disabled{color: #ccc;border: .05rem solid #ccc;}
+	.evaluate-box .image-btn{width: 2.2rem;height: 2.2rem;border-radius: .25rem;border: .05rem solid #EEEEEE;background: url(/schoolwap/images/default/warning.png) no-repeat;background-size: contain;position: relative;overflow: hidden;}
+	.evaluate-box .image-btn #file{position: absolute;left: 0;top: 0;right: 0;bottom: 0;opacity: 0;}
+	.evaluate-box .image-list img{float: left;width: 2.2rem;height: 2.2rem;border-radius: .25rem;margin-right: .2rem;}

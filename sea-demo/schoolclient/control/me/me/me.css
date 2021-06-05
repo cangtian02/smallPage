@@ -1,0 +1,50 @@
+.topInfo{background: #E60012;height: 5rem;padding: .75rem .5rem;display: -webkit-box;}
+	.topInfo .l{display: inline-block;width: 3.5rem;}
+	.topInfo .r{display: inline-block;width: 3rem;height: 3rem;margin-top: .25rem;background: url(/schoolclient/images/me/tab_me_vip.png) no-repeat;background-size: contain;}
+	.topInfo .c{-webkit-box-flex: 1;padding: 0 .5rem;}
+	.topInfo .l img{width: 3.5rem;height: 3.5rem;border-radius: 50%;}
+	.topInfo .c .t{color: #FFFFFF;}
+	.topInfo .c .alias{font-size: .8rem;}
+	.topInfo .c .inviteCode{font-size: .6rem;}
+	.topInfo .c .identity{width: 4.4rem;padding: 0 .4rem;font-size: .6rem;border-radius: 2.5rem;margin-top: .25rem;background: #FFFFFF;line-height: 1rem;}
+	.topInfo .c .identity i{display: inline-block;width: .7rem;height: .6rem;margin-right: .4rem;background: url(/schoolclient/images/me/icon_huiyuan.png) no-repeat;background-size: contain;vertical-align: middle;}
+
+.topBtn{height: 2.4rem;padding: .5rem 0;background: #FFFFFF;margin-bottom: .25rem;position: relative;}
+	.topBtn:after{content: '';position: absolute;left: 0;bottom: 0;right: auto;top: auto;height: 1px;width: 100%;background: #e7e7e7;display: block;-webkit-transform-origin: 50% 100%;transform-origin: 50% 100%;}
+	@media only screen and (-webkit-min-device-pixel-ratio: 2){.topBtn:after{-webkit-transform: scaleY(.5);transform: scaleY(.5);}}
+	.topBtn a{border-left: .05rem solid #e7e7e7;font-size: .7rem;text-align: center;line-height: 1.4rem;color: #535353;}
+	.topBtn a:first-child{border: none;}
+
+.numList{}
+	.list-block.numList .item-inner:after{display: none;}
+	.list-block.numList .item-content{padding-left: .45rem;}
+	.list-block.numList .item-media+.item-inner{margin-left: .45rem;line-height: 1.2rem;}
+	.numList li:first-child{font-size: .7rem;border-bottom: .05rem solid #F5F5F5;}
+	.numList li:first-child .item-title:last-child{color: #bfbfbf;font-size: .6rem;}
+	.numList li:first-child .item-title:first-child{color: #000000;}
+	.numList .boxflex{padding: .9rem 0;height: 4rem;}
+	.numList .boxflex .ospan{font-size: .6rem;}
+	.numList .boxflex .ospan a{color: #000000;display: block;}
+	.numList .boxflex .ospan a p{margin: 0;}
+	.numList .boxflex .ospan a .me-icon .shu{width: 1rem;line-height: .9rem;color: #FFFFFF;font-size: .6rem;border-radius: 50%;background: #E60012;position: absolute;right: -.4rem;top: -.5rem;border: solid .05rem #FFFFFF;}
+	.numList .boxflex .ospan a .me-icon{width: 1.4rem;height: 1.4rem;display: inline-block;position: relative;}
+				
+.goodsList{}		
+	.goodsList .boxflex .ospan a .me-icon-1{background: url(/schoolclient/images/me/tab_me_paid.png) no-repeat 0 center;background-size: 100% auto;}
+	.goodsList .boxflex .ospan a .me-icon-2{background: url(/schoolclient/images/me/tab_me_send.png) no-repeat 0 center;background-size: 100% auto;}
+	.goodsList .boxflex .ospan a .me-icon-3{background: url(/schoolclient/images/me/tab_me_delivery.png) no-repeat 0 center;background-size: 100% auto;}
+	.goodsList .boxflex .ospan a .me-icon-4{background: url(/schoolclient/images/me/tab_me_commented.png) no-repeat 0 center;background-size: 100% auto;}
+	.goodsList .boxflex .ospan a .me-icon-5{background: url(/schoolclient/images/me/tab_me_return.png) no-repeat 0 center;background-size: 100% auto;}
+
+.reservedList{}		
+	.reservedList .boxflex .ospan a .me-icon-1{background: url(/schoolclient/images/me/tab_me_unpaid.png) no-repeat 0 center;background-size: 100% auto;}
+	.reservedList .boxflex .ospan a .me-icon-2{background: url(/schoolclient/images/me/tab_me_solved.png) no-repeat 0 center;background-size: 100% auto;}
+	.reservedList .boxflex .ospan a .me-icon-3{background: url(/schoolclient/images/me/tab_me_confirmed.png) no-repeat 0 center;background-size: 100% auto;}
+	.reservedList .boxflex .ospan a .me-icon-4{background: url(/schoolclient/images/me/tab_me_unspecial.png) no-repeat 0 center;background-size: 100% auto;}
+	
+.me-list{margin: 0 0 .25rem 0;}
+	.me-list:last-child{margin: 0 0 1rem 0;}
+	.me-list .icon{width: .8rem;height: .8rem;}
+	.me-list .icon.me-icon1{background: url("/schoolclient/images/me/center_1.png") no-repeat;background-size: 100% 100%;}
+	.me-list .icon.me-icon2{background: url("/schoolclient/images/me/center_2.png") no-repeat;background-size: 100% 100%;}
+	.me-list .item-title{font-size: .7rem;}

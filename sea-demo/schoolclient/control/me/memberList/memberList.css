@@ -1,0 +1,12 @@
+.topBan{height: 8rem;background: url(/schoolclient/images/me/tab_huiyuan_banner_02.png) no-repeat;background-size: 100% 100%;padding: .5rem 0;text-align: center;color: #FFFFFF;}
+	.topBan i{display: inline-block;width: 4rem;height: 4rem;background: url(/schoolclient/images/me/tab_huiyuan_vip.png) no-repeat;background-size: 100% 100%;}
+	.topBan p{margin: 0;position: relative;}
+	.topBan p em{width: 3rem;height: .1rem;background: #FFFFFF;position: absolute;bottom: -.3rem;}
+	.topBan p em.l{left: 50%;margin-left: -5rem;}
+	.topBan p em.r{right: 50%;margin-right: -5rem;}
+	.topBan div{margin-top: .25rem;}
+.list-block{margin: .25rem 0;}
+	.sayimo-wallet-div{width:100%;}
+	.sayimo-wallet-div h3{margin: 0;font-size: .8rem;}
+	.sayimo-wallet-span2{color: #B4B4B4;font-size: .6rem;}
+	.sayimo-member-span{color: #B4B4B4;font-size: .7rem;}

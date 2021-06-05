@@ -1,0 +1,11 @@
+.list{background: #FFFFFF;margin: .25rem 0;}
+	.list li{border-bottom: .05rem solid #F5F5F5;padding: .5rem .5rem .25rem .5rem;}
+	.list li .t{line-height: 1.2rem;font-size: .8rem;margin-bottom: .25rem;position: relative;}
+	.list li .t, .list li .t a{color: #808181;}
+	.list li .t .w{display: block;margin-right: 1.5rem;}
+	.list li .t .more{display: block;width: .6rem;height: .4rem;background: url(/schoolwap/images/me/next.png) no-repeat;background-size: 100% auto;position: absolute;right: .25rem;top: .45rem;}
+	.list li .i{display: none; background: #fefee9;font-size: .6rem;color: #7f7f7f;padding: .25rem;}
+	.list li .i p{margin: 0;}
+	.list li.show .i{display: block;}
+	.list li.show .t .more{background: url(/schoolwap/images/me/up.png) no-repeat;background-size: 100% auto;}
+	.list li.show .t, .list li.show .t a{color: #00a7db;}

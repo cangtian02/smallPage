@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>轮播图</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    
+    #box {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    }
+    
+    .main li {
+      -webkit-flex-shrink: 0;
+      -ms-flex: 0 0 auto;
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .main li img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    
+    .index {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+      text-align: center;
+    }
+    
+    .index li {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin: 3px 2px;
+      border-radius: 50%;
+      background: rgba(0,0,0,.2);
+    }
+    
+    .index li.on {
+      background: #007abf;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <ul class="main">
+      <li><img src="image/1.jpg"></li>
+      <li><img src="image/2.jpg"></li>
+      <li><img src="image/3.jpg"></li>
+      <li><img src="image/4.jpg"></li>
+      <li><img src="image/5.jpg"></li>
+    </ul>
+    <ul class="index">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    document.addEventListener('touchstart', function(ev) {
+      ev.preventDefault();
+    }, false);
+
+    function Slide() {
+      this.oTotalBox = document.querySelector('#box');
+      this.oSlideBox = this.oTotalBox.querySelector('ul');
+      this.oIndex = this.oTotalBox.querySelector('.index');
+      this.oInter = null; //定时器
+      
+      this.aSlideList = this.oSlideBox.children;
+      this.aIndexList = this.oIndex.children;
+
+      this.iNow = 0; //移动到第几个元素
+      this.iStartX = 0; //记录手指开始按下的X坐标
+      this.iStartTranslateX = 0; //物体移动到的X坐标
+
+      this.init();
+    }
+
+    Slide.prototype.init = function() {
+      this.tab(); //初始化选项
+      this.setInterval(); //初始化定时器
+      this.aIndexListClick(); //初始化索引列表点击事件
+      
+      this.oSlideBox.addEventListener('touchstart', this.touchstartX.bind(this), false);
+      this.oSlideBox.addEventListener('touchmove', this.touchmoveX.bind(this), false);
+      this.oSlideBox.addEventListener('touchend', this.touchendX.bind(this), false);
+    }
+
+    Slide.prototype.tab = function() {
+      var aSlideList = this.aSlideList;
+      var aIndexList = this.aIndexList;
+
+      this.oSlideBox.style.transition = '0.5s';
+      this.oSlideBox.style.WebkitTransform = this.oSlideBox.style.transform = 'translateX(' + (-this.iNow * this.oSlideBox.offsetWidth) + 'px)';
+
+
+      for (var i = 0; i < aSlideList.length; i++) {
+        aSlideList[i].className = '';
+        aIndexList[i].className = '';
+      }
+      aSlideList[this.iNow].className = 'on';
+      aIndexList[this.iNow].className = 'on';
+    }
+
+    Slide.prototype.setInterval = function() {
+      this.oInter = setInterval(function() {
+        this.iNow++;
+        this.iNow = this.iNow % this.aSlideList.length;
+        this.tab();
+      }.bind(this), 3000);
+    }
+
+    Slide.prototype.aIndexListClick = function() {
+      var aIndexList = this.aIndexList;
+
+      for (var i = 0; i < aIndexList.length; i++) {
+        aIndexList[i].addEventListener('click', function(iIndex) {
+          clearInterval(this.oInter);
+          this.iNow = iIndex;
+          this.tab();
+          this.setInterval();
+        }.bind(this, i), false);
+      }
+
+    }
+    
+    Slide.prototype.touchstartX = function () {
+      var touchOne = event.changedTouches[0];
+      clearInterval(this.oInter);
+      this.oSlideBox.style.transition = 'none';;
+      this.iStartX = touchOne.pageX; //记录手指开始按下的X坐标
+      this.iStartTranslateX = (-this.iNow * this.oSlideBox.offsetWidth);
+    }
+    
+    Slide.prototype.touchmoveX = function () {
+      var touchOne = event.changedTouches[0];
+      var iMoveX = touchOne.pageX - this.iStartX; //计算按下时，和当前移动到的坐标的差值
+      this.oSlideBox.style.WebkitTransform = this.oSlideBox.style.transform = 'translateX(' + (this.iStartTranslateX + iMoveX) + 'px)';
+    }
+    
+    Slide.prototype.touchendX = function () {
+      var touchOne = event.changedTouches[0];
+      var iMoveX = touchOne.pageX - this.iStartX;
+      
+      this.iNow = (this.iStartTranslateX + iMoveX) / this.oSlideBox.offsetWidth;
+      this.iNow  = -Math.round(this.iNow );
+      if (this.iNow < 0) {
+        this.iNow = 0;
+      }
+      if (this.iNow > this.aSlideList.length - 1) {
+        this.iNow = this.aSlideList.length - 1;
+      }
+      this.tab();
+      this.setInterval(); 
+    }
+
+
+    new Slide();
+
+  </script>
+
+</body>
+
+</html>

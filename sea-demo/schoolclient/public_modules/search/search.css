@@ -1,0 +1,10 @@
+.content:after{display: block;content: '';position: absolute;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background: rgba(255,255,255,0);}
+	.content.showafter:after{z-index: 1;background: rgba(255,255,255,.3);}
+
+.searchbar .search-input input[type=submit]{width: 1.5rem;padding: 0;position: absolute;top: 0;left: 0;bottom: 0;z-index: 99;opacity: 0;}
+	.bar-search~.content{top: 2.2rem;}
+	.bar .searchbar .search-input input{background: #F5F5F5;}
+	.bar .searchbar{background: rgba(255,255,255,1);overflow: visible;}
+		
+.searchbar .searchList{position: absolute;top: 2rem;left: 0;right: 0;padding: 0 .75rem;background: #FFFFFF;max-height: 10rem;overflow-y: auto;}
+	.searchbar .searchList li{line-height: 1.8rem;font-size: .7rem;border-bottom: .05rem solid #F5F5F5;}	

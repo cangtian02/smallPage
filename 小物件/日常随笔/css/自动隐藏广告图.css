@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+
+.img{width:980px;   margin:0 auto; position:relative; z-index:50; clear:both;}
+.close{width:20px; height:20px; top: 0;right:0; text-align:center; line-height:20px; color:#CCC; font-size:14px; position:absolute; z-index:99; background-color:#000;
+         filter:alpha(opacity=80);opacity: 0.8; cursor:pointer;}
+.close:hover{background-color:#DE4A4A; filter:alpha(opacity=80);opacity: 0.8;}
+.img img{width:980px; height:400px;}
+ 

@@ -1,0 +1,52 @@
+.topBanner{height: 0;padding-top: 63.8888%;position: relative;}
+	.topBanner img, .topBanner .headPhoto, .topBanner .info{position: absolute;}
+	.topBanner img.bg{width: 100%;top: 0;bottom: 0;}
+	.topBanner .headPhoto{top: 13.043478%;bottom: 35.869565%;left: 33.677333%;right: 33.677333%;}
+	.topBanner .headPhoto img{height: 100%;width: 100%;}
+	.topBanner .headPhoto span{position: absolute;left: 0;right: 0;bottom: 0;line-height: 1.4rem;font-size: .7rem;text-align: center;color: #ff5f01;background: rgba(0,0,0,.5);}
+	.topBanner .info{bottom: 0;left: 0;right: 0;top: 72%;}
+	.topBanner .info .name{font-size: .9rem;}
+	.topBanner .info .name span{color: #969696;}
+	.topBanner .info .voteCnt{color: #ffe92c;margin: 0;}
+
+.topBanner_2{display: -webkit-box;height: 5.5rem;padding: .5rem;background: url(/schoolwap/images/activity/vote/voteBanBg_2.png) no-repeat;background-size: 100% 100%;}
+	.topBanner_2 .l{display: inline-block;width: 4.5rem;height: 4.5rem;margin-right: .5rem;position: relative;}
+	.topBanner_2 .l img{display: block;width: 4.5rem;height: 4.5rem;}
+	.topBanner_2 .l span{position: absolute;left: 0;right: 0;bottom: 0;line-height: 1.4rem;font-size: .7rem;text-align: center;color: #ff5f01;background: rgba(0,0,0,.5);}
+	.topBanner_2 .r{-webkit-box-flex: 1;}
+	.topBanner_2 .r .t{height: 3rem;line-height: 1.5rem;font-size: .7rem;}
+	.topBanner_2 .r .t span{color: #969696;}
+	.topBanner_2 .r p{margin: 0;line-height: 1.5rem;color: #fa9a12;font-size: .7rem;}
+	
+section{margin: 0 1.5rem 1.5rem 1.5rem;}
+
+.voteCntBox{padding: 1rem 0;}
+	.voteCntBox img{display: block;}
+	.voteCntBox img.topThree{width: 2rem;margin: 0 auto;}
+	.voteCntBox .records{width: 4.25rem;height: 2.75rem;margin: 0 auto;line-height: 1.8rem;color: #e3583f;background: url(/schoolwap/images/activity/vote/icon_ranking.png) no-repeat;background-size: 100% 100%;}
+
+.goHome{border-top: .1rem solid #D3D3D3;padding-top: .25rem;font-size: .7rem;}
+
+.subject{margin: 1.5rem .5rem;}
+
+.btn{margin: 0 .25rem .75rem .25rem;color: #FFFFFF;line-height: 2rem;border-radius: .25rem; background: #E60012;}
+	.btn.shareVote{background: #FA9A12;}
+	.btn.disabled{background: #C0C0C0;}
+
+.toast_text{font-size: .6rem;text-align: left;}
+	.toast_text p{margin: 0;}
+	.toast_title{padding-bottom: .5rem;border-bottom: .05rem solid #CFCFCF;}
+
+.gzewm{width: 10rem;padding: .5rem;border-radius: .25rem;position: fixed;left: 50%;margin-left: -5rem;top: 25%;z-index: 11550;display: none;}
+	.gzewm img{display: block;width: 100%;margin-bottom: .5rem;}
+	.gzewm p{margin: 0;font-size: .7rem;line-height: 1rem;}
+
+p.tc{font-size: .7rem;}
+
+.playBox{margin: .5rem 3rem;}
+	.slide-slideData .slide-main li{height: 0;background: #FFFFFF;padding-top: 75%;position: relative;}
+	.slide-slideData .slide-main li img{position: absolute;top: 0;bottom: 0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);}	
+
+.section{}
+	.section .subject{margin: 0;line-height: 1.4rem;text-align: center;}
+	.section .goHome{border: none;}		

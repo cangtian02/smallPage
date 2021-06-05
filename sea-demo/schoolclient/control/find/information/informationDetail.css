@@ -1,0 +1,11 @@
+.content{background: #FFFFFF;}
+	.card{margin: 0;box-shadow: 0 0 0;}
+	.card .news-title{font-weight: 600;}
+	.DateSource{margin: .5rem 0 0 .6rem;font-size: .6rem;color: #4b4b4b;}
+	.publishDate{font-size: .7rem;color: #535353;}
+	.source{font-size: .7rem;color: #386293;}
+	.image-text{margin: .5rem;word-wrap: break-word;}
+	.image-text p{text-indent: 2em;padding: 0;margin: 0;color: #514f4f;}
+	.image-text p img{display: block;width: 100%;}
+	.text-top{padding: .5rem 0 0 0;}
+	.author{padding: .75rem 0;text-align: center;border-top: .05rem solid #e5e5e5;font-size: .7rem;color: #4b4b4b;}

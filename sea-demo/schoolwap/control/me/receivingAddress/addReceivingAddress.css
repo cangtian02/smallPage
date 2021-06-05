@@ -1,0 +1,11 @@
+.content{background: #FFFFFF;}
+	.list-block{margin: 0;}	
+	.tab-control{border: .05rem solid #f32613;border-radius: 1.5rem;border-color: #E7E7E7;margin: .5rem;}
+	.tab-control .tab-control-item{line-height: 1.9rem;display: table-cell;overflow: hidden;width: 1%;transition: all .1s linear;text-align: center;border-radius: 1.5rem;color: #767676;font-size: .8rem;}
+	.tab-control .tab-control-item.tab-control-active{color: #fff;background-color: #e60012;}	
+	.tab-control-content{margin: 0 .75rem;display: none;}
+	.tab-control-content.tab-control-active{display: block;}
+.list-block input[type=text], .list-block input[type=tel], .list-block select, .list-block textarea, .list-block .item-title.label,.list-block .item-input
+{font-size: .7rem;}
+	.btn{border-radius: .25rem;text-align: center;line-height: 2rem;background: #e60012;color: #FFFFFF;font-size: .7rem;margin: 1.5rem .8rem;}
+	.btn.disabled{background: #C0C0C0;}

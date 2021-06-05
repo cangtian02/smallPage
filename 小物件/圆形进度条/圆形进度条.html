@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>圆形进度条</title>
+<style type="text/css">
+.cBox{width:200px; height:200px; margin:50px auto; position:relative;}
+.wrap{width:100px; height:200px; position:absolute; top:0; overflow:hidden;}
+.fr{right:0;}
+.fl{left:0;}
+.c{width:160px; height:160px; border:20px solid transparent; border-radius:50%; position:absolute; top:0;transform:rotate(45deg);}
+.c_fr{border-top:20px solid green; border-right:20px solid green; right:1px; animation:c_fr 1.5s linear;}
+.c_fl{border-bottom:20px solid green; border-left:20px solid green; left:1px; animation:c_fl 1.5s linear;}
+@keyframes c_fr{
+  0%{transform:rotate(-135deg);}
+  50%,100%{transform:rotate(45deg);}
+}
+@keyframes c_fl{
+  0%,50%{transform:rotate(-135deg);}
+  100%{transform:rotate(45deg);}
+}
+</style>
+</head>
+<body>
+<div class="cBox">
+    <div class="wrap fr">
+        <div class="c c_fr"></div>
+    </div>
+    <div class="wrap fl">
+        <div class="c c_fl"></div>
+    </div>
+</div>
+</body>
+</html>

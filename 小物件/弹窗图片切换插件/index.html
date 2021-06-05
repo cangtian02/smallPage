@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>lightbox插件开发</title>
+<link rel="stylesheet" href="images/style.css" />
+<script src="images/js/jquery.js"></script>
+<script src="images/js/lightbox.js"></script>
+</head>
+<body>
+	<ul class="clearfix imgbox">
+    	<h1>第一组</h1>
+    	<img class="js-lightbox" data-role="lightbox" data-group="group-1" data-id="1" data-source="images/1.jpg" src="images/1.jpg" alt="图片1" />
+    	<img class="js-lightbox" data-role="lightbox" data-group="group-1" data-id="2" data-source="images/2.jpg" src="images/2.jpg" alt="图片2" />
+    	<img class="js-lightbox" data-role="lightbox" data-group="group-1" data-id="3" data-source="images/3.jpg" src="images/3.jpg" alt="图片3" />
+    </ul>
+	<ul class="clearfix imgbox">
+    	<h1>第二组</h1>
+    	<img class="js-lightbox" data-role="lightbox" data-group="group-2" data-id="1" data-source="images/4.jpg" src="images/4.jpg" alt="图片4" />
+    </ul>
+<script>$(function(){var lightbox = new LightBox({speed:400});});</script>
+</body>
+</html>

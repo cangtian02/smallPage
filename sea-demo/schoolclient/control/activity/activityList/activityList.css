@@ -1,0 +1,10 @@
+.content{background: #FFFFFF;}
+.banner, .w10 img, .boxflex a, .boxflex a img{display: block;width: 100%;}
+.banner{margin-bottom: .5rem;}	
+.w10{display: block;}
+	.w10:last-child{margin: 0 .5rem 1.5rem .5rem;}
+.w10, .boxflex{margin: 0 .5rem .5rem .5rem;}
+	.boxflex a:first-child{margin-right: .25rem;}
+	.boxflex a:last-child{margin-left: .25rem;}
+.toast_title{border-bottom: .05rem solid #CFCFCF;line-height: 2rem;font-size: 1rem;color: #F23355;}
+	.toast_content{line-height: 4rem;}	

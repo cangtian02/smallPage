@@ -1,0 +1,17 @@
+body, .page, .page-group{background: #FFFFFF !important;}
+.e-tab, .e-tab-btn{width: 100%;position: absolute;}
+.e-btn{position: absolute;left: .5rem;right: .5rem;bottom: 3.15rem;line-height: 1.8rem;background: #E60012;color: #FFFFFF;font-size: .9rem;text-align: center;border-radius: .2rem;}
+.e-tab-btn{bottom: 0;padding: .7rem 0;table-layout: fixed;}
+	.e-tab-btn .e-tab-btn-item{display: table-cell;width: 1%;text-align: center;vertical-align: middle;padding: 0 .5rem;line-height: 1.65rem;}
+	.e-tab-btn .e-tab-btn-item span{display: block;border: 1px solid #9E9E9E;border-radius: .2rem;color: #333333;font-size: .8rem;}
+	.e-tab-btn .e-tab-btn-item.active span{border-color: #E60012;color: #E60012;}	
+.e-tab{top: 0;bottom: 5.65rem;overflow: hidden;border-bottom: .05rem solid #F5F5F5;}	
+	.e-tab .l{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;height: 100%;
+		-webkit-transform-style: preserve-3d;transform-style: preserve-3d;
+		-webkit-transition-property: -webkit-transform;transition-property: transform;
+	}
+	.e-tab .l .o{-webkit-flex-shrink: 0;-ms-flex: 0 0 auto;flex-shrink: 0;width: 100%;height: 100%;overflow-y: auto;}
+	.e-tab .l .o .img{display: block;width: 100%;max-height: 10rem;}
+	.e-tab .l .o .t{margin-left: .5rem;line-height: 2rem;font-size: .8rem;}
+	.e-tab .l .o .c{padding: 0 .25rem 1rem .25rem;overflow: hidden;font-size: .7rem;text-indent: 1.5rem;line-height: 1.25rem;}
+	.e-tab .l .o .c img{display: block;max-width: 100%;}

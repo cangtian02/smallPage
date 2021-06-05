@@ -1,0 +1,11 @@
+.btn{border-radius: .25rem;text-align: center;line-height: 2rem;background: #e60012;color: #FFFFFF;font-size: .7rem;margin: 1.5rem .8rem;}
+	.btn.disabled{background: #C0C0C0;}
+	
+.list-block{margin: .25rem 0 0 0;}
+.list-block .item-input{color: #A9A9A9;}
+.list-block .item-input, .list-block input[type=text], .list-block input[type=password], .list-block input[type=email], .list-block input[type=tel], .list-block input[type=url], .list-block input[type=date], .list-block input[type=datetime-local], .list-block input[type=time], .list-block input[type=number], .list-block input[type=search], .list-block select, .list-block textarea{font-size: .7rem;}
+
+.image-list{background: #FFFFFF;padding: .5rem;}
+	.image-list img{float: left;width: 2.2rem;height: 2.2rem;border-radius: .25rem;margin: 0 .25rem .25rem 0;}
+.image-btn{width: 2.2rem;height: 2.2rem;border-radius: .25rem;border: .05rem solid #EEEEEE;background: url(/schoolwap/images/default/warning.png) no-repeat;background-size: contain;position: relative;overflow: hidden;}
+	.image-btn .file{position: absolute;left: 0;top: 0;right: 0;bottom: 0;opacity: 0;}

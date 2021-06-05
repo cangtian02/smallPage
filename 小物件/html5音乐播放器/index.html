@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>苍天音乐播放器</title>
+		<link rel="stylesheet" href="images/style.css" />
+		<link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css" />
+		<script type="text/javascript" src="images/js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="images/js/musicinfo.js" ></script>
+		<script type="text/javascript" src="images/js/ct-music-play.js" ></script>
+	</head>
+	<body>
+		
+	<div class="ctMusicPlay clearfix">				
+		<div class="ctPlay-bg"></div><!--页面背景-->			
+		<div class="ctPlay-box clearfix">			
+			<div class="ctPlay-img fl">
+				<img src="" />
+				<span class="fa fa-play fa-2x fcf tc imgplpu"></span>
+			</div>			
+			<div class="ctPlay-cont fl clearfix">
+				<div class="ctPlay-info">
+					<h1 class="fcf fs14"></h1>
+					<h2 class="fcc fs12 fn"></h2>
+					<h3 class="fcc fs12 fn"></h3>
+				</div>
+				<div class="ctPlay-control clearfix">
+					<div class="ctPlay-volume fr">
+						<div class="ctPlay-line ctPlay-volume-line fr "><i></i><em></em></div>
+						<span class="fa fa-volume-up fcad tran"><em></em></span>
+					</div>
+					<div class="ctPlay-btn fl">
+						<span class="fa fa-backward fcad tran prev"></span>
+						<span class="fa fa-play fcad tran plpu"></span>
+						<span class="fa fa-forward fcad tran next"></span>
+					</div>
+				</div>
+				<div class="ctPlay-progress clearfix">
+					<div class="ctPlay-line ctPlay-progress-line"><i></i><em></em></div>
+					<div class="fr">
+						<span class="fa fa-repeat fcad tran"></span>
+						<span class="fa fa-random fcad tran"></span>
+					</div>
+					<div class="time fl fcc"></div>
+				</div>
+			</div>			
+		</div>		
+		<ul class="ctPlay-list" id="ctPlay-list"></ul><!--音乐列表，有js动态加载-->				
+	</div>
+	
+	</body>
+</html>

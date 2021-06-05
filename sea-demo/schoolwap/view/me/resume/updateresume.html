@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+    <div class="content">
+    	   	
+    	<div class="b-title"><cite>添加头像</cite>&nbsp;&nbsp;<span>必填</span></div>
+		<div class="b-top">
+			<div class="img">
+				<div class="input"><input accept="image/*" type="file" id="file" name="file" ></div>
+				<img src="/schoolwap/images/default/ck-none.png" id="imgfile" data-name="null" />
+				<div class="i"><i></i></div>
+			</div>
+			<p>点击更换</p>
+		</div>
+				
+		<div class="b-title"><div class="b-bianji fr bianji" data-id="1"><i></i>编辑</div><cite>基本信息</cite>&nbsp;&nbsp;<span>必填</span></div>
+		<div class="b-cont b-cont-1" data-id="1" data-flag="1">
+			<div class="b-cont-mask"></div>
+			<div class="table">
+				<div class="t">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</div>
+				<div class="c"><input type="text" value="" id="name" class="fromval" /></div>
+			</div>
+			<div class="table">
+				<div class="t">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</div>
+				<div class="c">
+					<select id="sex" class="fromval" data-list="1">
+						<option value="1">男</option>
+						<option value="0">女</option>
+					</select>	
+				</div>
+			</div>			
+			<div class="table">
+				<div class="t">出生日期：</div>
+				<div class="c"><input type="text" value="" id="birthday" class="fromval" /></div>
+			</div>				
+			<div class="table">
+				<div class="t">籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯：</div>
+				<div class="c"><input type="text" value="" id="nativePlace" class="fromval" /></div>
+			</div>
+			<div class="table">
+				<div class="t">联系电话：</div>
+				<div class="c"><input type="tel" value="" id="linkinfo" class="fromval" /></div>
+			</div>
+			<div class="table">
+				<div class="t">联系邮箱：</div>
+				<div class="c"><input type="email" value="" id="email" class="fromval" /></div>
+			</div>
+		</div>
+		
+		<div class="b-title"><div class="b-bianji fr bianji" data-id="2"><i></i>编辑</div><cite>求职意向</cite>&nbsp;&nbsp;<span>必填</span></div>
+		<div class="b-cont b-cont-2" data-id="2" data-flag="1">
+			<div class="b-cont-mask"></div>
+			<div class="table">
+				<div class="t">求职意向：</div>
+				<div class="c">
+					<select id="workType" class="fromval" data-list="实习">
+						<option value="实习">实习</option>
+						<option value="兼职">兼职</option>
+						<option value="全职">全职</option>
+					</select>					
+				</div>
+			</div>
+			<div class="table">
+				<div class="t">工作地点：</div>
+				<div class="c">
+					<input type="text" value="" id="address" class="fromval" />
+					<input type="hidden" id='baseAreaCode' value="" />
+				</div>
+			</div>
+			<div class="table">
+				<div class="t">期望薪资：</div>
+				<div class="c"><input type="tel" value="" id="expectWage" class="fromval" /></div>
+			</div>
+			<div class="table">
+				<div class="t">期望岗位：</div>
+				<div class="c"><input type="text" value="" id="expectPosition" class="fromval" readonly /></div>
+			</div>
+			<div class="table">
+				<div class="t">工作状态：</div>
+				<div class="c">
+					<select id="workStatus" class="fromval" data-list="1">
+						<option value="1">在职</option>
+						<option value="0">离职</option>
+						<option value="2">在校</option>
+					</select>					
+				</div>
+			</div>
+			<div class="table">
+				<div class="t">工作年龄：</div>
+				<div class="c">
+					<select id="workAge" class="fromval" data-list="在校大学生">
+						<option value="在校大学生">在校大学生</option>
+						<option value="应届毕业生">应届毕业生</option>
+						<option value="一年">一年</option>
+						<option value="两年">两年</option>
+						<option value="三年以上">三年以上</option>
+					</select>
+				</div>
+			</div>
+			<div class="table">
+				<div class="t">到岗时间：</div>
+				<div class="c">
+					<select id="firstWorkTime" class="fromval" data-list="随时">
+						<option value="随时">随时</option>
+						<option value="一周内">一周内</option>
+						<option value="一月内">一月内</option>
+					</select>					
+				</div>
+			</div>
+		</div>
+		
+		<div class="b-title"><div class="b-bianji fr bianji" data-id="3"><i></i>编辑</div><cite>技能特长</cite>&nbsp;&nbsp;<span>必填</span></div>
+		<div class="b-cont b-cont-3" data-id="3" data-flag="1">
+			<div class="b-cont-mask"></div>
+			<div class="table">
+				<div class="t">技能特长：</div>
+				<div class="c"><textarea rows="2" id="skill" escape="false" class="fromval"></textarea></div>
+			</div>
+		</div>
+		
+		<div class="b-title"><div class="b-bianji fr bianji" data-id="4"><i></i>编辑</div><cite>教育背景</cite>&nbsp;&nbsp;<span>必填</span></div>
+		<div class="b-cont b-cont-4" data-id="4" data-flag="1">
+			<div class="b-cont-mask"></div>
+			<div class="table">
+				<div class="t">就读院校：</div>
+				<div class="c"><input type="text" value="" id="school" class="fromval" /></div>
+			</div>
+			<div class="table">
+				<div class="t">专业名称：</div>
+				<div class="c"><input type="text" value="" id="profession" class="fromval" readonly /></div>
+			</div>
+			<div class="table">
+				<div class="t">最高学历：</div>
+				<div class="c">
+					<select id="education" class="fromval" data-list="大专">
+						<option value="大专">大专</option>
+						<option value="本科">本科</option>
+						<option value="硕士">硕士</option>
+						<option value="博士">博士</option>
+					</select>						
+				</div>
+			</div>
+			<div class="table">
+				<div class="t">入学时间：</div>
+				<div class="c"><input type="text" value="" id="beginDate" class="fromval" /></div>
+			</div>
+			<div class="table">
+				<div class="t">毕业时间：</div>
+				<div class="c"><input type="text" value="" id="endDate" class="fromval" /></div>
+			</div>
+		</div>
+		
+		<div class="b-title"><div class="b-bianji fr bianji" data-id="5"><i></i>编辑</div><cite>自我评价</cite>&nbsp;&nbsp;<span>必填</span></div>
+		<div class="b-cont b-cont-5" data-id="5" data-flag="1">
+			<div class="b-cont-mask"></div>
+			<div class="table">
+				<div class="t">自我评价：</div>
+				<div class="c">
+					<textarea rows="2" id="selfEvaluation" escape="false" class="fromval"></textarea>
+				</div>
+			</div>
+		</div>
+		
+		<div class="b-title"><div class="b-bianji fr" id="addresumeExperience"><i></i>新增</div><cite>工作经验</cite></div>
+		<div class="resumeExperience-box"></div>
+		
+		<div class="b-cont b-cont-t">
+			<div class="table">
+				<div class="t">是否企业可见：</div>
+				<div class="c">
+					<select id="isEnable">
+						<option value="1">可见</option>
+						<option value="0">不可见</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content-block" id="mask-block">
+			<div class="row">
+				<div class="col-50"><a href="javascript:;" class="button button-big button-fill button-danger" id="mask-close">取消</a></div>
+				<div class="col-50"><a href="javascript:;" class="button button-big button-fill button-success" id="mask-update">保存</a></div>
+			</div>
+		</div>
+		
+		<div class="content-block">
+			<div class="row">
+				<div class="col-50"><a href="javascript:;" class="button button-big button-fill button-danger" id="close">取消</a></div>
+				<div class="col-50"><a href="javascript:;" class="button button-big button-fill button-success" id="update">修改</a></div>
+			</div>
+		</div> 	
+   		
+   		<div class="mask"></div><!--遮罩层--->
+   		
+    </div>
+    </div>
+    </div>
+    <script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/me/resume/updateresume');</script>	
+</body>
+</html>

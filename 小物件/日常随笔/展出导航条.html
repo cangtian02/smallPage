@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/展出导航条.css" />
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+</head>
+
+<body>
+<div style="height:100px;"></div>
+<div class="navv">
+
+  <ul class="nav clearfix">
+    <li class="navL">
+      <h3><a>科技</a></h3>
+          <ul class="cc">
+               <li>无人机</li>
+               <li class="dd">战斗机
+                 <ol>
+                   <li>歼-10</li>
+                   <li>歼-10</li>
+                   <li>歼-10</li>
+                 </ol>
+               </li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li class="dd">战斗机
+                <ol>
+                   <li>歼-10</li>
+                   <li>歼-10</li>
+                   <li>歼-10</li>
+                 </ol>
+               </li>
+          </ul>
+    </li>
+     <li class="navL">
+      <h3><a>数码</a></h3>
+          <ul class="cc">
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+              <li class="dd">战斗机
+                 <ol>
+                   <li>歼-10</li>
+                   <li>歼-10</li>
+                   <li>歼-10</li>
+                 </ol>
+               </li>
+          </ul>
+    </li>
+     <li class="navL">
+      <h3><a>经济</a></h3>
+          <ul class="cc">
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+          </ul>
+    </li>
+     <li class="navL">
+      <h3><a>图文</a></h3>
+          <ul class="cc">
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+               <li>无人机</li>
+          </ul>
+    </li>
+  </ul>
+  
+  
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".nav li").hover(function(){
+	  	$(this).find('ul').stop(true,true).slideToggle(300);	
+		});   
+		$(".nav li ul .dd").hover(function(){
+	  	$(this).find('ol').stop(true,true).slideToggle(300);	
+		});
+	if($(".navv").length > 0){
+		nt = $(".navv").offset().top;
+		$(window).scroll(function() {
+			var st = $(document).scrollTop();//往下滚的高度
+			if (nt < st) {
+				$(".navv").css({"position":"fixed","top":"0"})
+			} else {
+				$(".navv").css({"position":"absolute","top":"100px"})
+			}
+		});	
+	}
+});
+</script>
+<div class="bb"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.content{bottom: 2.5rem;}
+
+.tran-item{padding: .25rem .5rem;background: #FFFFFF;margin-bottom: .05rem;position: relative;}
+	.tran-item.tran-item-pt5{padding: .5rem;}
+	.tran-name, .tran-price, .tran-span span, .tran-warning, .tran-desc-t{font-size: .7rem;}
+	.tran-share, .tran-warningtel{position: absolute;top: .5rem;bottom: .5rem;right: 0;width: 2rem;border-left: .05rem solid #BFBFBF;}
+		.tran-share i{width: 1rem;height: 1rem;position: absolute;top: 50%;margin-top: -.5rem;left: .5rem;background: url(/schoolclient/images/default/fenxiang.png) no-repeat;background-size: 100% 100%;}
+	.tran-updateTime{font-size: .6rem;color: #979797;}
+	.tran-span span{float: left;width: 50%;}
+	.tran-span span, .tran-warning, .tran-desc-t{color: #7B7B7B;}
+	.tran-warningtel a{width: 1rem;height: 1rem;position: absolute;top: 50%;margin-top: -.5rem;left: .5rem;background: url(/schoolclient/images/default/icon_warning.png) no-repeat;background-size: 100% 100%;}
+	.tran-desc{margin-top: .25rem;margin-bottom: 1rem;}
+
+.botbar{display: -webkit-box;height: 2.5rem;position: absolute;bottom: 0;left: 0;right: 0;color: #FFFFFF;}
+	.botbar .tel{display: inline-block;width: 6rem;color: #FFFFFF;line-height: 2.5rem;background: #E60012;}
+	.botbar .linkInfo{display: -webkit-box;-webkit-box-align: center;-webkit-box-flex: 1;padding-left: .5rem;background: #ECD332;}	
+	.botbar .btn{text-align: center;line-height: 2.5rem;}
+	.botbar .btn.deleteBtn{background: #ECD332;}
+	.botbar .btn.upordownBtn{background: #FEA831;}
+	.botbar .btn.confirmBtn{background: #E60012;}
+	.botbar .btn.updateBtn{background: #B7A289;}

@@ -1,0 +1,40 @@
+.gPlayerBox{position: relative;height: 0;padding-top: 75%;}
+	.gPlayerBox .gPlayer{position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+	.slide-container .slide-main li{height: 0;background: #FFFFFF;padding-top: 75%;position: relative;}
+	.slide-container .slide-main li img{position: absolute;top: 0;bottom: 0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);}
+	.slide-container .slide-pagination{display: none;}
+	.slide-container h1{position: absolute;left: 0;bottom: 0;right: 0;z-index: 999;margin: 0;font-size: .7rem;color: #FFFFFF;font-weight: normal;line-height: 1.5rem;background: rgba(0,0,0,.3);text-indent: .25rem;}
+
+.list-block{margin: 0;font-size: .6rem;color: #868687;}
+
+.listmoney{padding: .25rem;margin-bottom: .25rem;}
+	.listmoney h1{font-size: .6rem;font-weight: normal;color: #ababab;margin: 0;}
+	.listmoney .red{font-size: .8rem;margin: 0;font-family: arial;}
+	.listmoney .originalPrice{font-size: .7rem;margin: 0 0 0 .25rem;font-family: arial;line-height: 1.2rem;color: #a0a0a0;}
+	.listmoney .fr{color: #8a8989;font-size: .6rem;line-height: .8rem;}
+	.listmoney .fr i{display: inline-block;width: .8rem;height: .8rem;vertical-align: middle;margin-right: .25rem;background: url(/schoolwap/images/reserved/icon_content_person.png) no-repeat;background-size: 100% 100%;}
+
+.list-normsValue .item-content{padding-left: .25rem;}
+	.list-normsValue .item-link{width: 100%;padding-left: 0 !important;}
+
+.list-promise{background: #fff7f8;padding: .5rem;color: #8F8F94;font-size: .7rem;}
+	.list-promise span{margin-right: .6rem;}
+	.list-promise img{width: 1rem;height: 1rem;vertical-align: middle;}
+
+.list-extraInfo{padding: .5rem;margin: .25rem 0;}
+	.list-extraInfo .t{font-size: .7rem;color: #868687;}
+	
+.detailinfo{color: #8F8F94;margin-top: .25rem;}
+	.buttons-tab{border-top: .05rem solid #EEEEEE;border-bottom: .05rem solid #EEEEEE;}
+	.buttons-tab .button{border-left: .05rem solid #EEEEEE;}
+	.buttons-tab .button:first-child{border: none;}
+	.buttons-tab .button.active{color: #e60012;border-bottom: none;border-left: .05rem solid #EEEEEE;}
+	.detailinfo .tab p{margin: 0;}
+	#tab1 img,#tab2 img{max-width: 100%;}
+	.detailinfo .goodsProduce{word-wrap: break-word;}
+	.noInfo{height:2.5rem;line-height:2.5rem;font-size: .7rem;}
+
+#tab2 .list-block{margin: 0;}	
+.tabs .list-block ul:before{display: none;}
+.commentmore{line-height: 2rem;background: #F5F5F5;margin-bottom: 1rem;}
+	.commentmore a{color: #555;}

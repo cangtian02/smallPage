@@ -1,0 +1,6 @@
+.Pcrop_box{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: #333;overflow: hidden;}
+.Pcrop_img{position: absolute;z-index: 1;}
+.Pcrop_img.transition{transition-duration: 300ms;}
+.Pcrop_tracker{border: 1px solid #FFF;box-shadow: 0 0 0 1000px #000;opacity: .5;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);z-index: 2;}
+.Pcrop_btn{width: 70px;line-height: 30px;text-align: center;color: #FFFFFF;font-size: 14px;background: #0894EC;border-radius: 5px;position: absolute;bottom: 15px;right: 15px;z-index: 3;}
+#J-canvas{display: none;}

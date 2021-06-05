@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>弹框插件-ct9001</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="http://www.ct9001.com/wp-content/themes/ct9001/js/jquery.1.7.2.js"></script>
+		<script src="popup.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#btnalert").click(function(){
+					popup.alert({
+						title: "弹出框",
+						content: "我是一个弹出框",
+						width: 300,
+						height: 100
+					});
+				});
+				$("#btnconfirm").click(function(){
+					popup.confirm({
+						title: "确认框",
+						content: "我是一个确认框",
+						width: 300,
+						height: 150,
+						confirmFun: confirmtest,
+						cancelFun: canceltest
+					});
+				});
+				$("#btniframe").click(function(){
+					popup.iframe({
+						title: "框架框",	
+						width: 1200,
+						height: 600,
+						url: "http://www.ct9001.com"
+					});
+				});								
+				function confirmtest(){
+					popup.alert({						
+						content: "您已确认操作",
+						width: 300,
+						height: 80
+					});
+				}
+				function canceltest(){
+					popup.alert({						
+						content: "您已取消操作",
+						width: 300,
+						height: 80
+					});					
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<center style="margin: 50px auto;">	
+			<input type="button" value="弹出框" id="btnalert" />
+			<input type="button" value="确认框" id="btnconfirm" />
+			<input type="button" value="框架框" id="btniframe" />
+		</center>
+		<div style="width: 100%;margin: 0 auto;border-top: 2px solid #EEEEEE;">
+			<div style="width: 1000px;margin: 0 auto;padding: 20px 0;">
+				<h3>popup.js是一个基础级的基于jquery开发的弹框插件，方便实用。</h3><br />
+				<h5>此插件封装了三个常用的弹框方法，分别是：alert、confirm、iframe</h5>
+				<p><b>alert:</b>是一个简单的弹框，用于简单的提示窗口。</p>
+				<p><b>confirm:</b>是一个确认弹框，用于确认操作。</p>
+				<p><b>iframe:</b>是一个iframe框架弹框，用于加载iframe框架。</p>
+				<p>alert、confirm、iframe都有最基本的属性</p>
+				<p style="text-indent: 2em;">title: —— 弹框标题</p>
+				<p style="text-indent: 2em;">content: —— 弹框内容</p>
+				<p style="text-indent: 2em;">width: —— 弹框宽度</p>
+				<p style="text-indent: 2em;">height: —— 弹框高度</p>
+				<p>iframe有url属性，用于加载框架的地址</p>
+				<p>confirm确认弹框有confirmFun和cancelFun两个点击按钮后返回的函数，confirmFun为点击确认后执行的属性，cancelFun为点击取消后执行的属性，可为空。</p>
+				<p style="text-indent: 2em;">用法：confirmFun: confirmtest; confirmtest为函数名称</p>
+			</div>
+		</div>
+	</body>
+</html>

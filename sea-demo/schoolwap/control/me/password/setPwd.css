@@ -1,0 +1,6 @@
+.list-block{margin: .25rem 0;}
+	.list-block .s-icon{float: left;width: .7rem;height: 1rem;margin-right: .5rem;}
+	.list-block .s-icon-1{background: url(/schoolwap/images/me/icon_xinmima.png) no-repeat 0 center;background-size: 100% auto;}
+	.list-block .s-icon-2{background: url(/schoolwap/images/me/icon_queren.png) no-repeat 0 center;background-size: 100% auto;}
+	.btn{line-height: 2rem;margin: 1.5rem .8rem;color: #fff;background-color: #e60012;border-radius: .25rem;text-align: center;}
+	.info{margin: 0 .5rem;font-size: .7rem;}

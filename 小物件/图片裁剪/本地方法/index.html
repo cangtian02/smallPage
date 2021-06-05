@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="image/jquery.Jcrop.min.css" />
+		<link rel="stylesheet" href="image/J_jcorp.css" />
+		<style type="text/css">
+			body{margin: 0;font-family: "微软雅黑";}
+			.J-jcorp{width: 120px;text-align: center;margin: 50px auto;line-height: 36px;background: #2587C8;color: #FFFFFF;border-radius: 5px;cursor: pointer;}
+			.file-img-list{margin: 50px;}
+				.file-img-list img{width: 150px;margin-right: 20px;float: left;}			
+		</style>
+	</head>
+	<body>		
+		
+		<div class="J-jcorp" id="J-jcorp">上传图片</div>
+		<div class="J-jcorp" id="J-jcorp">上传图片</div>
+		<div class="file-img-list"></div>		
+		
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.Jcrop.min.js" ></script>
+		<script type="text/javascript" src="js/J_jcorp.js" ></script>
+		<script type="text/javascript">
+			var J_jcorp = new J_jcorp({
+				'aspectRatio': 1.5,//裁剪宽高比
+				'maxSize': [600,400],//裁剪最大尺寸 [width,height]
+				'minSize': [150,100],//裁剪最小尺寸 [width,height]
+				'picSize': [0,0],//最终保存图片尺寸 [width,height]
+				'consoleBox': '.file-img-list',//裁剪完毕后图片输出框(必填项)
+				'quality': .6//裁剪完后图片压缩比例
+			});
+			//#J-jcorp 开启裁剪插件的id名称			
+		</script>
+	</body>
+</html>

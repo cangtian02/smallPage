@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>手风琴</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="jquery-2.1.0.js"></script>
+<script type="text/javascript" src="accordion.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#sfqbox").accordion({speed: 300,call: true,callbox:".text"});
+	});
+</script>
+</head>
+<body>
+<ul class="Column sfqbox" id="sfqbox">
+	<li><a href="" class="imga fcf"><img src="2.jpg" /><p class="text">沧海难为水</p></a></li>
+	<li><a href="" class="imga fcf"><img src="1.jpg" /><p class="text">沧海难为水</p></a></li>
+	<li><a href="" class="imga fcf"><img src="3.jpg" /><p class="text">沧海难为水</p></a></li>
+	<li><a href="" class="imga fcf"><img src="4.jpg" /><p class="text">沧海难为水</p></a></li>
+	<li><a href="" class="imga fcf"><img src="5.jpg" /><p class="text">沧海难为水</p></a></li>
+	<li><a href="" class="imga fcf"><img src="6.jpeg" /><p class="text">沧海难为水</p></a></li>
+</ul>
+</body>
+</html>

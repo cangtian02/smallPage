@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="image/jquery.Jcrop.min.css" />
+		<link rel="stylesheet" href="image/J_jcorp.css" />
+		<style type="text/css">
+			body{margin: 0;font-family: "微软雅黑";}
+			.J-jcorp{width: 120px;text-align: center;margin: 50px auto;line-height: 36px;background: #2587C8;color: #FFFFFF;border-radius: 5px;cursor: pointer;}
+			.file-img-list{margin: 50px;}
+				.file-img-list img{width: 150px;margin-right: 20px;float: left;}			
+		</style>
+	</head>
+	<body>		
+		
+		<div class="J-jcorp" id="a">上传图片</div>
+		
+		<div class="J-jcorp" id="b">上传图片</div>
+				
+		<div class="file-img-list"></div>		
+		
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.Jcrop.min.js" ></script>
+		<script type="text/javascript" src="js/J_jcorp.js" ></script>
+		<script type="text/javascript">
+			$("#a").J_jcorp({
+				'aspectRatio': 1.5,//裁剪宽高比
+				'maxSize': [600,400],//裁剪最大尺寸 [width,height]
+				'minSize': [150,100],//裁剪最小尺寸 [width,height]
+				'picSize': [300,200],//最终保存图片尺寸 [width,height]
+				'quality': .6,//裁剪完后图片压缩比例
+				'AjaxData': ['http://testapi.sayimo.cn/schoolapi/public/uploadbase64','json'],// [0,1] 0:接口地址 1:dataType(json，jsonp)(必填项)
+				'callback': function(s,data){//接口成功回调
+					$('.file-img-list').append('<img src="' + s + '" data-picid="' + data.data[0].id + '" />');
+				}				
+			});
+			$("#b").J_jcorp({
+				'aspectRatio': 1,//裁剪宽高比
+				'maxSize': [400,400],//裁剪最大尺寸 [width,height]
+				'minSize': [100,100],//裁剪最小尺寸 [width,height]
+				'picSize': [200,200],//最终保存图片尺寸 [width,height]
+				'quality': .4,//裁剪完后图片压缩比例
+				'AjaxData': ['http://testapi.sayimo.cn/schoolapi/public/uploadbase64','json'],// [0,1] 0:接口地址 1:dataType(json，jsonp)(必填项)
+				'callback': function(s,data){//接口成功回调, s图片本地base64地, data接口返回数据
+					$('.file-img-list').append('<img src="' + s + '" data-picid="' + data.data[0].id + '" />');
+				}
+			});					
+		</script>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+.page, .page-group{background: #F9F9F9;}
+.banner, .line{display: block;width: 100%;}
+.contBox{padding: 2rem 1rem;background: #FFFFFF;}
+	.contBox p{margin: 0;line-height: 1.4rem;}
+	.contBox .kefu{display: block;margin: 1.5rem 1rem 0 1rem;text-align: center;border: .05rem dashed #2F2F2F;border-radius: 1rem;line-height: 2rem;font-size: .8rem;font-weight: bold;position: relative;}
+	.contBox .kefu i{width: 1.2rem;height: 1.2rem;background: url(/schoolwap/images/default/icon_phone.png) no-repeat;background-size: 100% 100%;position: absolute;top: .4rem;left: .6rem;}
+.btn{display: block;border-radius: .25rem;text-align: center;line-height: 2rem;background: #e60012;color: #FFFFFF;font-size: .7rem;margin: 1.5rem .8rem;}

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{ font-size:12px; line-height:24px; color:#000;}
+
+.side{width:300px; height:200px; float:left; border:1px solid #000; margin-top:100px; margin-left:200px;}
+.sidetop{width:250px; padding-left:50px; height:30px; float:left; background-color:#96F;}
+.sidetop li{width:50px; height:30px; float:left;cursor:pointer; line-height:30px; text-align:center; font-size:12px;}
+.sidebox{display:block; width:300px; height:170px; float:left; background-color:#ccc; position:relative;}
+.sidebox li{width:280px; height:120px; padding:10px; position:absolute; display:none;}

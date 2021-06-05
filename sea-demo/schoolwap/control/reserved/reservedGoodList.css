@@ -1,0 +1,20 @@
+.reservedGoodList{margin: 0 .5rem;}
+	.reservedGoodList li{margin-bottom: .5rem;}
+	.reservedGoodList li a{display: block;position: relative;}
+	.reservedGoodList li a img{display: block;width: 100%;}
+	.reservedGoodList li a .i{position: absolute;left: 0;right: 0;bottom: 0;background: rgba(255,255,255,.6);padding: .1rem .25rem;}
+	.reservedGoodList li a .i .l{margin-right: 5rem;}
+	.reservedGoodList li a .i .l h1, .reservedGoodList li a .i .l p{-webkit-flex-shrink: 1;-ms-flex: 0 1 auto;-webkit-flex-shrink: 1;flex-shrink: 1;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+	.reservedGoodList li a .i .l h1{font-size: .7rem;margin: 0;}
+	.reservedGoodList li a .i .l p{font-size: .6rem;margin: 0;color: #191919;}
+	.reservedGoodList li a .i .r{font-size: .8rem;position: absolute;right: .25rem;bottom: .05rem;}
+	.reservedGoodList li a .i .r i{font-size: .9rem;}
+.row {overflow: hidden;margin-left: 0;}
+	.row .col-33{width: 33.333333333333332%;margin-left: 0;text-align: center;height: 2.6rem;line-height: 2.8rem;margin-top: .25rem;margin-bottom: .25rem;font-weight: bold;font-size: .7rem;}
+	.row .bg-1{background-color: #FFAAB1;color: #E60012;}
+	.row .bg-2{background-color: #FADCA7;color: #E69200;}
+	.row .bg-3{background-color: #98D2FF;color: #0082E6;}
+	.row .col-33 i{display: inline-block;vertical-align: text-top;width: .8rem;height: .8rem;margin-right: .15rem;}
+	.row .bg-1 i{background: url(/schoolwap/images/reserved/icon_reservation_half-price.png) no-repeat;background-size: contain;}
+	.row .bg-2 i{background: url(/schoolwap/images/reserved/icon_reservation_gard.png) no-repeat;background-size: contain;}
+	.row .bg-3 i{background: url(/schoolwap/images/reserved/icon_reservation_purchase.png) no-repeat;background-size: contain;}

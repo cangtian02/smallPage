@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>移动端裁剪插件</title>
+	<link rel="stylesheet" href="Pcrop.css" />
+</head>
+<body>	
+	<script src="zepto.min.js"></script>
+	<script src="hammer.min.js"></script>
+	<script src="Pcrop.js"></script>
+	<script type="text/javascript">
+		var Pcorp = new Pcorp({
+			'src': '1.jpg',
+			'aspectRatio': [1,1],
+			'quality': .6,
+			'callback': function(basesrc){
+				var img = new Image();
+				img.src = basesrc;
+				img.onload = function(){
+					$("body").append('<img src="' + img.src + '" >');
+				}				
+			}
+		});		
+	</script>	
+</body>
+</html>

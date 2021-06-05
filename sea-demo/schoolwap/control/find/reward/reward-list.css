@@ -1,0 +1,26 @@
+.bar:after{display: none;}
+.rewardClassList{position: absolute;left: 0;right: 0;top: 2.2rem;z-index: 2;}
+	.rewardClassList ul{overflow: hidden;background: #FFFFFF;}
+	.rewardClassList ul li{float: left;width: 25%;border-top: .05rem solid #F5F5F5;}
+	.rewardClassList ul li div{display: -webkit-box;-webkit-box-pack: center;-webkit-box-align: center;height: 2rem;border-right: .05rem solid #F5F5F5;padding: .25rem 0;font-size: .6rem;color: #454545;}
+	.rewardClassList ul li.active div{color: #E60012;}
+	.rewardClassList .toggerBox{text-align: center;line-height: 2rem;font-size: .7rem;color: #0894ec;border-top: .05rem solid #F5F5F5;border-bottom: .05rem solid #F5F5F5;background: #FFFFFF;display: none;}
+
+.content{bottom: 2.5rem;}
+	
+.myreward{height: 2.5rem;background: #FFFFFF;border-top: .05rem solid #F5F5F5;position: absolute;left: 0;right: 0;bottom: 0;z-index: 2;}
+	.myreward span{display: block;margin: .25rem 1rem;color: #FFFFFF;font-size: .8rem;text-align: center;line-height: 2rem;background: #E60012;border-radius: .25rem;}
+
+.rewardList{margin: 0 .25rem;}
+	.rewardList li{margin-bottom: .5rem;}
+	.rewardList li a{display: -webkit-box;height: 7rem;padding: 2rem .5rem .5rem;background: #FFFFFF;border-bottom: .05rem solid #F5F5F5;position: relative;}
+	.rewardList li a .l{display: inline-block;width: 4.5rem;height: 4.5rem;border: .05rem solid #F5F5F5;margin-right: .5rem;}
+	.rewardList li a .l img{display: block;width: 100%;height: 100%;}
+	.rewardList li a .r{-webkit-box-flex: 1;}
+	.rewardList li a .r .t{-webkit-box-pack: center;-webkit-box-flex: 1;height: 2rem;line-height: 1rem;color: #666;font-size: .7rem;}
+	.rewardList li a .r .p{margin: .2rem 0;font-size: .7rem;}
+	.rewardList li a .r .i{color: #A7A7A7;font-size: .6rem;}
+	.rewardList li a .p_l, .rewardList li a .p_r{color: #FFFFFF;position: absolute;top: 0;}
+	.rewardList li a .p_l{line-height: 1.4rem;padding: 0 .75rem;left: 0;font-size: .7rem;background: #999999;}
+	.rewardList li a .p_l.p_l_2{background: #3CAAE6;}
+	.rewardList li a .p_r{right: 0;background: #E60012;width: 2rem;height: 2rem;padding: .2rem 0;line-height: .8rem;text-align: center;font-size: .6rem;}

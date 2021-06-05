@@ -1,0 +1,16 @@
+.list-block{margin: 0;}
+    .list-block .item-title, .list-block input[type=text], .list-block input[type=tel]{font-size: .7rem;}
+	.list-block .imgBtn{width: 2.15rem;height: 2.15rem;margin: .25rem 0;background: url(/schoolwap/images/default/warning.png) no-repeat;background-size: 100% 100%;position: relative;overflow: hidden;}	
+	.list-block .imgBtn input, .list-block .imgBtn img{position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+	.list-block .imgBtn input{opacity: 0;z-index: 2;}
+	.list-block .imgBtn img{display: block;width: 100%;height: 100%;z-index: 3;}
+    	    
+.popup{position: fixed;top: 30%;height: auto;bottom: 0;}    
+	.popup .content-block{margin: 0;padding: 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+	.popup .closeBtn{position: absolute;top: 0;left: 0;right: 0;height: 2rem;line-height: 2rem;border-bottom: .05rem solid #F5F5F5;}
+	.popup .closeBtn a{padding: 0 .5rem;}  
+	.popup .imgBox{position: absolute;left: 0;right: 0;top: 2.25rem;bottom: .25rem;text-align: center;}	 
+	.popup .imgBox img{display: inline-block;max-width: 90%;} 
+
+.btn{border-radius: .25rem;text-align: center;line-height: 2rem;background: #e60012;color: #FFFFFF;font-size: .7rem;margin: 1.5rem .8rem;}
+	.btn.disabled{background: #C0C0C0;}	

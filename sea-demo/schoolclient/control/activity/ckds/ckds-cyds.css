@@ -1,0 +1,31 @@
+.dsInfo{display: -webkit-box;height: 3rem;padding: 0 .5rem;}
+	.dsInfo .l{-webkit-box-flex: 1;height: 3rem;padding: .25rem 0;}
+	.dsInfo .l p{margin: 0;}
+	.dsInfo .l p.name{font-size: .7rem;line-height: 1.5rem;}
+	.dsInfo .l p.time{font-size: .6rem;line-height: 1rem;}
+	.dsInfo .r{display: inline-block;width: 3rem;height: 3rem;background: url(/schoolclient/images/activity/ckds/icon_dks.png) no-repeat;background-size: 100% 100%;}
+	.dsInfo .r.r_1{background: url(/schoolclient/images/activity/ckds/icon_jxz.png) no-repeat;background-size: 100% 100%;}
+	.dsInfo .r.r_2{background: url(/schoolclient/images/activity/ckds/icon_yjs.png) no-repeat;background-size: 100% 100%;}
+
+.list-block{margin: .25rem 0;}
+	.list-block .item-title:first-child{font-size: .7rem;}
+	.list-block .item-title:last-child{font-size: .6rem;color: #CCCCCC;}
+
+.teamList{}
+	.teamList li{padding: .5rem;background: #FFFFFF;border-bottom: .05rem solid #F5F5F5;}
+	.teamList li .t{display: -webkit-box;height: 3rem;}
+	.teamList li .t img{display: inline-block;width: 3rem;height: 3rem;margin-right: .5rem;}
+	.teamList li .t .r{-webkit-box-flex: 1;}
+	.teamList li .t .r p{margin: 0;line-height: 1rem;font-size: .7rem;}
+	.teamList li .t .r p:first-child{display: -webkit-box;height: 2rem;-webkit-box-align: center;}
+	.teamList li .t .r p:last-child{color: #B0B0B0;}
+	.teamList li .b{text-align: center;}
+	.teamList li .b span{display: inline-block;margin-top: .5rem;padding: 0 1rem;border: .05rem solid #E60012;border-radius: .25rem;line-height: 1.4rem;color: #E60012;font-size: .7rem;}
+	.teamList li .b span:first-child{margin-right: 2rem;}
+	.teamList li .b .disabled{color: #C0C0C0;border: .05rem solid #C0C0C0;}
+
+.popup{position: fixed;top: 30%;height: auto;bottom: 0;}    
+	.popup .content-block{margin: 0;padding: 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+	.popup .closeBtn{position: absolute;top: 0;left: 0;right: 0;height: 2rem;line-height: 2rem;border-bottom: .05rem solid #F5F5F5;}
+	.popup .closeBtn a{padding: 0 .5rem;}  
+	.popup .html-content{position: absolute;left: 0;right: 0;top: 2.25rem;bottom: 0;overflow-y: auto;}

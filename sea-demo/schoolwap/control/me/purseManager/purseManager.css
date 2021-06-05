@@ -1,0 +1,17 @@
+.sayimo-puser-div{width: 100%;background: url(/schoolwap/images/me/purse.png) no-repeat;background-size: 100% 100%;position: relative;padding-top: 53.8888%;color: #FFFFFF;}
+	.sayimo-puser-div1, .sayimo-puser-div2{font-size: 1rem;text-align: center;position: absolute;left: 50%;width: 7rem;margin-left: -3.25rem;}
+	.sayimo-puser-div1{top: 30%;}
+	.sayimo-puser-div2{top: 50%;border-top: .05rem solid #FFFFFF;padding-top: .5rem;}
+
+.purse-info{margin: .25rem 0;}
+	.purse-info li{text-align: center;padding: .5rem 0;font-size: .7rem;}
+	.purse-info li:first-child{border-right: .05rem solid #EEEEEE;}
+	.purse-info li p{margin: 0;}
+	.purse-info li img{width: .7rem;margin-right: .3rem;vertical-align: middle;}
+
+.list-block{margin: 0;}
+	.list-block .icon{width: .8rem;height: .8rem;}
+	.list-block .icon.sayimo-pu-icon1{background: url("/schoolwap/images/me/icon_shouzhi.png") no-repeat;background-size: contain;}
+	.list-block .icon.sayimo-pu-icon2{background: url("/schoolwap/images/me/icon_qianbao2.png") no-repeat;background-size: contain;}
+	.list-block .icon.sayimo-pu-icon3{background: url("/schoolwap/images/me/icon_mima.png") no-repeat;background-size: contain;}
+	.list-block .item-title{font-size: .7rem;}

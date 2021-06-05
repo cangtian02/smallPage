@@ -1,0 +1,47 @@
+{
+    "family": "schoolwap",
+    "version": "2.4.9.010",
+    "name": "schoolwap",
+    "spm": {
+        "alias": {
+        	"base": "dist/public_modules/base/base", 
+        	"wxcofing": "dist/public_modules/wxcofing",
+        	"cityPicker": "dist/public_modules/cityPicker/cityPicker",        	        	
+        	"errorCode": "dist/public_modules/errorCode/errorCode",        	        	        	  	
+        	"schoolPicker": "dist/public_modules/schoolPicker/schoolPicker",        	
+        	"slide": "dist/public_modules/slide/slide",
+        	"touchTab": "dist/public_modules/touchTab/touchTab",
+        	"uploadImg": "dist/public_modules/uploadImg/uploadImg",   
+        	"ajax": "dist/public_modules/ajax",
+        	"animate": "dist/public_modules/animate",   	
+        	"cookie": "dist/public_modules/cookie",
+        	"dateDiff": "dist/public_modules/dateDiff",
+        	"dateFormat": "dist/public_modules/dateFormat",
+            "LazyLoad": "dist/public_modules/LazyLoad",
+            "numbox": "dist/public_modules/numbox",     
+            "touch": "dist/public_modules/touch",                                    
+            "seckillTimes": "dist/public_modules/seckillTimes/seckillTimes",
+            "classGoodsList": "dist/public_modules/classGoodsList/classGoodsList",
+            "orderGoodsList": "dist/public_modules/orderGoodsList/orderGoodsList",
+            "commentList": "dist/public_modules/commentList/commentList",
+            "botbar": "dist/public_modules/bottombar/bottombar",
+            "buybar": "dist/public_modules/buybar/buybar",
+            "payManner": "dist/public_modules/payManner/payManner",
+            "popupBox": "dist/public_modules/popupBox/popupBox",
+            "expectPosition": "dist/public_modules/popupSelect/expectPosition",
+            "profession": "dist/public_modules/popupSelect/profession",
+            "industry": "dist/public_modules/popupSelect/industry", 
+            "search": "dist/public_modules/search/search",
+            "groupBuying": "dist/public_modules/groupBuying/groupBuying",
+            "slideFixed": "dist/public_modules/slideFixed/slideFixed"
+        }
+    },
+    "devDependencies": {
+    	"grunt": "~0.4.1",
+        "grunt-cmd-concat": "~0.2.0",
+        "grunt-cmd-transport": "~0.2.0",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-uglify": "~0.2.0",
+        "grunt-replace": "~1.0.1"
+    }
+}

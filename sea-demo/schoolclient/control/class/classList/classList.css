@@ -1,0 +1,9 @@
+.left_nav_content{width: 4.5rem;position: absolute;left: 0;top: 2.2rem;bottom: 0;overflow-y: scroll;}
+	.left_nav_content::-webkit-scrollbar{display: none;}
+	.left_nav li{line-height: 2.5rem;text-align: center;font-size: .7rem;color: #2e2e2e;border-bottom: .05rem solid #F5F5F5;}
+	.left_nav li.current{background: #F5F5F5;color: #eb323f;}	
+.content{left: 4.5rem;padding: .25rem;}
+	.classList{padding-bottom: .5rem;}
+	.classList li{float: left;width: 33.33333%;padding: .5rem 0 0 0;}
+	.classList li img{display: block;width: 3rem;height: 2.66667rem;margin: 0 auto .5rem auto;}
+	.classList li p{margin: 0;color: #6f6f6f;font-size: .6rem;}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+    	<div class="buttons-tab buttons-fixed">
+			<a href="#tab1" id="btab1" class="tab-link button active"><img src="/schoolwap/images/activity/default/tab_order_Reservation-Order.png">预约商品秒抢</a>
+			<a href="#tab2" id="btab2" class="tab-link button"><img src="/schoolwap/images/activity/default/tab_order_shopping.png">普通商品秒抢</a>
+		</div>	
+	<div class="content">			
+        <div class="tabs">
+            <div id="tab1" class="tab active"></div>
+        	<div id="tab2" class="tab"></div>
+    	</div>		
+    </div>
+    <div class="bottom-model">
+		<div class="bottom-close"></div>
+		<div class="bottom-title">秒抢活动说明：</div>
+		<div class="bottom-content" id="bottom-content"></div>
+	</div>
+    </div>
+    <script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/activity/miaoqiang/miaoqiang-list');</script>	
+</body>
+</html>

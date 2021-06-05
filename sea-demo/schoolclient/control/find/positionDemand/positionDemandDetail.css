@@ -1,0 +1,10 @@
+.b-cont{margin: 0 .5rem .5rem .5rem;background: #FFFFFF;}
+	.b-cont:first-child{margin-top: .25rem;}
+	.b-cont .table{display: -webkit-box;margin: .25rem .5rem;line-height: 1.4rem;}
+	.b-cont .table .t{width: 5rem;display: inline-block;font-size: .7rem;color: #424242;font-weight: bold;}
+	.b-cont .table .c{-webkit-box-flex: 1;color: #666666;font-size: .7rem;}
+	.b-cont .table .c p{margin: 0;}
+.content{bottom: 3rem;}	
+.deliver_box{position: absolute;left: 0;right: 0;bottom: 0;height: 2.95rem;border-top: .05rem solid #DCDCDC;background: #FFFFFF;}
+	.deliver_box .deliver_btn{line-height: 2.05rem; margin: .45rem;background: #E60012;color: #FFFFFF;font-size: .7rem;text-align: center;border-radius: .25rem;}
+	.deliver_box .deliver_btn i{display: inline-block;width: .9rem;height: .9rem;vertical-align: middle;margin-right: .5rem;background: url(/schoolclient/images/find/positionDemand/icon_deliver.png) no-repeat;background-size: 100% 100%;}	

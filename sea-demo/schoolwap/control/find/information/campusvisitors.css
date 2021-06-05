@@ -1,0 +1,12 @@
+.ck-news{background: #f7576e;}
+.ck-needs{background: #57c0f7;}
+.buttons-tab .button.active{color: #fff;border: 0;}
+.buttons-tab .button.active:after {content: " ";width: 0;height: 0;border-left: .5rem solid transparent;border-right: .5rem solid transparent;border-bottom: .75rem solid #fff;position: absolute;left: 50%;bottom: 0;margin-left: -.25rem;}
+.buttons-tab .button{color: #fff;height: 3.5rem;line-height: 3.5rem;font-size: .7rem;}
+.tab-link img {width: 1.1rem;height: 1.25rem;margin-right: .25rem;vertical-align: middle;}
+.tabs{margin-top: 3.5rem;}
+.timer{margin-top: 1rem;color: #808080;font-size: .7rem;}
+.timer .item-title,.timer .item-after{color: #808080;}
+.item-content {border-bottom: .05rem solid #e7e7e7;}
+.list-block .item-inner:after,.buttons-tab:after{display: none;}
+.list-block li .clamp_2{line-height: 1rem;font-size: .6rem;}

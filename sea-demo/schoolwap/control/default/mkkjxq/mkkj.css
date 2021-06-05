@@ -1,0 +1,9 @@
+.content .playaBox video{background:transparent url('../../../images/default/sydefault.png') 50% 50% no-repeat;background-size:cover;}
+
+.cen,p{margin: 0;font-size: .6rem;}
+	.cen .mkkj,.cen .mkrc{padding:2rem .5rem 0;}
+	.cen .mkkj img,.cen .mkrc img{width: 10rem;height: 10rem;display: block;margin:0 auto; }
+	.cen .mkkj .tc{font-size: .8rem;color: #00b050;line-height: 3rem;}
+	.cen .mkrc .tc{font-size: .8rem;color: #0372c1;line-height: 3rem;}
+	.cen .mkkj .miaoshu,.cen .mkrc .miaoshu{font-size: .7rem;line-height: 1.5rem;}
+.cen .tr{font-size: .8rem;padding: 2rem .5rem 2rem 0;}	

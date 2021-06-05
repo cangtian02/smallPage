@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="js/jquery-2.1.0.js"></script>
+<style type="text/css">
+#tooltip{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:2px;
+	display:none;
+	color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<ul><li><a href="images/hfzs_zxsjtu.gif" class="tooltip" title="房子装饰"><img src="images/hfzs_zxsjtu.gif" alt="房子装饰" /></a></li></ul>
+<script type="text/javascript">
+  $(function(){
+	  var x=10;
+	  var y=20;
+	  $("a.tooltip").mouseover(function(e){//mouseover鼠标移入
+		  this.myTitle=this.title;
+		  this.title = "";
+		  var imgTitle = this.myTitle? "<br />" + this.myTitle : "";
+		  var tooltip = "<div id='tooltip'><img src='"+this.href+"'alt='产品预览图' />"+imgTitle+"</div>";
+		  $("body").append(tooltip);//append追加内容
+		  $("#tooltip")
+		  .css({
+			  "top": (e.pageY+y) + "px", 
+			  "left": (e.pageX+x) + "px"
+			  
+			  }).show("fast");
+		  }).mouseout(function(){//mouseout鼠标离开
+			  this.title = this.myTitle;
+			  $("#tooltip").remove();//移除
+		  }).mousemove(function(e){
+			  $("#tooltip")
+			  .css({
+		      "top": (e.pageY+y) + "px", 
+			  "left": (e.pageX+x) + "px"
+			  });
+			  });
+	  })
+</script>
+</body>
+</html>

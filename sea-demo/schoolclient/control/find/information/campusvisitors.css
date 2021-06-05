@@ -1,0 +1,10 @@
+.ck-news{background: #f7576e;}
+.ck-needs{background: #57c0f7;}
+.buttons-tab .button.active{color: #fff;border: 0;}
+.buttons-tab .button.active:after {content: " ";width: 0;height: 0;border-left: .5rem solid transparent;border-right: .5rem solid transparent;border-bottom: .75rem solid #fff;position: absolute;left: 50%;bottom: 0;margin-left: -.25rem;}
+.buttons-tab .button{color: #fff;height: 3.5rem;line-height: 3.5rem;font-size: .7rem;}
+.tab-link img{width: 1.1rem;height: 1.25rem;margin-right: .25rem;vertical-align: middle;}
+.tabs{margin-top: 3.5rem;}
+.list-block ul{background: none;}
+.list-block ul:before,.list-block ul:after{display: none;}
+.list-block ul li{background: #FFFFFF;}

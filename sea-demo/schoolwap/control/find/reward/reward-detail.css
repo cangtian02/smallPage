@@ -1,0 +1,36 @@
+.slidePlay{position: relative;margin-bottom: .25rem;}
+	.slidePlay .r_icon{color: #FFFFFF;position: absolute;top: 0;right: 1rem;background: #E60012;width: 2rem;height: 2rem;padding: .2rem 0;line-height: .8rem;text-align: center;font-size: .6rem;}
+
+.share-box{position: absolute;top: 0;bottom: 0;left: 0;right: 0;z-index: 99999;background: url(/schoolwap/images/default/share.png) no-repeat;background-size: 100% 100%;display: none;}
+	
+.tran-item{padding: .25rem .5rem;background: #FFFFFF;margin-bottom: .05rem;position: relative;}
+	.tran-item.tran-item-pt5{padding: .5rem;}
+	.tran-name, .tran-price, .tran-span, .tran-warning, .tran-desc-t{font-size: .7rem;}
+	.tran-share, .tran-warningtel{position: absolute;top: .5rem;bottom: .5rem;right: 0;width: 2rem;border-left: .05rem solid #BFBFBF;}
+		.tran-share i{width: 1rem;height: 1rem;position: absolute;top: 50%;margin-top: -.5rem;left: .5rem;background: url('/schoolwap/images/default/fenxiang.png') no-repeat;background-size: 100% 100%;}
+	.tran-updateTime{font-size: .6rem;color: #979797;}
+	.tran-span, .tran-warning, .tran-desc-t{color: #7B7B7B;}
+	.tran-warningtel a{width: 1rem;height: 1rem;position: absolute;top: 50%;margin-top: -.5rem;left: .5rem;background: url('/schoolwap/images/default/icon_warning.png') no-repeat;background-size: 100% 100%;}
+	.tran-desc{margin-top: .25rem;margin-bottom: .5rem;}
+
+.buttons-tab .button.active{color: #E60012;border-color: #E60012;}
+
+.otherList{}
+	.otherList li{display: -webkit-box;height: 3.5rem;padding: .25rem 0 .25rem .25rem;border-bottom: .05rem solid #F5F5F5;}
+	.otherList li .l{display: inline-block;width: 3rem;height: 3rem;margin-right: .5rem;}
+	.otherList li .l img{display: block;width: 80%;height: 80%;margin: 10%;border-radius: 50%;}
+	.otherList li .r{-webkit-box-flex: 1;}
+	.otherList li .r .p{font-size: .6rem;}
+	.otherList li .r .i{color: #A7A7A7;font-size: .6rem;}
+	.otherList li .r .t{line-height: 1.2rem;font-size: .7rem;}
+	.otherList li .r .t span{color: #666;}
+	.otherList li .r .t .p_l{color: #FFFFFF;padding: 0 .5rem;}
+	.otherList li .r .t .p_l.p_l_1{background: #E60012;}
+	.otherList li .r .t .p_l.p_l_2{background: #FEA831;}
+	.otherList li .r .t .p_l.p_l_3{background: #0082E6;}
+	.otherList li .r .t .p_l.p_l_4{background: #999999;}
+
+.html-content img{margin: .25rem 0;}
+		
+.myreward{height: 2.5rem;background: #FFFFFF;border-top: .05rem solid #F5F5F5;position: absolute;left: 0;right: 0;bottom: 0;z-index: 2;display: none;}
+	.myreward span{display: block;margin: .25rem 1rem;color: #FFFFFF;font-size: .8rem;text-align: center;line-height: 2rem;background: #E60012;border-radius: .25rem;}

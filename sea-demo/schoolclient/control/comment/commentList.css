@@ -1,0 +1,5 @@
+.buttons-tab .button.active{color: #eb323f;border-color: #eb323f;}
+@media only screen and (max-width: 374px){
+	.buttons-tab .button{font-size: .7rem;}
+}
+.tabs{margin-top: 2.25rem;}

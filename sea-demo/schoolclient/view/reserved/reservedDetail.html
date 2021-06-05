@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+	<div class="page">		
+	<div class="content">
+		<div class="gPlayerBox"><div class="gPlayer" id="gPlayer"></div></div>		
+		<div class="listmoney clearfix bgf">
+			<h1 id="story"></h1>
+			<div class="fr"><i></i>已售<span id="buyCount">0</span>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			<p class="red fl arial">￥<span id="preferentialPrice">0.00</span></p>
+			<p class="fl originalPrice arial"><del>￥<span id="originalPrice">0.00</span></del></p>
+		</div>
+		<div class="activityBox" id="activityBox"></div>	
+		<div class="list-block list-normsValue">	
+			<ul>
+				<li class="item-content">
+					<a href="javascript:;" class="item-link item-content" id="open-popup-box">
+						<div class="item-inner">
+							<div class="item-title">已选择：<span id="normsValue" class="red">规格值</span></div>
+							<font class="red fr arial">￥<span id="total-prices"></span></font>
+						</div>
+					</a>
+				</li>			
+			</ul>
+		</div>
+
+		<div class="list-promise clearfix">
+			<span><img src="../../images/reserved/icon_content_DC.png"/>&nbsp;高效配送</span>
+			<span><img src="../../images/reserved/icon_content_right.png"/>&nbsp;正品保证</span>
+			<span><img src="../../images/reserved/icon_content_quality.png"/>&nbsp;服务质量</span>				
+		</div>
+
+		<div class="list-extraInfo bgf" id="extraInfo">
+			<div class="t">配送说明：</div>
+			<div class="html-content"></div>
+		</div>
+		
+		<div class="detailinfo bgf" id="detailinfo">			
+			<div class="buttons-tab fixed-tab">
+				<a href="#tab1" class="tab-link active button">商品介绍</a>
+				<a href="#tab2" class="tab-link button" id="commentBtn">商品评论</a>
+			</div>			
+			<div class="tabs">
+				<div id="tab1" class="tab active goodsProduce"><div class="noInfo tc">暂无商品介绍</div></div>		
+				<div id="tab2" class="tab comment-box"><div class="list-block media-list"><ul class="comment-list" id="comment-list"></ul></div></div>
+			</div>
+		</div>
+	</div>
+	    <div class="sayimo-mask"></div><!--遮罩层-->
+	</div>
+	</div>
+	<script src="../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/reserved/reservedDetail');</script>	
+</body>
+</html>

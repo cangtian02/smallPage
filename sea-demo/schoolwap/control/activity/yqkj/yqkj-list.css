@@ -1,0 +1,19 @@
+.yqkjList{}
+	.yqkjList li{padding: .5rem;margin-bottom: .25rem;background: #FFFFFF;}
+	.yqkjList li a{display: block;}
+	.yqkjList li .top{height: 5.5rem;display: -webkit-box;}
+	.yqkjList li .top .l{display: inline-block;width: 5.5rem;height: 5.5rem;margin-right: .25rem;}
+	.yqkjList li .top .l img{width: 5.4rem;height: 5.4rem;border: .05rem solid #F5F5F5;}
+	.yqkjList li .top .r{-webkit-box-flex: 1;}
+	.yqkjList li .top .r .name{height: 2rem;line-height: 1rem;font-weight: normal;font-size: .7rem;color: #131313;margin-right: 1.5rem;}
+	.yqkjList li .top .r .price{line-height: 1rem;font-size: .7rem;position: relative;padding: .25rem 0;}
+	.yqkjList li .top .r .price del{color: #737373;}
+	.yqkjList li .top .r .price i{display: block;width: 2.4rem;height: 2.4rem;background: url(/schoolwap/images/activity/yqkj/icon_kan.png) no-repeat;background-size: contain;position: absolute;right: 0;top: 0;}
+	.yqkjList li .top .r .num{color: #737373;font-size: .6rem;}
+	.yqkjList li .time{margin-top: .5rem;padding-top: .5rem;border-top: .05rem solid #F5F5F5;color: #737373;font-size: .7rem;line-height: 1rem;}
+	.yqkjList li .time i{display: inline-block;width: .8rem;height: .8rem;vertical-align: middle;margin-right: .25rem;background: url(/schoolwap/images/activity/yqkj/icon_clock.png) no-repeat;background-size: contain;}
+	.yqkjList li .time span{display: inline-block;width: 1.7rem;border: .05rem solid #E60012;border-radius: .1rem;text-align: center;color: #E60012;}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	.yqkjList li .time{line-height: .8rem;}	
+	.yqkjList li .time span{width: 1.2rem;}	
+}	

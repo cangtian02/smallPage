@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="src/axios.js"></script>
+</head>
+<body>
+	
+<script>
+    axios.get('http://localhost:8081/applist').then(function (response) {
+
+        console.log(response.data);
+
+    }).catch(function (response) {
+
+        console.log(response);
+
+    });
+</script>
+
+</body>
+</html>

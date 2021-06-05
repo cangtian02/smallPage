@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+    <div class="content pull-to-refresh-content">
+		<!-- 默认的下拉刷新层 -->
+		<div class="pull-to-refresh-layer"><div class="preloader"></div><div class="pull-to-refresh-arrow"></div></div>		
+		<div class="topInfo">
+			<div class="l modifyAccount"><img src="/schoolclient/images/default/lazy.png" id="headPhoto"></div>
+			<div class="c modifyAccount">
+	            <div class="t alias" id="alias">尚一</div>
+	            <div class="t inviteCode">我的邀请码：<span id="inviteCode"></span></div>
+		        <div class="identity" id="identity"><i></i><span></span></div>			
+			</div>
+			<div class="r" id="nativeShare"></div>
+		</div>
+		
+        <div class="topBtn boxflex">
+	        <a href="javascript:;" data-url="view/me/memberList.html">我的会员</a>
+	        <a href="javascript:;" data-url="view/me/resume/myresume.html">个人简历</a> 
+	        <a href="javascript:;" id="purseManager"></a> 
+	        <a href="javascript:;" data-url="view/me/mecollect/mecollectList.html">我的收藏</a> 
+        </div>
+              
+        <div class="list-block me-list numList goodsList">
+        	<ul>
+	            <li>
+	              <a href="javascript:;" class="item-link item-content" data-url="view/orders/goodsOrders/goodsOrdersList.html">
+	                <div class="item-inner">	                	
+	                  	<div class="item-title">商品订单</div>
+	                  	<div class="item-title">查看全部订单</div>
+	                </div>
+	              </a>
+	            </li>        		
+	            <li class="boxflex tc">
+					<div class="ospan">
+						<a href="javascript:;" id="g-waitPayCount" data-url="view/orders/goodsOrders/goodsOrdersList.html?tab=1">
+							<div class="me-icon me-icon-1"></div>
+							<p>待付款</p>
+						</a>
+					</div>
+					<div class="ospan">
+						<a href="javascript:;" id="g-waitSendCount" data-url="view/orders/goodsOrders/goodsOrdersList.html?tab=2">
+							<div class="me-icon me-icon-2" ></div>
+							<p>待发货</p>
+						</a>
+					</div>
+					<div class="ospan">
+						<a href="javascript:;" id="g-hasbeenSendCount" data-url="view/orders/goodsOrders/goodsOrdersList.html?tab=3">
+							<div class="me-icon me-icon-3"></div>
+							<p>待收货</p>
+						</a>
+					</div>
+					<div class="ospan">
+						<a href="javascript:;" id="g-waitCommentsCount" data-url="view/orders/goodsOrders/goodsOrdersList.html?tab=4">
+							<div class="me-icon me-icon-4"></div>
+							<p>待评价</p>
+						</a>
+					</div>
+					<div class="ospan">
+						<a href="javascript:;" id="returngoodsList" data-url="view/orders/returngoodsOrders/returngoodsOrdersList.html">
+							<div class="me-icon me-icon-5"></div>
+							<p>售后</p>
+						</a>
+					</div>					
+				</li>
+			</ul>	
+        </div>
+
+        <div class="list-block me-list numList reservedList">
+        	<ul>
+	            <li>
+	              <a href="javascript:;" class="item-link item-content" data-url="view/orders/reservedOrders/reservedOrdersList.html">
+	                <div class="item-inner">	                	
+	                  	<div class="item-title">预约订单</div>
+	                  	<div class="item-title">查看全部订单</div>
+	                </div>
+	              </a>
+	            </li>        		
+	            <li class="boxflex tc">
+					<div class="ospan">
+						<a href="javascript:;" id="r-waitPayCount" data-url="view/orders/reservedOrders/reservedOrdersList.html?tab=1">
+							<div class="me-icon me-icon-1"></div>
+							<p>待付款</p>
+						</a>
+					</div>
+					<div class="ospan">
+						<a href="javascript:;" id="r-waitAcceptCount" data-url="view/orders/reservedOrders/reservedOrdersList.html?tab=2">
+							<div class="me-icon me-icon-2" ></div>
+							<p>待受理</p>
+						</a>
+					</div>
+					<div class="ospan">
+						<a href="javascript:;" id="r-waitConfirmCount" data-url="view/orders/reservedOrders/reservedOrdersList.html?tab=3">
+							<div class="me-icon me-icon-3"></div>
+							<p>待确认</p>
+						</a>
+					</div>
+					<div class="ospan">
+						<a href="javascript:;" id="r-waitCommentsCount" data-url="view/orders/reservedOrders/reservedOrdersList.html?tab=4">
+							<div class="me-icon me-icon-4"></div>
+							<p>待评价</p>
+						</a>
+					</div>					
+				</li>
+			</ul>	
+        </div>
+        
+		<div class="list-block me-list">
+	        <ul>
+	            <li>
+	              <a href="javascript:;" class="item-link item-content" data-url="view/me/receivingAddress/receivingAddressList.html">
+	                <div class="item-media">
+	                	<i class="icon me-icon1"></i>
+					</div>
+	                <div class="item-inner">
+	                  	<div class="item-title">收货地址</div>
+	                </div>
+	              </a>
+	            </li>	            
+			</ul>
+		</div>
+
+		<div class="list-block me-list">
+	        <ul>
+	            <li>
+	              <a href="javascript:;" class="item-link item-content" data-url="view/me/set/set.html">
+	                <div class="item-media">
+	                	<i class="icon me-icon2"></i>
+					</div>
+	                <div class="item-inner">
+	                  	<div class="item-title">设置</div>
+	                </div>
+	              </a>
+	            </li>
+	        </ul>
+       </div>
+    	
+    </div>
+    </div>
+   	</div>
+    <script src="../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/me/me/me');</script>
+</body>
+</html>

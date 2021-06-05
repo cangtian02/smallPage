@@ -1,0 +1,8 @@
+.seckillTimes{margin: 0;}
+	.seckillTimes li{height: 2.2rem;padding: .25rem;font-size: .6rem;margin: .25rem 0;}
+	.seckillTimes .state{padding: 0 .5rem;background: #CFCFCF;border-radius: .1rem;color: #FFFFFF;line-height: 1.3rem;margin-top: .2rem;}
+	.seckillTimes .state.active{background: #E60012;}
+	.seckillTimes .fl{line-height: 1.7rem;}
+	.seckillTimes .fl cite{font-style: normal;}
+	.seckillTimes .fl .time{display: inline-block;}
+	.seckillTimes .fl span{background: #E60012;color: #FFFFFF;padding: .15rem;border-radius: .15rem;}

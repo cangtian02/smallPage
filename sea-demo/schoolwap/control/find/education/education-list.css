@@ -1,0 +1,16 @@
+.buttons-tab .button.active{color: #E60012;border-color: #E60012;}
+.content{top: 2.2rem;}
+
+.eduList{margin-bottom: 1rem;}
+	.eduList li{display: -webkit-box;height: 5rem;padding: .5rem;border-bottom: .05rem solid #F5F5F5;background-color: #FFFFFF;}
+	.eduList li .l{display: inline-block;width: 4rem;height: 4rem;margin-right: .5rem;border: .05rem solid #F5F5F5;position: relative;}
+	.eduList li .l img{width: 3.9rem;height: 3.9rem;}
+	.eduList li .l span{font-size: .6rem;color: #FFFFFF;padding: 0 .3rem;position: absolute;top: 0;right: 0;}
+	.eduList li .l span.m{background-color: #666666;}
+	.eduList li .l span.s{background-color: #E60012;}
+	.eduList li .r{-webkit-box-flex: 1;position: relative;}
+	.eduList li .r p{margin: 0;}
+	.eduList li .r p.t{height: 2.2rem;line-height: 1.1rem;}
+	.eduList li .r p.t, .eduList li .r p.s, .eduList li .r .c{font-size: .7rem;}
+	.eduList li .r p.s, .eduList li .r p.d{font-size: .6rem;color: #666666;}
+	.eduList li .r .c{color: #FFFFFF;background-color: #E60012;padding: 0 .5rem;position: absolute;top: 2.2rem;right: 0;}

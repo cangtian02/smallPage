@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">    	   	   	
+	<div class="content infinite-scroll infinite-scroll-bottom">
+		<div class="pPlayer" id="pPlayer"></div>
+		<div class="pInfo">					
+			<img src="/schoolwap/images/default/sydefault.png" id="providerUrl">
+			<div class="providerName"><h1 id="providerName" class="ellipsis"></h1><div class="providerIcon"><i></i><i></i><i></i><i></i><i></i></div></div>		
+			<a href="javascript:;" class="r" id="telPhone">联系卖家</a>
+		</div>
+		<div class="detailinfo" id="detailinfo">			
+			<div class="buttons-tab">
+				<a href="#tab1" class="tab-link active button">全部商品</a>
+				<a href="#tab2" class="tab-link button">店铺介绍</a>
+			</div>			
+			<div class="tabs">
+				<div id="tab1" class="tab active"><ul class="classGoodList"></ul><div class="infinite-scroll-preloader"><div class="preloader"></div></div></div>		
+				<div id="tab2" class="tab"><div class="html-content"><div class="noInfo tc">暂无商品介绍</div></div></div>		
+			</div>
+		</div>				
+	</div>			
+    </div>
+    </div>
+   	<script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/find/studentShop/studentShop-shopindex');</script>		
+</body>
+</html>

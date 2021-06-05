@@ -1,0 +1,33 @@
+.buttons-tab .button{font-size: .7rem;}
+	.buttons-tab .button.active{color: #E60012;border-color: #E60012;border-width: .05rem;}
+.tabs{margin-top: .25rem;}
+
+/*列表*/
+.ment-list{}
+	.ment-list li{background: #FFFFFF;margin-bottom: .25rem;}
+	.ment-list li .top{font-size: .6rem;line-height: 2rem;margin: 0 .5rem;border-bottom: .05rem solid #E5E5E5;}
+	.ment-list li .top .l{color: #AAAAAA;}
+	.ment-list li .top .fr{color: #E60012;}
+	.ment-list li .h{height: 4rem;overflow: hidden;padding: 0 .5rem;margin: .5rem 0;}
+	.ment-list li .h a{float: left;width: 4rem;height: 4rem;border: .05rem solid #F5F5F5;margin-right: .25rem;}
+	.ment-list li .h a img{display: block;width: 100%;height: 100%;}
+	.ment-list li .cont{padding: .5rem;height: 5rem;display: -webkit-box;}
+	.ment-list li .cont .l{display: inline-block;width: 4rem;height: 4rem;margin-right: .5rem;border: .05rem solid #F5F5F5;}
+	.ment-list li .cont .l img{width: 3.9rem;height: 3.9rem;}
+	.ment-list li .cont .r{-webkit-box-flex: 1;}
+	.ment-list li .cont .r h1{height: 2rem;line-height: 1rem;font-weight: normal;font-size: .7rem;color: #131313;display: -webkit-box;overflow: hidden;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-break: break-all;margin: 0;}
+	.ment-list li .cont .r .r_price{line-height: 1.1rem;}
+	.ment-list li .cont .r .r_price em{font-style: normal;}
+	.ment-list li .cont .r .r_price .r_price_o{font-size: .8rem;color: #E60012;}
+	.ment-list li .cont .r .r_price .r_price_p{font-size: .7rem;color: #a0a0a0;}
+	.ment-list li .cont .r .num{color: #999999;font-size: .6rem;}
+	.ment-list li .main{line-height: 2rem;padding: 0 .5rem;border-bottom: .05rem solid #F5F5F5;font-size: .6rem;border-top: .05rem solid #F5F5F5;}
+	.ment-list li .main .red{font-size: .8rem;}
+	.ment-list li .btn{padding: .5rem .3rem;height: 2.6rem;}
+	.ment-list li .btn a{float: right;font-size: .7rem;line-height: 1.5rem;padding: 0 .4rem;border-radius: .1rem;margin-left: .3rem;}
+	.ment-list li .btn a:last-child{margin-left: 0;}
+	.ment-list li .btn a.l{color: #817f7f;border: .05rem solid #817f7f;}
+	.ment-list li .btn a.r{color: #E60012;border: .05rem solid #E60012;}
+	@media only screen and (max-width: 374px){
+		.ment-list li .cont .r h1,.ment-list li .btn a{font-size: .6rem;}		
+	}

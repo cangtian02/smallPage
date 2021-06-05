@@ -1,0 +1,25 @@
+.slide-container{}
+	.slide-container .slide-main li{height: 0;background: #FFFFFF;padding-top: 43.75%;position: relative;}
+	.slide-container .slide-main li img{position: absolute;top: 0;bottom: 0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);}
+
+.pInfo{height: 2.5rem;display: -webkit-box;background: #FFFFFF;}
+	.pInfo .telPhone{display: inline-block;width: 5rem;line-height: 2.5rem;text-align: center;color: #FFFFFF;font-size: .7rem;background: #E60012;}
+	.pInfo img{display: inline-block;width: 2rem;height: 2rem;margin: .25rem 0 .25rem .25rem;}
+	.pInfo .providerName{-webkit-box-flex: 1;height: 2rem;margin: .25rem;overflow: hidden;}
+	.pInfo h1{font-size: .8rem;color: #8F8F90;line-height: 1rem;margin: 0;}
+	.pInfo .providerIcon i{display: inline-block;width: .7rem;height: .7rem;margin-right: .2rem;background: url(/schoolclient/images/find/studentshop/icon_huguan.png) no-repeat;background-size: 100% 100%;}
+
+.buttons-tab .button{color: #8F8F90;margin: 0 2rem;font-size: .7rem;}
+	.buttons-tab .button.active{color: #E60012;border-color: #E60012;}
+	.buttons-tab:after{display: none;}
+	.buttons-tab:before{content: '';display: block;width: .05rem;height: 1rem;background: #E2E2E2;position: absolute;top: .5rem;left: 50%;}
+
+.tabs{margin-top: .5rem;}
+
+.classGoodList{}
+	.classGoodList li{float: left;width: 50%;padding: 0 .25rem .5rem .25rem;}
+	.classGoodList li img{display: block;width: 100%;}
+	.classGoodList li .tt{color: #626262;padding: .25rem;font-size: .7rem;}
+	.classGoodList li .money{padding: 0 .25rem .25rem .25rem;}
+	.classGoodList li .money font{color: #eb323f;margin-right: .25rem;}
+	.classGoodList li .money del{color: #979797;font-size: .6rem;}

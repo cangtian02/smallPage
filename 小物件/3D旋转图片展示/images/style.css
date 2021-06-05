@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+*{word-wrap:break-word; outline:none; margin:0;}
+body{margin:0; padding:0; font-family:"Microsoft YaHei","微软雅黑","宋体","Arial","Arial Narrow"; background:#FFF;}
+ul,li{margin:0; padding:0;list-style-type:none;}
+.clearfix{zoom:1;}
+.clearfix:after{content:"."; display:block; clear:both; height:0; font:0/0 sans-serif; visibility:hidden;}
+.peBox{width: 600px; min-height: 293px; margin: 50px auto; perspective: 750px; position: relative;}
+.box{width: 280px; height: 240px; position: absolute; left: 50%; margin-left: -140px; transform-style: preserve-3d; transition: transform 1s;}
+.box img{position: absolute; bottom: 0; width: 280px;}

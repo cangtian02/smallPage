@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+	<div class="content">			
+		<div class="list-block">
+		    <ul>
+			    <li>
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</div>
+			        		<div class="item-input"><input type="text" id="subName" placeholder="请输入投稿人姓名" /></div>
+			        	</div>
+			        </div>
+			    </li>
+			    <li>
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">联系方式</div>
+			        		<div class="item-input"><input type="tel" id="telPhone" placeholder="请输入投稿人联系方式" /></div>
+			        	</div>
+			        </div>
+			    </li>
+			    <li>
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</div>
+			        		<div class="item-input"><input type="text" id="schoolId" placeholder="请选择投稿人所在学校" /></div>
+			        	</div>
+			        </div>
+			    </li>
+			    <li>
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">所&nbsp;&nbsp;在&nbsp;&nbsp;系</div>
+			        		<div class="item-input"><input type="text" id="department" placeholder="请输入投稿人所在系" /></div>
+			        	</div>
+			        </div>
+			    </li>
+			    <li>
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</div>
+			        		<div class="item-input"><input type="text" id="class" placeholder="请输入投稿人所在班级" /></div>
+			        	</div>
+			        </div>
+			    </li>
+			    <li class="subject din">
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">广&nbsp;&nbsp;告&nbsp;&nbsp;语</div>
+			        		<div class="item-input"><input type="text" id="subject" placeholder="请输入广告语" maxlength="18" /></div>
+			        	</div>
+			        </div>
+			    </li>
+			    <li class="subject_2 din">
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">照片简述</div>
+			        		<div class="item-input"><input type="text" id="subject" placeholder="请输入照片简述" maxlength="18" /></div>
+			        	</div>
+			        </div>
+			    </li>			    
+			    <li class="description din">
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">创意思路</div>
+			        		<div class="item-input">
+			        			<textarea rows="2" id="description" escape="false" placeholder="请输入您的创意思路"></textarea>
+			        		</div>
+			        	</div>
+			        </div>
+			    </li>
+			    <li class="photoIds din">
+			        <div class="item-content">
+			        	<div class="item-inner">
+			        		<div class="item-title label">我要拍照</div>
+			        		<div class="item-input">添加照片<span>（最多添加4张）</span></div>
+			        	</div>
+			        </div>
+			    </li>
+				<div class="image-list clearfix din">
+					<div class="image-btn"><input accept="image/*" type="file" id="file" name="file" ></div>
+				</div>				    
+			</ul>    
+		</div>
+		<div class="btn disabled" id="btn">立即投稿</div>
+   	</div>
+    </div>     
+    <script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/activity/ckds/ckds-ljtg');</script>	
+</body>
+</html>

@@ -1,0 +1,15 @@
+.list-block{margin: 0;}
+	.list-block ul{background: none;}
+	.list-block ul:after, .list-block .item-inner:after{display: none;}
+	.list-block li{margin-bottom: .25rem;background: #FFFFFF;}	
+	.address-top{color: #666666;padding: .5rem 0 0 .75rem;font-size: .8rem;}
+	.address-center{color: #a0a0a0;padding: .25rem .25rem .25rem .8rem;border-bottom: .05rem solid #EEEEEE;font-size: .6rem;}
+	.address-bot{height: 1.8rem;}
+	.list-block .item-content{min-height: 1.8rem;}
+	.item-after img{width: .7rem;height: .7rem;vertical-align: middle;margin-right: .5rem;}
+	.item-after a{margin-left: .75rem;font-size: .6rem;color: #a0a0a0;}
+	.item-after{float: right;padding: .5rem .75rem 0 .75rem;}
+	label{float: left;width: 40%;height: 1.8rem;}	
+	label.label-checkbox i.icon-form-checkbox {width: .7rem;height: .7rem;border-radius: .7rem;}
+	.list-block.media-list .item-title {font-size: .6rem;color: #a0a0a0;}
+.auth_button{border-radius: .25rem;background: #e60012;color: #FFFFFF;font-size: .7rem;margin: .8rem .8rem 0 .8rem;text-align: center;line-height: 1.8rem;}

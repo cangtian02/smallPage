@@ -1,0 +1,12 @@
+.content{background: #FFFFFF;}
+	.emsinfo{padding: .5rem;border-bottom: .25rem solid #ededed;font-size: .7rem;color: #434343;}
+	.emsinfo div{line-height: 1.2rem;}
+	.new-order-flow{padding: .5rem 0 0 1rem;margin-bottom: 1rem;}
+	.new-order-track{padding: 0 0 .25rem .25rem;border-left: .05rem dashed #c9c9c9;}
+	.new-order-track ul{-webkit-padding-start: 1.25rem;}
+	.new-order-track li{position: relative;padding: .75rem .5rem;border-bottom: .05rem solid #ededed;}
+	.new-order-track li:first-child{padding: 0 .5rem .75rem .5rem;}
+	.new-order-track li span{display: block;font-size: .7rem;color: #6e6e6e;}
+	.new-order-track li .new-track{color:#f99700;}
+	.new-order-track li .icon{position: absolute;left: -1.9rem;width: .75rem;height: .75rem;content:url('/schoolwap/images/default/icon_unchecked.png');}
+	.new-order-track li .on{content:url('/schoolwap/images/default/icon_choose.png');}

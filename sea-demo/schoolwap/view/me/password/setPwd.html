@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+	<div class="page">
+	<div class="content">
+		<div class="list-block">
+			<ul>
+				<li>
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="item-media"><i class="s-icon s-icon-1"></i></div>
+							<div class="item-input"><input type="password" id="password" maxlength="6"  placeholder="请输入六位支付密码" autocomplete="off" /></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="item-media"><i class="s-icon s-icon-2"></i></div>
+							<div class="item-input">
+								<input type="password" id="validate-code-input" maxlength="6" placeholder="请确认支付密码" autocomplete="off" />
+							</div>
+						</div>
+					</div>
+				</li>		
+			</ul>
+		</div>					    			    					    	
+		<div id="btn" class="btn">提交</div>
+		<div class="info">新伙伴，您好！ 为了您的财产安全，请先设置支付密码。谢谢您的配合</div>	
+	</div>
+	</div>
+	</div>
+	<script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/me/password/setPwd');</script>	
+</body>
+</html>

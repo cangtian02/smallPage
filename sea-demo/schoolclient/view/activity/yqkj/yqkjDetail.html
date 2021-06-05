@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+    <div class="content">
+    	
+		<div class="gPlayer" id="gPlayer"><div class="gTimes red" id="gTimes">剩余时间：0 天 00 : 00 : 00</div></div>
+		
+		<div class="gInfo bgf">
+			<div class="top">				
+				<div class="gName clamp_2" id="gName"></div>
+				<div class="gPrice red"><div>原价</div><div><span class="arial">￥</span><span id="gPrice">00.00</span></div></div>
+			</div>
+			<div class="bot">
+				<div class="gNormsValue ellipsis" id="open-popup-box">规格：<span id="normsValue">规格值</span></div>
+				<div class="gSendAddress ellipsis">发货地：<span id="sendAddress">发货地</span></div>
+			</div>
+		</div>
+		
+		<div class="kjBox bgf clearfix">
+			<div id="kjInfo">
+				<div class="kjInfo">
+					<div class="l"><div class="b"><div class="p red"><span id="currentPrice">0.00</span></div></div></div>
+					<div class="r"><div class="b"><div class="p red"><span id="cutPrice">0.00</span></div></div></div>
+				</div>
+				<div class="kjPriceinfo" id="kjPriceinfo"></div>
+			</div>
+			<div class="kjBtn">
+				<div class="btn ljkjbtn" id="ljkjbtn"><img src="../../../images/activity/yqkj/lijikanjia.png" /></div>
+				<div class="btn sharebtn" id="sharebtn"><img src="../../../images/activity/yqkj/yaoqinghaoyou.png" /></div>
+			</div>
+			<div class="ex"><img src="../../../images/activity/yqkj/icon_logo.png" />请认准尚一官方平台</div>
+		</div>
+		
+		<div class="ljkjTab bgf">			
+			<div class="buttons-tab">
+				<a href="#tab1" class="tab-link active button">活动说明</a>
+				<a href="#tab2" class="tab-link button">校友团</a>
+				<a href="#tab3" class="tab-link button">参与榜</a>
+			</div>			
+			<div class="tabs">
+				<div id="tab1" class="tab active"><div class="html-content" id="description"><div class="noInfo">暂无活动说明</div></div></div>		
+				<div id="tab2" class="tab detailbyidentifier"><div class="html-content"><div class="noInfo">暂无校友帮你砍价</div></div></div>		
+				<div id="tab3" class="tab customerid"><div class="html-content"><div class="noInfo">暂无人参与砍价</div></div></div>
+			</div>
+		</div>
+		
+    </div>
+    	<div class="sayimo-mask"></div><!--遮罩层-->
+    </div>
+    </div>
+    <script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/activity/yqkj/yqkjDetail');</script>	
+</body>
+</html>

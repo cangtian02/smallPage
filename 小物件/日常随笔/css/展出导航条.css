@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{ font-size:12px; line-height:30px; color:#fff;}
+.bb{width:100%; height:2000px; margin:0 auto;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+.navv{width:100%; height:40px; margin:0 auto; background-color:#333; }
+.nav{width:1000px; height:40px; margin:0 auto; }
+.nav .navL{ width:80px; height:40px; position:relative; float:left;  text-align:center; cursor:pointer;}
+.nav li a{font-size:18px; color:#FFF; line-height:40px; margin:0 20px;}
+.nav li:hover{background-color:#DE4A4A;}
+
+.nav .cc{ width:160px;height:auto; overflow:hidden; background-color:#DE4A4A; display:none; position:absolute;}
+.nav .cc li{float:left; width:80px;}
+.nav .cc li:hover{background-color:#333;}
+
+.nav .cc .dd ol{width:80px; margin-left:80px; margin-top:-25px; background-color:#414141; position:fixed; display:none; z-index:999;}
+.nav .cc li ol li:hover{background-color:#de4a4a;}

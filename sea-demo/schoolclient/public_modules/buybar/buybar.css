@@ -1,0 +1,30 @@
+.bar{background: #FFFFFF;display: -webkit-box;}
+	.bar .l{display: inline-block;width: 7.1rem;height: 2.5rem;}
+	.bar .r{-webkit-box-flex: 1;height: 2.5rem;}	
+	.bar .l .btn div{width: 3.5rem;text-align: center;font-size: .6rem;color: #666666;height: 2.5rem;}
+	.bar .l .btn-kf{position: relative;}
+	.bar .l .btn-kf:after{content: '';width: .05rem;position: absolute;top: 0;bottom: 0;right: 0;background: #e7e7e7;-webkit-transform: scaleX(0.5);transform: scaleX(0.5);}
+	.bar .l .btn .sayimo-icon{display: block;width: 1.2rem;height: 1.2rem;margin: .2rem auto 0 auto;}
+	.bar .l .btn .sayimo-icon-service{background: url(/schoolclient/images/buybar/tab_detail_service.png) no-repeat;background-size: contain;}
+	.bar .l .btn .sayimo-icon-collect{background: url(/schoolclient/images/buybar/tab_detail_uncollect.png) no-repeat;background-size: contain;}
+	.bar .l .btn-sc .sayimo-icon-collect.active{position: relative;}
+	.bar .l .btn-sc .sayimo-icon-collect.active:before{display: block;content: '';position: absolute;left: -.05rem;top: -.1rem;right: -.05rem;bottom: -.05rem;background: url(/schoolclient/images/buybar/tab_detail_collect.png) no-repeat;background-size: 100% 100%;}
+	.bar .l .btn-sc .sayimo-icon-collect.active:before{-webkit-animation: collect .6s;animation: collect .6s;}
+	@keyframes collect{
+		0%{transform: scale(0,0);}
+		25%{transform: scale(.6,.6);}
+		50%{transform: scale(1.2,1.2);}
+		75%{transform: scale(1.6,1.6);}
+		100%{transform: scale(1,1);}
+	}
+	@-webkit-keyframes collect{
+		0%{-webkit-transform: scale(0,0);}
+		25%{-webkit-transform: scale(.6,.6);}
+		50%{-webkit-transform: scale(1.2,1.2);}
+		75%{-webkit-transform: scale(1.6,1.6);}
+		100%{-webkit-transform: scale(1,1);}
+	}	
+	.bar .r .btn div{text-align: center;font-size: .7rem;line-height: 2.5rem;color: #FFFFFF;}
+	.bar .r .btn div.btn-gwc{background: #FEA831;}
+	.bar .r .btn div.btn-ljgm{background: #E60012;}
+	.bar .r .btn div.btn-ljgm.noBuy{background: #E2E2E2;}

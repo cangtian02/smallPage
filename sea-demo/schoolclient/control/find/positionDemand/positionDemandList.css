@@ -1,0 +1,35 @@
+.fabu-btn{position: absolute;bottom: 0;left: 0;right: 0;height: 2.5rem;background: rgba(0,0,0,.8);}
+	.fabu-btn a{position: absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: 1;color: #FFFFFF;font-size: .7rem;line-height: 2.5rem;text-align: center;}
+	.fabu-btn .close{width: 2rem;height: 2rem;position: absolute;top: 0;right: 0;z-index: 2;}
+	.fabu-btn .close i{display: block;width: 1.5rem;height: 1.5rem;margin: .25rem;background: url(/schoolclient/images/find/positionDemand/icon_cancel.png) center center no-repeat;background-size: 80% 80%;}
+	
+.bar-search~.content{top: 1.8rem !important;}
+.content{padding-bottom: 2.5rem;}
+
+.sort-bar{position: absolute;left: 0;right: 0;top: 2.2rem;height: 1.8rem;padding: .3rem 0;z-index: 2;}
+	.sort-bar:after{content: '';position: absolute;left: 0;bottom: 0;right: auto;top: auto;height: 1px;width: 100%;background-color: #e7e7e7;display: block;z-index: 15;-webkit-transform-origin: 50% 100%;transform-origin: 50% 100%;-webkit-transform: scaleY(.5);transform: scaleY(.5);}
+	.sort-bar li{height: 1.2rem;border-left: .05rem solid #F5F5F5;position: relative;}	
+	.sort-bar li .c{text-align: center;line-height: 1.2rem;font-size: .6rem;color: #626262;}
+	.sort-bar li .c.active, .sort-bar li dl dd.active{color: #E60012;}
+	.sort-bar li dl{margin: 0;padding: 0;position: absolute;top: 1.5rem;left: 0;right: 0;background: #FFFFFF;display: none;}
+	.sort-bar li dl dd{margin: 0;line-height: 1.5rem;font-size: .6rem;text-align: center;border-bottom: .05rem solid #F5F5F5;}
+	.sort-bar li dl dd:first-child{display: none;}
+	.sort-bar .boxflex input{position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: 0;}
+	.sort-bar li:first-child, .sort-bar li dl dd:last-child{border: none;}
+	
+.content-mask{position: absolute;left: 0;top: 0;right: 0;bottom: 0;z-index: 999;background: rgba(0,0,0,.7);display: none;}
+	
+.list-block{margin: 0;}
+	.list-block ul{background: none;}
+	.list-block ul:before,.list-block ul:after{display: none;}
+	.list-block ul li{background: #FFFFFF;}	
+	.list-block ul li .top-timer{font-size: .6rem;}
+	.list-block ul li .top-timer:last-child{margin-top: .2rem;}
+	.list-block.media-list ul li .item-font1{color: #3D3D3D;font-size: .8rem;font-weight: bolder;}
+	.list-block ul li .item-after-font1{color: #a9a9a9;line-height: 1.4rem;}
+	.list-block ul li .item-font2{color: #848383;}
+	.list-block ul li .item-after.item-after-font2{color: #fc869d;font-size: .7rem;}
+	.list-block ul li .item-font3{color: #b5b5b5;}
+	.list-block ul li .item-font3 i{display: inline-block;width: .7rem;height: .8rem;vertical-align: middle;margin-right: .25rem;}
+	.list-block ul li .item-font3 i.col_1{background: url(/schoolclient/images/find/positionDemand/detail_map.png) no-repeat;background-size: 100% 100%;}
+	.list-block ul li .item-font3 i.col_2{background: url(/schoolclient/images/find/positionDemand/detail_school.png) no-repeat;background-size: 100% 100%;margin-left: .25rem;}

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+*{word-wrap:break-word; outline:none; margin:0;}
+body{margin:0; padding:0; background:#FFF;}
+ul,li{margin:0; padding:0;list-style-type:none;}
+.clearfix{zoom:1;}
+.clearfix:after{content:"."; display:block; clear:both; height:0; font:0/0 sans-serif; visibility:hidden;}
+.Box{width: 200px; margin: 100px auto; perspective: 1000px;}
+.box{width: 200px; height: 200px; margin: 100px 0; transform-style: preserve-3d; position: relative;}
+.tran{transition: transform 3s cubic-bezier(0.4,0.4,0.4,1);}
+.box.b1{transform:rotateX(1305deg) rotateY(1260deg) rotateZ(1305deg);}
+.box.b2{transform:rotateX(1320deg) rotateY(1350deg) rotateZ(720deg);}
+.box.b3{transform:rotateX(-1305deg) rotateY(-1305deg) rotateZ(900deg);}
+.box.b4{transform:rotateX(1405deg) rotateY(1305deg) rotateZ(900deg);}
+.box.b5{transform:rotateX(1670deg) rotateY(1440deg) rotateZ(765deg);}
+.box.b6{transform:rotateX(1140deg) rotateY(1350deg) rotateZ(720deg);}
+.box li{position: absolute; width: 200px; height: 200px; background: #3C3C3C url(sz.png);}	
+.box .box_1{background-position: 0 0; transform: translateZ(99px);}	
+.box .box_2{background-position: -200px 0; transform: rotateY(-90deg) translateZ(99px);}	
+.box .box_3{background-position: -400px 0; transform: rotateX(90deg) translateZ(99px);}	
+.box .box_4{background-position: 0 -200px; transform: rotateX(270deg) translateZ(99px);}	
+.box .box_5{background-position: -200px -200px; transform: translateZ(-99px);}	
+.box .box_6{background-position: -400px -200px; transform: rotateY(90deg) translateZ(99px);}

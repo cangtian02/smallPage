@@ -1,0 +1,7 @@
+.list-block{margin: 0;}
+	.list-block li{border-bottom: .05rem solid #f5f5f5;}
+	.list-block .item-inner:after{display: none;}
+	.item-content{border-bottom: .05rem solid #e7e7e7s;}
+	.timer{margin-top: 1rem;color: #808080;font-size: .7rem;}
+	.timer .item-title,.timer .item-after{color: #808080;}
+	.list-block li .clamp_2{line-height: 1rem;font-size: .7rem;font-weight: 500;}

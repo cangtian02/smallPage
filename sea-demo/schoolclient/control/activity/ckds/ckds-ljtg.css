@@ -1,0 +1,13 @@
+.list-block{margin: .25rem 0 0 0;}
+	.list-block input[type=text], .list-block input[type=tel], .list-block select, .list-block textarea{font-size: .7rem;}
+
+.btn{border-radius: .25rem;text-align: center;line-height: 2rem;background: #e60012;color: #FFFFFF;font-size: .7rem;margin: 1.5rem .8rem;}
+	.btn.disabled{background: #C0C0C0;}
+	
+.photoIds .item-input{color: #666666;}
+	.photoIds .item-input span{color: #B8B7B7;}
+
+.image-list{padding: .75rem;}
+	.image-btn, .image-list img{float: left;width: 2.2rem;height: 2.2rem;border-radius: .25rem;margin-right: .2rem;}
+	.image-btn{border: .05rem solid #EEEEEE;background: url(/schoolclient/images/default/warning.png) no-repeat;background-size: contain;position: relative;overflow: hidden;}
+	.image-btn #file{position: absolute;left: 0;top: 0;right: 0;bottom: 0;opacity: 0;} 	

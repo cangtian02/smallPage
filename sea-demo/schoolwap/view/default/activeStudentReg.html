@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+    <div class="content">
+		<img src="/schoolwap/images/default/active_banner.jpg" class="aBanner" />		
+		<div class="reg_form">
+			<label for="studentName">姓&nbsp;&nbsp;名</label>
+			<input type="text" placeholder="请输入你的姓名" name="studentName" id="studentName"/>
+		</div>
+		<div class="reg_form">
+			<label for="studentNo">学&nbsp;&nbsp;号</label>
+			<input type="tel" placeholder="请输入你的学号" name="number" id="studentNo" />
+		</div>		
+		<div class="item-p">
+			<a href="javascript:;" class="button button-fill button-danger" id="button">立即注册 </a>
+			<div class="go_auth"><a href="javascript:;" id="notStudent">我不是在校生或我尚未注册，点击继续访问></a></div>
+		</div>
+		<p class="font-zw">1、通过认证的在校学生，免费获得一块尚一智能钢化膜；</p>
+		<p class="font-zw">2、钢化膜必须在“彩虹梦客空间”公益服务平台0元购买，免费送达；</p>
+		<p class="font-zw">3、学生注册前需提交姓名和学号到平台，若输入姓名/学号有误，请联系客服。</p>
+		<div class="tel">
+			<a href="">
+				<font class="item-font-one">联系我们</font>
+				<font class="item-font-two"></font>
+				<img class="item-img" src="/schoolwap/images/default/icon_phone2.png">
+			</a>
+		</div>    	
+    </div>
+    </div>
+    </div>
+    <script src="../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/default/activeStudentReg');</script>	
+</body>
+</html>

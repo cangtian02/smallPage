@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幻灯片基础版</title>
+<link rel="stylesheet" type="text/css" href="css/幻灯片加强效果.css" />
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+</head>
+<body>
+<div class="slidebox">
+    <ul class="slideimg">
+        <li><a href="#" title="旅行，人生之路"><img src="images/1.jpg" alt="旅行，人生之路" /></a></li>
+        <li><a href="#" title="海洋，无限想象"><img src="images/2.jpg" alt="海洋，无限想象" /></a></li>
+        <li><a href="#" title="背影，你发如雪"><img src="images/3.jpg" alt="背影，你发如雪" /></a></li>
+    </ul>
+     <ul class="slideT">
+        <li><cite>1</cite><a href="#" title="旅行，人生之路">旅行，人生之路</a></li>
+        <li><cite>2</cite><a href="#" title="海洋，无限想象">海洋，无限想象</a></li>
+        <li><cite>3</cite><a href="#" title="背影，你发如雪">背影，你发如雪</a></li>
+    </ul>
+    <div class="prev" title="上一条"></div>
+    <div class="next" title="下一条"></div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	var slidebox = $(".slidebox"),
+		imgbox = slidebox.find(".slideimg");
+		slideT = slidebox.find(".slideT");
+	var i=0;
+	var time;
+	var sWidth = $(slidebox).width();
+	n = imgbox.find('li').length;
+	$(imgbox).css({"width":sWidth * n,"left":0,"top":0});
+	$('.prev').click(function(){
+		if (i == 0){i = (n-1);}
+		else i = (i - 1) % n;
+		slide(i);
+	})
+	$('.next').click(function(){
+		if(i > (n-1)){i = 0;}
+		i = (i + 1) % (n);
+		slide(i);
+	})
+	var btn = "<ul class='shu'>";
+	for( var i=0; i < n; i++) {
+		var ii = i+1;
+		btn += "<a href='javascript:void(0)'>"+ii+"</a>";
+	}
+	btn += "</ul>";
+	$(slidebox).append(btn);
+	$(slidebox).find(".shu a").eq(0).css({"background-color":"#de4a4a"})	
+	$(slidebox).find(".shu a").each(function() {
+		$(this).hover(function(){
+			var i=$(this).index();
+				slide(i);
+		})
+	});
+	slidebox.hover(function(){
+		clearTimeout(time);
+	},function(){
+		time = setInterval (function(){						
+			i++;
+			if( i > (n-1) ){i = 0;}
+			slide(i);
+		},3000);
+	}).trigger("mouseleave");
+	
+	function slide(i){
+		var nowLeft = -i*sWidth;
+		$(imgbox).stop(true,false).animate({"left":nowLeft},500);	
+		$(slideT).find('li').eq(i).css({"display":"block"}).siblings('li').css({"display":"none"})
+		$(slidebox).find(".shu a").eq(i).css({"background-color":"#de4a4a"}).siblings('a').css({"background-color":"#333"})
+	}
+	
+})
+</script>
+</body>
+</html>
+
+
+

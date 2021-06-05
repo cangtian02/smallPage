@@ -1,0 +1,27 @@
+.play-soure{height: 10rem;background: url(/schoolclient/images/default/lazy.png) no-repeat;background-size: 100% 100%;position: relative;}
+	.play-soure .play-control{width: 4rem;height: 4rem;position: absolute;top: 3rem;left: 50%;margin-left: -2rem;background: rgba(0,0,0,.3);border-radius: 50%;}
+	.play-soure .play-control .btn{width: 2rem;height: 2rem;margin: 1rem;}
+	.play-soure .play-control .btn.play{background: url(/schoolclient/images/find/education/tab_find_video_play.png) no-repeat;background-size: 100% 100%;}
+	.play-soure .play-control .btn.pasue{background: url(/schoolclient/images/find/education/tab_find_video_pasue.png) no-repeat;background-size: 100% 100%;}
+	.play-soure .play-control .btn .preloader{width: 2rem;height: 2rem;}
+	.play-soure video{display: block;width: 100%;}
+	
+.play-line{display: -webkit-box;height: 2rem;background: #949497;}
+	.play-line .time{display: inline-block;width: 4rem;text-align: center;color: #FFFFFF;font-size: .7rem;line-height: 2rem;}
+	.play-line .line{-webkit-box-flex: 1;position: relative;overflow: hidden;}
+	.play-line .line em{height: .1rem;background: #FFFFFF;border-radius: .1rem;position: absolute;left: .25rem;right: .25rem;top: .95rem;}
+	.play-line .line i{height: .1rem;background: #E60012;position: absolute;left: .25rem;right: .25rem;top: .95rem;-webkit-transform: translateX(-100%);transform: translateX(-100%);}	
+	.play-line .line i cite{width: .5rem;height: .5rem;background: #E60012;border-radius: 50%;position: absolute;right: -.25rem;top: -.2rem;}
+	
+.eduInfo{display: -webkit-box;margin-bottom: .75rem;}
+	.eduInfo .b{width: 5rem;line-height: 3rem;background: #E60012;text-align: center;font-size: .7rem;color: #FFFFFF;}
+	.eduInfo .i{-webkit-box-flex: 1;background: #FFFFFF;padding: 0 .25rem;font-size: .7rem;}
+	.eduInfo .i .d,.eduInfo .i .t{line-height: 1rem;}
+	.eduInfo .i .t{height: 2rem;-webkit-box-pack: center;-webkit-box-flex: 1;}
+	.eduInfo .i .d span.time{color: #848484;}    
+
+.html-content img.photo{display: inline-block;width: 2.4rem;height: 2.4rem;border-radius: 50%;vertical-align: middle;margin-right: .5rem;}
+
+.buttons-tab .button.active{color: #E60012;border-color: #E60012;}
+
+#audio{display: none;}

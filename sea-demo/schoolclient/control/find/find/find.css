@@ -1,0 +1,6 @@
+.row.no-gutter{margin-bottom: .75rem;border-top: .05rem solid #EEEEEE;}
+	.col-25{height: 3.9rem;padding: .4rem 0;border-bottom: .05rem solid #EEEEEE;border-right: .05rem solid #EEEEEE;text-align: center;}
+	.col-25 img{display: block;width: 2.2rem;height: 2.2rem;margin: 0 auto;}
+	.col-25 p{margin: 0;font-size: .6rem;color: #535353;}
+.toast_title{border-bottom: .05rem solid #CFCFCF;line-height: 2rem;font-size: 1rem;color: #F23355;}
+	.toast_content{line-height: 4rem;}

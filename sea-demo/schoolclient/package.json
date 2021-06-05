@@ -1,0 +1,42 @@
+{
+    "family": "schoolclient",
+    "version": "1.0.001",
+    "name": "schoolclient",
+    "spm": {
+        "alias": {
+        	"base": "dist/public_modules/base/base",
+        	"buybar": "dist/public_modules/buybar/buybar",
+        	"commentList": "dist/public_modules/commentList/commentList",
+        	"groupBuying": "dist/public_modules/groupBuying/groupBuying",         	
+        	"payManner": "dist/public_modules/payManner/payManner",
+        	"Pcorp": "dist/public_modules/Pcorp/Pcorp",
+        	"popupBox": "dist/public_modules/popupBox/popupBox",
+            "expectPosition": "dist/public_modules/popupSelect/expectPosition",
+            "profession": "dist/public_modules/popupSelect/profession",        	
+        	"search": "dist/public_modules/search/search",
+        	"seckillTimes": "dist/public_modules/seckillTimes/seckillTimes",
+        	"slide": "dist/public_modules/slide/slide",
+        	"slideFixed": "dist/public_modules/slideFixed/slideFixed",
+        	"touchTab": "dist/public_modules/touchTab/touchTab",
+        	"ajax": "dist/public_modules/ajax",
+        	"artTemplate": "dist/public_modules/artTemplate",
+        	"cityPicker": "dist/public_modules/cityPicker",
+        	"dateDiff": "dist/public_modules/dateDiff",
+        	"errorCode": "dist/public_modules/errorCode",
+        	"dateFormat": "dist/public_modules/dateFormat",
+        	"hammer": "dist/public_modules/hammer",
+        	"LazyLoad": "dist/public_modules/LazyLoad",
+        	"numbox": "dist/public_modules/numbox",
+        	"schoolPicker": "dist/public_modules/schoolPicker",
+        	"uploadImg": "dist/public_modules/uploadImg"
+        }
+    },
+    "devDependencies": {
+    	"grunt": "~0.4.1",
+        "grunt-cmd-concat": "~0.2.0",
+        "grunt-cmd-transport": "~0.2.0",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-uglify": "~0.2.0",
+        "grunt-replace": "~1.0.1"
+    }
+}

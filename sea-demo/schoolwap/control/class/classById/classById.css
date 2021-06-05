@@ -1,0 +1,39 @@
+.sort-bar, .pull-to-refresh-layer, .infinite-scroll-preloader, .mask{display: none;}
+
+.sort-bar{position: absolute;left: 0;right: 0;top: 2.2rem;height: 1.8rem;padding: .3rem 0;background: #FFFFFF;-webkit-backface-visibility:hidden;backface-visibility:hidden;z-index: 2;}
+	.sort-bar li{float: left;width: 25%;height: 1.2rem;}
+	.sort-bar li .c{width: 100%;height: 1.2rem;text-align: center;line-height: 1.2rem;border-left: 1px solid #F5F5F5;font-size: .6rem;color: #626262;}
+	.sort-bar li:first-child .c{border: none;}
+	.sort-bar li .c em{width: 0;height: 0;border-left: .2rem solid transparent;border-right: .2rem solid transparent;border-bottom: .2rem solid #AEADAD;display: inline-block;vertical-align: middle;margin-left: .2rem;transition: all .5s ease;}
+	.sort-bar li.active .c{color: #E60012;}
+	.sort-bar li.active .c em{border-bottom: .2rem solid #E60012;}
+	.sort-bar li.active.s .c em{transform: rotate(180deg);}
+	.sort-bar li.active.j .c em,.sort-bar li.active:first-child .c em,.sort-bar li.active:last-child .c em{transform: rotate(0deg);}
+
+.mask{position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,.7);z-index: 998;}
+
+.t_box{position: absolute;left: 5rem;right: 0;top: 4rem;bottom: 0;background: rgba(255,255,255,1);z-index: 999;}
+	.t_box .t{line-height: 2rem;font-size: .7rem;}
+	.t_box .cont{position: absolute;top: 2rem;bottom: 0;left: 0;right: 0;border-top: .05rem solid #F5F5F5;overflow-y: scroll;}
+	.list-block.brandList{margin: 0;}
+	.list-block.brandList ul:before{opacity: 0;}
+	.list-block.brandList li.active .item-title{color: #E60012;}
+	.list-block.brandList li img{width: 1.5rem;height: 1.5rem;margin-right: .5rem;}
+	.list-block.brandList p{font-size: .7rem;text-align: center;}
+	.list-block.brandList .item-inner{justify-content: flex-start;font-size: .7rem;}
+	
+.mask.show{-webkit-animation: maskin .3s linear;animation: maskin .3s linear;opacity: 1;display: block;}
+@-webkit-keyframes maskin{0%{opacity: 0;display: none;}100%{opacity: 1;display: block;}}
+@keyframes maskin{0%{opacity: 0;display: none;}100%{opacity: 1;display: block;}}
+
+.mask.hide{-webkit-animation: maskout .3s linear;animation: maskout .3s linear;opacity: 0;display: none;}
+@-webkit-keyframes maskout{0%{opacity: 1;display: block;}100%{opacity: 0;display: none;}}
+@keyframes maskout{0%{opacity: 1;display: block;}100%{opacity: 0;display: none;}}
+		
+.t_box.show{-webkit-animation: boxin .3s linear;animation: boxin .3s linear;-webkit-transform: translateX(0%);transform: translateX(0%);opacity: 1;}
+@-webkit-keyframes boxin{0%{-webkit-transform: translateX(100%);opacity: .5;}100%{-webkit-transform: translateX(0%);opacity: 1;}}
+@keyframes boxin{0%{transform: translateX(100%);opacity: .5;}100%{transform: translateX(0%);opacity: 1;}}
+
+.t_box.hide{-webkit-animation: boxout .3s linear;animation: boxout .3s linear;-webkit-transform: translateX(100%);transform: translateX(100%);opacity: .5;}
+@-webkit-keyframes boxout{0%{-webkit-transform: translateX(0%);opacity: 1;}100%{-webkit-transform: translateX(100%);opacity: .5;}}	
+@keyframes boxout{0%{transform: translateX(0%);opacity: 1;}100%{transform: translateX(100%);opacity: .5;}}

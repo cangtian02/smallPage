@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./slide.js"></script>
+</head>
+<body>
+  
+  <div class="slide_box" id="slide_box">
+    <ul class="slide_item">
+      <li><img src="./1.jpg" /></li>
+      <li><img src="./2.jpg" /></li>
+      <li><img src="./3.jpg" /></li>
+    </ul>
+    <div class="slide_pre"><</div>
+    <div class="slide_next">></div>
+    <div class="slide_dot">
+      <li></li>
+      <li></li>
+      <li></li>
+    </div>
+  </div>
+
+  <script>
+    new Slide({
+      id: 'slide_box'
+    })
+  </script>
+
+</body>
+</html>

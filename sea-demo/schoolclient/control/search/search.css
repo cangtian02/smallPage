@@ -1,0 +1,7 @@
+.classGoodList{}
+	.classGoodList li{float: left;width: 50%;padding: 0 .25rem .5rem .25rem;}
+	.classGoodList li img{display: block;width: 100%;}
+	.classGoodList li .tt{color: #626262;padding: .25rem;font-size: .7rem;}
+	.classGoodList li .money{padding: 0 .25rem .25rem .25rem;}
+	.classGoodList li .money font{color: #eb323f;margin-right: .25rem;}
+	.classGoodList li .money del{color: #979797;font-size: .6rem;}

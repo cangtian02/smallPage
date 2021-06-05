@@ -1,0 +1,11 @@
+.L_nav{position: absolute;left: 0;top: 2.5rem;bottom: 0;width: 4.5rem;overflow-y: scroll;background: #FFFFFF;}
+	.L_nav li{height: 2.5rem;line-height: 2.5rem;background: #FFFFFF;border-bottom: .05rem solid #F7F6F6;text-align: center;font-size: .7rem;color: #2e2e2e;}
+	.L_nav li.current{background: #F5F5F5;color: #eb323f;}
+	.L_nav::-webkit-scrollbar{display: none;}
+.content{left: 4.5rem;padding: .25rem;}
+	.classList{text-align: center;background: #FFFFFF;display: none;}
+	.classList.active{display: block;}
+	.classList li{width: 33.33333%;float: left;padding: .5rem 0;}
+	.classList li a{display: block;}
+	.classList li img{width: 4rem;height: 3.55556rem;display: inline-block;}
+	.classList li p{color: #6f6f6f;margin: 0;font-size: .7rem;}

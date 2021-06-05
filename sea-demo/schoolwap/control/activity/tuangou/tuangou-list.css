@@ -1,0 +1,47 @@
+.buttons-tab:after{display: none;}
+.buttons-tab .button{border: none;}
+.buttons-tab .button{color: #fff;height: 3.5rem;line-height: 3.5rem;font-size: .7rem;}	
+	.tab-link:first-child{background: #33D3F5;}
+	.tab-link:last-child{background: #EF6D6D;}
+	.tab-link img{width: 2rem;height: 2rem;vertical-align: middle;margin-right: .5rem;}
+	.buttons-tab .button.active{color: #fff;border: 0;}
+	.buttons-tab .button.active:after{content: "";width: 0;height: 0;border-left: .5rem solid transparent;border-right: .5rem solid transparent;border-bottom: .75rem solid #FFFFFF;position: absolute;left: 50%;bottom: -.05rem;margin-left: -.25rem;}
+	
+.content{top: 3.75rem;}
+
+.goodsList{}
+	.goodsList li{padding: .5rem;margin-bottom: .25rem;background: #FFFFFF;}
+	.goodsList li a{display: block;}
+	.goodsList li .top{height: 4.5rem;display: -webkit-box;}
+	.goodsList li .top .l{display: inline-block;width: 4.5rem;height: 4.5rem;margin-right: .25rem;}
+	.goodsList li .top .l img{width: 4.4rem;height: 4.4rem;border: .05rem solid #F5F5F5;}
+	.goodsList li .top .r{-webkit-box-flex: 1;}
+	.goodsList li .top .r .name{height: 2.2rem;line-height: 1.1rem;font-weight: normal;font-size: .7rem;color: #131313;margin-right: 1.5rem;}
+	.goodsList li .top .r .price{line-height: 1.3rem;font-size: .8rem;color: #E60012;position: relative;}
+	.goodsList li .top .r .price i{display: block;width: 1.5rem;height: 1.5rem;background: url(/schoolwap/images/activity/tuangou/icon_tuan.png) no-repeat;background-size: contain;position: absolute;right: 0;bottom: 0;}
+	.goodsList li .top .r .num{color: #999999;font-size: .6rem;}	
+	.goodsList li .time{margin-top: .5rem;padding-top: .5rem;color: #737373;border-top: .05rem solid #F5F5F5;}
+	.goodsList li .time span{color: #E60012;}
+	
+.reservedList{}
+	.reservedList li{margin-bottom: .25rem;}
+	.reservedList li a{display: block;position: relative;}
+	.reservedList li a img{display: block;width: 100%;}
+	.reservedList li a .bot{position: absolute;left: 0;right: 0;bottom: 0;background: rgba(255,255,255,.6);padding: .1rem .25rem;}
+	.reservedList li a .bot .l{margin-right: 4rem;}
+	.reservedList li a .bot .l .name{font-size: .7rem;margin: 0;}
+	.reservedList li a .bot .l p{font-size: .6rem;margin: 0;color: #191919;}
+	.reservedList li a .bot .r{font-size: .8rem;position: absolute;right: .25rem;bottom: .05rem;}
+	.reservedList li a .bot .r i{font-size: .9rem;}	
+	.reservedList li a em{width: 2.6rem;height: 2.6rem;position: absolute;right: .6rem;bottom: 2.6rem;background: url(/schoolwap/images/activity/tuangou/icon_tuangou.png) no-repeat;background-size: contain;}
+	.reservedList li .time{position: absolute;top: 0;left: 0;right: 0;background: rgba(173,173,173,.75);padding: .25rem;}
+
+.goodsTime{}
+	.goodsTime li .time{font-size: .7rem;line-height: 1rem;}
+	.goodsTime li .time i{display: inline-block;width: .8rem;height: .8rem;vertical-align: middle;margin-right: .25rem;background: url(/schoolwap/images/activity/tuangou/icon_clock.png) no-repeat;background-size: contain;}
+	.goodsTime li .time span{display: inline-block;width: 1.7rem;border: .05rem solid #E60012;border-radius: .1rem;text-align: center;}
+	
+@media only screen and (min-width: 320px) and (max-width: 374px) {	
+	.goodsTime li .time span{width: 1.2rem;}
+	.goodsTime li .time{line-height: .8rem;}
+}				

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+	<div class="page">
+	<div class="content infinite-scroll infinite-scroll-bottom">			
+		<div class="buttons-tab fixed-tab">
+			<div class="touchTab" id="touchTab">
+				<div class="touchTab-list" id="touchTab-list">
+					<ul>				
+						<a href="#tab1" id="btab1" class="tab-link button active">待审核</a>
+						<a href="#tab2" id="btab2" class="tab-link button">待确认</a>
+						<a href="#tab3" id="btab3" class="tab-link button">待退换货</a>
+						<a href="#tab4" id="btab4" class="tab-link button">待收货</a>
+						<a href="#tab5" id="btab5" class="tab-link button">已换货</a>
+						<a href="#tab6" id="btab6" class="tab-link button">已退货</a>
+						<a href="#tab7" id="btab7" class="tab-link button">已驳回</a>
+					</ul>
+				</div>
+			</div>				
+		</div>
+		<div class="tabs">
+			<div id="tab1" class="tab active"><ul class="ment-list"></ul></div>		
+			<div id="tab2" class="tab"><ul class="ment-list"></ul></div>		
+			<div id="tab3" class="tab"><ul class="ment-list"></ul></div>
+			<div id="tab4" class="tab"><ul class="ment-list"></ul></div>		
+			<div id="tab5" class="tab"><ul class="ment-list"></ul></div>		
+			<div id="tab6" class="tab"><ul class="ment-list"></ul></div>
+			<div id="tab7" class="tab"><ul class="ment-list"></ul></div>
+		</div>
+		<!-- 加载提示符 -->
+		<div class="infinite-scroll-preloader"><div class="preloader"></div></div>				
+	</div>
+	</div>
+	</div>
+	<div class="sayimo-mask"></div><!--遮罩层-->
+	<script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/orders/returngoodsOrders/returngoodsOrdersList');</script>	
+</body>
+</html>

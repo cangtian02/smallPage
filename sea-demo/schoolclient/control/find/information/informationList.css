@@ -1,0 +1,8 @@
+.list-block{margin: 0;}
+	.list-block ul{background: none;}
+	.list-block ul:before,.list-block ul:after{display: none;}
+	.list-block ul li{background: #FFFFFF;}
+	.list-block ul li img{width: 4rem;}
+	.list-block ul li .item-title-row:first-child{height: 2.4rem;}
+	.list-block ul li .clamp_2{line-height: 1.2rem;font-size: .7rem;}
+	.list-block ul li .item-title-row:last-child{margin-top: .5rem;color: #808080;font-size: .6rem;}

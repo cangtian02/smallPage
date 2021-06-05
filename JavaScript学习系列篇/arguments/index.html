@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript学习系列篇之arguments</title>
+</head>
+<body>
+	
+<script>
+	// "use strict";
+
+	// function myConcat(separator) {
+	// 	var args1 = Array.prototype.slice.call(arguments);
+	// 	var args2 = Array.prototype.slice.call(arguments, 1);
+	// 	return args1.join(separator) + ' ---- ' + args2.join(separator);
+	// }
+	// var a = myConcat(", ", "red", "orange", "blue");
+	// document.write(a);
+
+
+	// var factorial = function(x) {
+	// 	if (x < 2) {
+	// 		return 1;
+	// 	} else {
+	// 		return x * arguments.callee(x - 1);
+	// 	}
+	// }
+	// console.log(factorial(5)); // 120 (5 * 4 * 3 * 2 * 1)
+	
+
+	// function check(args) {
+	// 	var actual = args.length;
+	// 	var expected = args.callee.length;
+	// 	if (actual != expected) {
+	// 		throw new Error('参数个数有无：期望值：' + expected + '；实际值：' + actual);
+	// 	}
+	// }
+
+	// function fn(x, y, z) {
+	// 	check(arguments);
+	// 	console.log(x + y + z);
+	// }
+	// fn();
+	// fn(1,2,3);
+	
+	// function func() { 
+	// 	console.log(...arguments);
+	// } 
+	// func(1, 2, 3); // 1 2 3
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.ck-news{background: #f7576e;}
+.ck-needs{background: #57c0f7;}
+.buttons-tab .button.active{color: #fff;border: 0;}
+.buttons-tab .button.active:after {content: " ";width: 0;height: 0;border-left: 0.5rem solid transparent;border-right: .5rem solid transparent;border-bottom: .75rem solid #fff;position: absolute;left: 50%;bottom: 0;margin-left: -.25rem;}
+.buttons-tab .button{color: #fff;height: 3rem;line-height: 3rem;font-size: .7rem;}
+.buttons-tab:after{display: none;}
+.tab-link img{width: 1.1rem;height: 1.25rem;margin-right: .25rem;vertical-align: middle;}
+.tabs{margin-top: 3rem;}
+
+.goadd{margin-top: 5rem;text-align: center;}
+	.goadd p{line-height: 2rem;font-size: .8rem;color: #666666;}
+	.goadd a{padding: .5rem 2.5rem;border-radius: .25rem;background: #E60012;color: #FFFFFF;font-size: .8rem;}
+
+.b-title{line-height: 2rem;font-size: .8rem;color: #333333;padding-left: .5rem;font-weight: bold;background: #FFFFFF;border-bottom: .05rem solid #E3E4E6;}
+	
+.b-cont{margin-bottom: .25rem;padding: .5rem .5rem .5rem .7rem;background: #FFFFFF;}
+	.b-cont:first-child{margin-top: .25rem;}
+	.b-cont .table{display: -webkit-box;line-height: 1.4rem;}
+	.b-cont .table .t{width: 5.6rem;display: inline-block;font-size: .7rem;color: #424242;font-weight: bold;}
+	.b-cont .table .c{-webkit-box-flex: 1;color: #666666;font-size: .7rem;}
+
+.b-top{padding: .5rem;background: #FFFFFF;text-align: center;margin-bottom: .25rem;}
+	.b-top img{display: inline-block;width: 3rem;height: 3rem;border-radius: 50%;border: .05rem solid #CCCCCC;}
+	.b-top h3{margin: 0;color: #f75e53;}
+	.b-top p{margin: 0;color: #848484;font-size: .7rem;}
+
+.list-block ul{background: none;}
+.list-block ul:before, .list-block ul:after{display: none;}
+.deliver-list{margin: .25rem 0;}
+	.deliver-list li{margin-bottom: .25rem;background: #FFFFFF;}
+	.deliver-list li .payScope{font-size: .7rem;position: absolute;top: .35rem;right: .5rem;}
+	.deliver-list li .item-title-row:nth-child(2){font-size: .7rem;color: #686868;}
+	.deliver-list li .item-title-row:nth-child(3){font-size: .6rem;color: #A9A9A9;}		

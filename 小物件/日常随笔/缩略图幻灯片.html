@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>缩略图幻灯片</title>
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/jquery.SuperSlide.js"></script>
+		<style type="text/css">
+@charset "utf-8";
+/* CSS Document */
+*{word-wrap:break-word; outline:none; margin:0;}
+body{margin:0; padding:0; color:#3c404b; background:#FFF; font-size:12px; line-height:24px;}
+form,ul,li,ol,p,h1,h2,h3,h4,h5,h6,h9,dl,dt,dd,pre{margin:0; padding:0;}
+input,select,textarea{font-size:12px;line-height:28px;}
+body,input,select,textarea,pre{font-family:"Microsoft YaHei","微软雅黑","宋体","Arial","Arial Narrow";}
+img{border:0;}
+ul,li{list-style-type:none;}
+a{text-decoration:none; color:#3C404B;}
+a:hover{text-decoration:none; color:#FF5500;}
+.fl{float:left; display:inline;}
+.fr{float:right;}
+
+.M_player{width:900px; height:710px; margin: 20px auto; position: relative;}
+	.M_player .bd{width:100%; height:600px; position: relative; overflow:hidden; background: #F8F8F8;}	
+	.M_player .bd .btn{width:60px; height:60px; position: absolute; top:50%; margin-top:-30px; z-index:2; background: #000000;}
+	.M_player .bd .btn:hover{background: #FF5500;}
+	.M_player .bd .prev{left: 0;}
+	.M_player .bd .next{right: 0;}	
+	.M_player .bd li{float: left; width:100%; height:600px; text-align: center; line-height: 680px;}
+	.M_player .bd li img{display: inline;}		
+	.M_player .hd{width: 830px; height: 80px; padding: 0 35px; margin: 10px auto; position:relative; overflow:hidden;}	
+	.M_player .hd li{float: left; display: inline; width: 110px; height: 80px; margin-right:10px; position:relative;}
+	.M_player .hd li img{width: 110px; height: 80px;}
+	.M_player .hd li em{width: 106px; height: 76px; border: 2px solid #FF5500; position: absolute; left: 0; top: 0; display: none;}		
+	.M_player .hd li.on em, .M_player .hd li:hover em{display: block; cursor: pointer;}	
+	.M_player .hd .b_btn{width:30px; height:30px; position: absolute; top: 25px; background: #000000;}
+	.M_player .hd .b_btn:hover{background: #FF5500;}
+	.M_player .hd .b_prev{left: 0;}
+	.M_player .hd .b_next{right: 0;}	
+		
+		</style>
+	</head>
+	<body>
+
+		<div class="M_player">
+			<div class="bd">
+				<a class="prev btn fl" href="javascript:void(0)" title="上一张"></a>
+				<a class="next btn fr" href="javascript:void(0)" title="下一张"></a>
+				<ul>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/1.jpg" /></td></tr></table>
+					</li>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/2.jpg" /></td></tr></table>
+					</li>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/3.jpg" /></td></tr></table>
+					</li>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/4.jpg" /></td></tr></table>
+					</li>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/1.jpg" /></td></tr></table>
+					</li>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/2.jpg" /></td></tr></table>
+					</li>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/3.jpg" /></td></tr></table>
+					</li>
+					<li>
+						<table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center" valign="middle" >
+						<tr><td align="center" valign="middle"><img src="images/4.jpg" /></td></tr></table>
+					</li>					
+				</ul>
+			</div>
+			<div class="hd">
+				<a class="b_prev b_btn" href="javascript:void(0)"></a>
+				<a class="b_next b_btn" href="javascript:void(0)"></a>
+				<ul>					
+					<li><img src="images/1.jpg" /><em></em></li>
+					<li><img src="images/2.jpg" /><em></em></li>
+					<li><img src="images/3.jpg" /><em></em></li>
+					<li><img src="images/4.jpg" /><em></em></li>
+					<li><img src="images/1.jpg" /><em></em></li>
+					<li><img src="images/2.jpg" /><em></em></li>
+					<li><img src="images/3.jpg" /><em></em></li>
+					<li><img src="images/4.jpg" /><em></em></li>					
+				</ul>
+			</div>            
+		</div>		
+<script type="text/javascript">
+jQuery(".M_player").slide({mainCell:".bd ul",autoPlay:true,effect:"left",trigger:"click",interTime:3000,
+startFun:function(i,c){
+	var hd = $(".M_player .hd ul"),
+		hdLi = hd.find("li"),
+		hdLiWidth = hdLi.width() + 10;	
+	if(i <= 2){
+		hd.animate({"left" : 0});
+	}else if(i >= (c-3)){
+		hd.animate({"left" : - hdLiWidth * (c-5)});
+	}else{
+		hd.animate({"left" : - hdLiWidth*(i-2)});
+	}
+}
+});
+jQuery(".M_player .hd").slide({mainCell:"ul",prevCell:".b_prev",nextCell:".b_next",autoPage:true,effect:"left",autoPlay:false,vis:7});
+</script>
+	</body>
+</html>

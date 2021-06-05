@@ -1,0 +1,7 @@
+.payManner p{margin: 0;color: #AAAAAA;font-size: .7rem;padding-left: .5rem;line-height: 2rem;}
+	.payManner .list-block{margin: 0;}
+	.payManner .list-block.media-list .item-media{padding: 0;}
+	.payManner .list-block.media-list .item-media img{width: 1.5rem;}
+	.payManner .list-block.media-list .text{font-size: .6rem;color: #9e9e9e;}
+	.payManner .list-block.media-list .cir{width: .9rem;height: .9rem;border: .05rem solid #9e9e9e;border-radius: 50%;position: absolute;right: 2.05rem;top: 50%;margin-top: -.45rem;z-index: 1;}
+	.payManner .list-block.media-list .current{width: 1rem;height: 1rem;position: absolute;right: 2rem;top: 50%;margin-top: -.5rem;display: none;z-index: 2;}

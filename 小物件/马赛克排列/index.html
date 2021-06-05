@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ct9001</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+.box{width:600px; height:600px;}
+.box li{float:left; width:100px; height:100px; background:#000; list-style-type:none; margin:0; padding:0;}
+.box li.two{background:#666;}
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    for(var a=1; a<=6; a++){
+		for(var b=1; b<=6; b++){
+			$(".box").append("<li class=" + a + "></li>");	
+		}
+	}
+	$(".box li").each(function(i) {
+		var c = $(this).attr("class");
+		if(c%2==1){
+			$(this).addClass("ji");
+		}else{
+			$(this).addClass("ou");
+		}
+	});
+	$(".box li.ou").each(function(i) {
+        if(i%2==0){
+			$(this).addClass("two");
+		}
+    });
+	$(".box li.ji").each(function(i) {
+        if(i%2==1){
+			$(this).addClass("two");
+		}
+    });
+});
+</script>
+
+<ul class="box"></ul>
+
+</body>
+</html>

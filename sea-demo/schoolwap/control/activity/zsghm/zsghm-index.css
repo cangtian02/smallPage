@@ -1,0 +1,12 @@
+.active_banner img{width: 100%;display: block;max-height: 12rem;}
+	.active_detail{padding: 0 .5rem;}
+	.guize_tt{display: block;margin: .75rem auto;width: 45%;}
+.guize_cont{background: #2BA7D8;font-size: .7rem;margin: 0 .5rem 1.5rem .5rem;position: relative;}
+	.font-color{color: #FFFFFF;padding: .8rem .5rem .5rem .5rem;}
+	.guize_cont_row{background: #2BA7D8;height: .8rem;border-radius: 2rem;position: absolute;left: -.5rem;right: -.5rem;top: 0;}
+	.item_img1{position: absolute;width: 100%;top: .8rem;}
+	.item_img2, .item_img3{position: absolute;width: 4rem;height: .9rem;bottom: -.9rem;}
+	.item_img2{left: 0;}
+	.item_img3{right: 0;}
+.button.button-fill{background: #E60012;color: #FFF;line-height: 1.8rem;height: 1.8rem;margin: .5rem 1rem 1rem 1rem;}
+.go_auth{display: block;text-align: right;margin: .25rem .5rem .25rem 0;color: #ff0000;font-size: .8rem;}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+	<div class="page">		
+		<div class="bar bar-tab">
+			<div class="btn fr" id="confirmPay">提交订单</div>
+			<div class="main tr"></div>
+		</div>			
+	<div class="content">
+		
+		<ul class="list-block receiveInfo"> 
+			<li>
+				<a href="javascript:;" class="item-link item-content">
+					<div class="item-inner"><div class="item-title"></div></div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="item-content">
+					<div class="item-inner"><div class="item-title"></div></div>
+				</a>
+			</li>				
+		</ul>
+		
+		<div class="activityBox" id="activityBox"></div>
+		
+		<div class="list-block ps-info">	
+			<ul>
+				<li class="item-content">
+					<a href="javascript:;" class="item-content">
+						<div class="item-inner"><div class="item-title">
+							<span class="fl t">配送方式：</span>																
+						</div></div>
+					</a>
+				</li>
+				<li class="item-content" id="template">
+					<a href="javascript:;" class="item-link item-content">
+						<div class="item-inner"><div class="item-title"> <span class="fr">您还未选择配送时间</span><span class="fl t" id="sdfs">送达时间：</span></div></div>
+					</a>
+				</li>							
+			</ul>
+		</div>
+					
+		<div class="ment-list"></div>			
+		<div class="leaveWords"><span>订单备注：</span><input type="text" id="leaveWords" placeholder="留言给商家..." /></div>	
+	</div>			
+	</div>
+	</div>
+	<div class="sayimo-mask"></div><!--遮罩层-->
+	<div class="t_box">
+		<div class="t tc">定时送达</div>
+		<div class="cont">
+			<div class="l c">
+				<ul class="n" id="te_list"></ul>
+			</div>
+			<div class="r c">
+				<ul class="s" id="ti_list"></ul>
+			</div>
+		</div>
+	</div>
+	<script src="../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/pay/reservedPay/reservedPay');</script>	
+</body>
+</html>

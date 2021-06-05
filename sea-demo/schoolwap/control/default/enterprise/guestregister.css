@@ -1,0 +1,5 @@
+.guestregister_banner img{width: 100%;display: block;}
+.list-block{margin: 0 0 .25rem 0;}
+.button.button-fill{background: #ff0000;color: #FFF;line-height: 2rem;height: 2rem;margin: 1.5rem .8rem;}
+.list-block .item-input, .list-block .item-input input, .list-block .item-input select{text-align: right;}
+.list-block .item-title.label, .list-block .item-input input{font-size: .7rem;}

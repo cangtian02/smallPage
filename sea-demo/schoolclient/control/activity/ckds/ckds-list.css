@@ -1,0 +1,13 @@
+.ckdsList{}
+	.ckdsList li{padding: .5rem;background: #FFFFFF;border-bottom: .05rem solid #F5F5F5;}
+	.ckdsList li a{display: -webkit-box;height: 3.75rem;}
+	.ckdsList li a img{display: inline-block;width: 5rem;height: 3.75rem;margin-right: .5rem;}
+	.ckdsList li a .r{-webkit-box-flex: 1;}
+	.ckdsList li a .r p{margin: 0;}
+	.ckdsList li a .r p.z_1{color: #dfdfdf;}
+	.ckdsList li a .r p.z_2{color: #e61002;}
+	.ckdsList li a .r p.z_3{color: #6e6e6e;}
+	.ckdsList li a .r p.z{font-size: .7rem;line-height: .9rem;}
+	.ckdsList li a .r p.t{font-size: .7rem;color: #434343;height: 2rem;line-height: 1rem;}
+	.ckdsList li a .r p.t{-webkit-box-pack: center;}
+	.ckdsList li a .r .d{font-size: .6rem;color: #cecece;line-height: .8rem;}

@@ -1,0 +1,30 @@
+.receiveInfo{background: #FFFFFF;margin-bottom: .5rem;margin-top: 0;}
+	.receiveInfo .item-content{width: 100%;}
+	.receiveInfo .item-content .item-title{line-height: 1rem;text-overflow:initial;white-space:normal;}
+	.receiveInfo .item-content .item-title p{margin: 0;font-size: .7rem;}
+	.receiveInfo .item-content .item-title span{color: #898888;font-size: .6rem;}
+
+.ment-list li{background: #FFFFFF;margin-bottom: .5rem;}
+	.ment-list li .top{font-size: .6rem;line-height: 2rem;margin: 0 .5rem;border-bottom: .05rem solid #E5E5E5;}
+	.ment-list li .top .l{color: #AAAAAA;}	
+	.ment-list li .orderInfo{color: #AAAAAA;font-size: .6rem;padding: .5rem;border-bottom: .05rem solid #F5F5F5;}
+	.ment-list li .orderInfo a{color: #AAAAAA;}
+	.ment-list li .main{line-height: 2rem;padding: 0 .5rem;border-bottom: .05rem solid #F5F5F5;font-size: .6rem;}
+	.ment-list li .main .red{font-size: .8rem;}
+
+.bar{background: #FFFFFF;}
+	.bar a{float: right;font-size: .7rem;line-height: 1.4rem;padding: 0 .4rem;border-radius: .2rem;margin: .5rem .2rem;}
+	.bar a.l{color: #817f7f;border: .05rem solid #817f7f;}
+	.bar a.r{color: #E60012;border: .05rem solid #E60012;}
+	@media only screen and (max-width: 374px){
+		.bar a{font-size: .6rem;}
+	}
+
+.modal-text{line-height: 1rem;}
+	.modal-text input{display: inline-block;margin-right: .25rem;vertical-align: middle;}
+	
+.back-list{padding: .5rem 0 0 1rem;text-align: left;border-top: .05rem solid #CFCFCF;}
+	.back-list li{line-height: 1.5rem;font-size: .6rem;-webkit-flex-shrink: 1;-ms-flex: 0 1 auto;-webkit-flex-shrink: 1;flex-shrink: 1;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}		
+	.back-list li em{display: inline-block;width: .7rem;height: .7rem;vertical-align: middle;margin-right: .25rem;background: url(/schoolwap/images/default/icon_find_content_dischoose.png) no-repeat;background-size: 100% 100%;}
+	.back-list li.active em{background: url(/schoolwap/images/default/icon_find_content_highlight_delivery.png) no-repeat;background-size: 100% 100%;}
+	.back-list li.noback, .back-list li.nostatus{color: #959494;}

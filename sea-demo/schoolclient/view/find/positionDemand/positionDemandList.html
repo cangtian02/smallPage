@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <link rel="stylesheet" href="../../../sea_modules/sm/0.6.2/sm.min.css" />
+</head>
+<body>
+	<div class="page-group">
+    <div class="page">
+    	<div class="sort-bar bgf" id="sort-bar">
+			<ul class="boxflex">
+	  			<li>
+	  				<div class="c"><sapn class="t">求职意向</sapn>&nbsp;<span class="icon icon-down"></span></div>
+				  	<dl>
+				  		<dd>求职意向</dd>
+				  		<dd data-dd="实习">实习</dd>
+				  		<dd data-dd="兼职">兼职</dd>
+				  		<dd data-dd="全职">全职</dd>
+				  	</dl>
+	  			</li>
+	  			<li>
+	  				<div class="c"><sapn class="t">工作区域</sapn>&nbsp;<span class="icon icon-down"></span></div>
+	  				<input type="text" id="city-picker" readonly />
+	  				<input type="hidden" id='baseAreaCode' value="" readonly />
+	  			</li>
+	  			<li>
+	  				<div class="c"><span><sapn class="t">选择行业</sapn>&nbsp;<span class="icon icon-down"></span></div>
+	  				<input type="text" id="positionClass" readonly />
+	  			</li>
+	  		</ul>
+		</div>
+    <div class="content infinite-scroll infinite-scroll-bottom pull-to-refresh-content">
+		<!-- 下拉加载提示符-->
+		<div class="pull-to-refresh-layer"><div class="preloader"></div><div class="pull-to-refresh-arrow"></div></div>	  	
+    	<div class="list-block media-list"><ul></ul></div>
+		<!-- 加载提示符 -->
+		<div class="infinite-scroll-preloader"><div class="preloader"></div></div>	    	
+    	<div class="content-mask"></div>
+    </div>
+    	<div class="fabu-btn"><a>企业下载APP即可发布招聘</a><div class="close"><i></i></div></div>
+    </div>
+    </div>
+    <script src="../../../sea_modules/zepto/1.2.0/zepto.js"></script>
+	<script src="../../../sea_modules/sea/3.0.1/sea.js"></script>
+	<script src="../../../config.js"></script>
+	<script>seajs.use(SAYIMO.BUILD + 'control/find/positionDemand/positionDemandList');</script>	
+</body>
+</html>
